@@ -1,0 +1,13 @@
+ # Comments and blank lines are allowed.
+     
+^/README.*
+^/LICENSE*
+^/COPYING
+
+\.DS_Store
+\.git
+\.gitignore
+
+scripts
+bitbar
+Keyboard\ Maestro
