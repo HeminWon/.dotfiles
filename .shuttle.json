@@ -1,0 +1,39 @@
+{
+  "_comments": [
+    "Valid terminals include: 'Terminal.app' or 'iTerm'",
+    "In the editor value change 'default' to 'nano', 'vi', or another terminal based editor.",
+    "Hosts will also be read from your ~/.ssh/config or /etc/ssh_config file, if available",
+    "For more information on how to configure, please see http://fitztrev.github.io/shuttle/"
+  ],
+  "editor": "default",
+  "launch_at_login": false,
+  "terminal": "iTerm",
+  "iTerm_version": "nightly",
+  "default_theme": "Homebrew",
+  "open_in": "new",  
+  "show_ssh_config_hosts": false,
+  "ssh_config_ignore_hosts": [  ],
+  "ssh_config_ignore_keywords": [  ],
+  "hosts": [
+  	{
+    "mitmproxy": [
+      {
+        "name": "Open mitmproxy",
+        "cmd": "echo didi | sudo -S networksetup -setwebproxy 'Wi-Fi' 127.0.0.1 8080 && sudo networksetup -setsecurewebproxy 'Wi-Fi' 127.0.0.1 8080 && mitmproxy && mitmproxy -p 8080"
+      }
+    ],
+    "HTTP(S) Proxy": [
+      {
+        "name": "Turn on HTTP(S) Proxy",
+        "cmd": "echo didi | sudo -S networksetup -setwebproxy 'Wi-Fi' 127.0.0.1 8080 && sudo networksetup -setsecurewebproxy 'Wi-Fi' 127.0.0.1 8080"
+      },
+      {
+        "name": "Turn off HTTP(S) Proxy",
+        "cmd": "echo didi | sudo -S networksetup -setwebproxystate 'Wi-Fi' off && sudo networksetup -setsecurewebproxystate 'Wi-Fi' off"
+      },
+    ],
+  },
+  ]
+}
+
+        
