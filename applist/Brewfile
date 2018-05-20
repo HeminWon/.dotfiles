@@ -1,0 +1,70 @@
+tap "buo/cask-upgrade"
+tap "homebrew/core"
+tap "homebrew/bundle"
+tap "caskroom/cask"
+# Automatic configure script builder
+brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Generic library support script
+brew "libtool"
+# YAML Parser
+brew "libyaml"
+# Powerful, lightweight programming language
+brew "lua"
+# Mac App Store command-line interface
+brew "mas"
+# SSL/TLS cryptography library
+brew "openssl"
+# Library for command-line editing
+brew "readline"
+# Intercept, modify, replay, save HTTP/S traffic
+brew "mitmproxy"
+# NCurses Disk Usage
+brew "ncdu"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Web caching proxy
+brew "polipo"
+# Advanced filtering web proxy
+brew "privoxy"
+# Pyenv plugin to manage virtualenv
+brew "pyenv-virtualenv"
+# Alternative to pyenv for managing virtualenvs
+brew "pyenv-virtualenvwrapper"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+cask "alfred"
+cask "charles"
+cask "cheatsheet"
+cask "contexts"
+cask "flux"
+cask "go2shell"
+cask "google-chrome"
+cask "iina"
+cask "iterm2"
+cask "keycastr"
+cask "lepton"
+cask "licecap"
+cask "shuttle"
+cask "sourcetree"
+cask "sublime-text"
+cask "typora"
+cask "xmind"
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "OhMyStar2", id: 1218642292
+mas "Pages", id: 409201541
+mas "WeChat", id: 836500024
+mas "Xcode", id: 497799835
+mas "网易有道词典", id: 491854842
