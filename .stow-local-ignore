@@ -8,6 +8,7 @@
 \.git
 \.gitignore
 
+# ignore file
 scripts
 bitbar
 Keyboard\ Maestro
