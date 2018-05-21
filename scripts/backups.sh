@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILES=$HOME/.dotfiles
+DOTFILES=$HOME/dotfiles
 
 # backup Keyboard Maestro
 cp /$HOME/Library/Application\ Support/Keyboard\ Maestro/Keyboard\ Maestro\ Macro\ Stats.plist /$DOTFILES/Keyboard\ Maestro/Keyboard\ Maestro\ Macro\ Stats.plist
