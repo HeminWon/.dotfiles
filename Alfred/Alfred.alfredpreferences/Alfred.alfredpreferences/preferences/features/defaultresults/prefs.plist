@@ -7,10 +7,9 @@
 		<string>features.websearch.google.fallback</string>
 		<string>features.websearch.custom.4CDC59AC-47AB-41E7-8F38-781B8CE9835F.fallback</string>
 		<string>features.websearch.custom.556CC339-AC6D-4E36-8552-DA40AE86E7EB.fallback</string>
-		<string>features.websearch.amazon.fallback</string>
-		<string>features.websearch.wiki.fallback</string>
+		<string>features.websearch.bing.fallback</string>
 	</array>
-	<key>showDocuments</key>
+	<key>showArchives</key>
 	<true/>
 	<key>showFolders</key>
 	<true/>

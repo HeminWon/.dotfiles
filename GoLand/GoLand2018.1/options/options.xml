@@ -1,0 +1,23 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="Default.savedEditorTheme" value="_@user_Default" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="ExpandRunDashboardTypesPanel" value="false" />
+    <property name="FileTemplates.SelectedTemplate" value="Go File" />
+    <property name="GO_IDE_DEFAULT_PROJECT_PATH" value="$USER_HOME$/go/src" />
+    <property name="LayoutCode.optimizeImports" value="true" />
+    <property name="SettingsSearchHistory" value="on save" />
+    <property name="evlsprt3.181" value="14" />
+    <property name="file.gist.reindex.count" value="229" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="go.init.cfg.2" value="true" />
+    <property name="go.init.cfg.line.markers" value="true" />
+    <property name="go.last.update.timestamp" value="1527472945240" />
+    <property name="go.libraries.notification.had.been.shown" value="true" />
+    <property name="go.optimizeImportsByDefault" value="true" />
+    <property name="go.settings.notification.shown" value="true" />
+    <property name="go.suggest.all.rc.was.enabled.once" value="true" />
+    <property name="ts.lib.d.ts.version" value="2.8.1" />
+  </component>
+</application>

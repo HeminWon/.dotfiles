@@ -1,0 +1,29 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.3360.2100@192dpi" x="1678" y="904" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.3360.2100@192dpi" x="954" y="662" />
+    <location key="SettingsEditor.0.0.3360.2100@192dpi" x="654" y="300" />
+    <location key="com.intellij.ide.util.TipDialog.1680.0.1920.1080" x="2297" y="382" />
+    <location key="bookmarks.1680.0.1920.1080" x="2195" y="470" />
+    <location key="ProcessPopupWindow.1680.0.1920.1080" x="3116" y="970" />
+    <location key="SettingsEditor.1680.0.1920.1080" x="1819" y="173" />
+    <location key="find.popup.1680.0.1920.1080" x="2287" y="157" />
+    <location key="#com.intellij.ide.util.MemberChooser.1680.0.1920.1080" x="2382" y="265" />
+    <location key="Github.CreateGistDialog.1680.0.1920.1080" x="2474" y="449" />
+    <location key="WELCOME_SCREEN.1680.0.1920.1080" x="2456" y="389" />
+    <location key="RollbackChangesDialog.1680.0.1920.1080" x="2280" y="276" />
+    <location key="#Updates.1680.0.1920.1080" x="2395" y="417" />
+    <size key="NewXcodeProjectWizard.1680.0.1920.1080" width="600" height="400" />
+    <size key="GridCell.Tab.0.left.1680.0.1920.1080" width="1899" height="358" />
+    <size key="GridCell.Tab.0.center.1680.0.1920.1080" width="1899" height="358" />
+    <size key="GridCell.Tab.0.right.1680.0.1920.1080" width="1899" height="358" />
+    <size key="GridCell.Tab.0.bottom.1680.0.1920.1080" width="1899" height="358" />
+    <size key="GridCell.Tab.1.left.1680.0.1920.1080" width="1899" height="358" />
+    <size key="GridCell.Tab.1.center.1680.0.1920.1080" width="1899" height="358" />
+    <size key="GridCell.Tab.1.right.1680.0.1920.1080" width="1899" height="358" />
+    <size key="GridCell.Tab.1.bottom.1680.0.1920.1080" width="1899" height="358" />
+    <size key="bookmarks.1680.0.1920.1080" width="1075" height="340" />
+    <size key="ProcessPopupWindow.1680.0.1920.1080" width="400" height="108" />
+    <size key="find.popup.1680.0.1920.1080" width="972" height="627" />
+  </component>
+</application>
