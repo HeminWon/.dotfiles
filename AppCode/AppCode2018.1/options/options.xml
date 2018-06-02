@@ -3,13 +3,13 @@
     <property name="Default.savedEditorTheme" value="_@user_Default" />
     <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
     <property name="FileTemplates.SelectedTemplate" value="HTML File" />
-    <property name="KEYMAP" value="project view" />
+    <property name="KEYMAP" value="call&#10;project view" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="NewXcodeProject.Left" value="iOS.Application" />
     <property name="NewXcodeProject.Right" value="Augmented Reality App" />
     <property name="evlsprt3.173" value="10" />
     <property name="evlsprt3.181" value="10" />
-    <property name="file.gist.reindex.count" value="18" />
+    <property name="file.gist.reindex.count" value="46" />
     <property name="lastTip" value="34" />
     <property name="ts.lib.d.ts.version" value="2.8.1" />
   </component>

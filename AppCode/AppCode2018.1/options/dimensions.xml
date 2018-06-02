@@ -10,18 +10,19 @@
     <location key="find.popup.1680.0.1920.1080" x="2287" y="157" />
     <location key="#com.intellij.ide.util.MemberChooser.1680.0.1920.1080" x="2382" y="265" />
     <location key="Github.CreateGistDialog.1680.0.1920.1080" x="2474" y="449" />
-    <location key="WELCOME_SCREEN.1680.0.1920.1080" x="2456" y="389" />
+    <location key="WELCOME_SCREEN.1680.0.1920.1080" x="2750" y="561" />
     <location key="RollbackChangesDialog.1680.0.1920.1080" x="2280" y="276" />
     <location key="#Updates.1680.0.1920.1080" x="2395" y="417" />
+    <location key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2.1680.0.1920.1080" x="2184" y="305" />
     <size key="NewXcodeProjectWizard.1680.0.1920.1080" width="600" height="400" />
-    <size key="GridCell.Tab.0.left.1680.0.1920.1080" width="1899" height="358" />
-    <size key="GridCell.Tab.0.center.1680.0.1920.1080" width="1899" height="358" />
-    <size key="GridCell.Tab.0.right.1680.0.1920.1080" width="1899" height="358" />
-    <size key="GridCell.Tab.0.bottom.1680.0.1920.1080" width="1899" height="358" />
-    <size key="GridCell.Tab.1.left.1680.0.1920.1080" width="1899" height="358" />
-    <size key="GridCell.Tab.1.center.1680.0.1920.1080" width="1899" height="358" />
-    <size key="GridCell.Tab.1.right.1680.0.1920.1080" width="1899" height="358" />
-    <size key="GridCell.Tab.1.bottom.1680.0.1920.1080" width="1899" height="358" />
+    <size key="GridCell.Tab.0.left.1680.0.1920.1080" width="1899" height="167" />
+    <size key="GridCell.Tab.0.center.1680.0.1920.1080" width="1899" height="167" />
+    <size key="GridCell.Tab.0.right.1680.0.1920.1080" width="1899" height="167" />
+    <size key="GridCell.Tab.0.bottom.1680.0.1920.1080" width="1899" height="167" />
+    <size key="GridCell.Tab.1.left.1680.0.1920.1080" width="1899" height="167" />
+    <size key="GridCell.Tab.1.center.1680.0.1920.1080" width="1899" height="167" />
+    <size key="GridCell.Tab.1.right.1680.0.1920.1080" width="1899" height="167" />
+    <size key="GridCell.Tab.1.bottom.1680.0.1920.1080" width="1899" height="167" />
     <size key="bookmarks.1680.0.1920.1080" width="1075" height="340" />
     <size key="ProcessPopupWindow.1680.0.1920.1080" width="400" height="108" />
     <size key="find.popup.1680.0.1920.1080" width="972" height="627" />

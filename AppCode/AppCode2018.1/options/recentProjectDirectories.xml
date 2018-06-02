@@ -3,10 +3,11 @@
     <option name="recentPaths">
       <list>
         <option value="$USER_HOME$/Documents/Global2" />
+        <option value="$USER_HOME$/Documents/Global2/GlobalPax.xcworkspace" />
+        <option value="$USER_HOME$/Documents/HeminWon/HeminWon/HeminWonCore" />
         <option value="$USER_HOME$/Documents/Global" />
         <option value="$USER_HOME$/Documents/OneTravel" />
         <option value="$USER_HOME$/Documents/Brazil99_2" />
-        <option value="$USER_HOME$/Documents/HeminWon/HeminWon/HeminWonCore" />
         <option value="$USER_HOME$/Desktop/123" />
         <option value="$USER_HOME$/Documents/OneTravel3" />
       </list>
@@ -59,19 +60,30 @@
               <option name="build" value="OC-181.5087.34" />
               <option name="productionCode" value="OC" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1527651777918" />
-              <option name="buildTimestamp" value="1527065469137" />
+              <option name="projectOpenTimestamp" value="1527917369257" />
+              <option name="buildTimestamp" value="1527065480485" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/Global2/GlobalPax.xcworkspace">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="OC-181.5087.34" />
+              <option name="productionCode" value="OC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1527823936669" />
+              <option name="buildTimestamp" value="1527065485700" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
         <entry key="$USER_HOME$/Documents/HeminWon/HeminWon/HeminWonCore">
           <value>
             <RecentProjectMetaInfo>
-              <option name="build" value="OC-173.4674.5" />
+              <option name="build" value="OC-181.5087.34" />
               <option name="productionCode" value="OC" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1527514338579" />
-              <option name="buildTimestamp" value="1519729766682" />
+              <option name="projectOpenTimestamp" value="1527662511578" />
+              <option name="buildTimestamp" value="1527065501440" />
             </RecentProjectMetaInfo>
           </value>
         </entry>

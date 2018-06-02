@@ -1,7 +1,7 @@
 tap "buo/cask-upgrade"
 tap "homebrew/core"
+tap "homebrew/cask"
 tap "homebrew/bundle"
-tap "caskroom/cask"
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -42,12 +42,13 @@ brew "pyenv-virtualenvwrapper"
 brew "stow"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+cask "bitbar"
 cask "captin"
-cask "charles"
 cask "cheatsheet"
 cask "flux"
 cask "go2shell"
 cask "google-chrome"
+cask "hammerspoon"
 cask "iina"
 cask "iterm2"
 cask "keycastr"
