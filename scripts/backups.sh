@@ -1,16 +1,17 @@
 #!/bin/bash
 
-DOTFILES=$HOME/dotfiles
+DOTFILES=~/dotfiles
+PATH_PREFERENCES=~/Library/Preferences
 
 # backup Keyboard Maestro
 backup_KeyboardMaestro() {
-	cp $HOME/Library/Application\ Support/Keyboard\ Maestro/Keyboard\ Maestro\ Macro\ Stats.plist /$DOTFILES/Keyboard\ Maestro/Keyboard\ Maestro\ Macro\ Stats.plist
-	cp $HOME/Library/Application\ Support/Keyboard\ Maestro/Keyboard\ Maestro\ Macros.plist /$DOTFILES/Keyboard\ Maestro/Keyboard\ Maestro\ Macros.plist
+	cp $HOME/Library/Application\ Support/Keyboard\ Maestro/Keyboard\ Maestro\ Macro\ Stats.plist $DOTFILES/Keyboard\ Maestro/Keyboard\ Maestro\ Macro\ Stats.plist
+	cp $HOME/Library/Application\ Support/Keyboard\ Maestro/Keyboard\ Maestro\ Macros.plist $DOTFILES/Keyboard\ Maestro/Keyboard\ Maestro\ Macros.plist
 }
 
 # backup Alfred
 backup_Alfred() {
-	cp -r $HOME/Library/Application\ Support/Alfred\ 3/Alfred.alfredpreferences /$DOTFILES/Alfred/Alfred.alfredpreferences
+	cp -r $HOME/Library/Application\ Support/Alfred\ 3/Alfred.alfredpreferences $DOTFILES/Alfred/Alfred.alfredpreferences
 }
 
 # backup app
@@ -31,7 +32,6 @@ backup_App() {
 }
 
 backup_AppCode() {
-	PATH_PREFERENCES=~/Library/Preferences
 	NAME_APPCODE=`ls $PATH_PREFERENCES | grep -E '^AppCode' | sort -V -r | head -n 1`
 	PATH_APPCODE=${PATH_PREFERENCES}/${NAME_APPCODE}
 	echo $PATH_APPCODE
@@ -41,13 +41,22 @@ backup_AppCode() {
 }
 
 backup_GoLand() {
-	PATH_PREFERENCES=~/Library/Preferences
 	NAME_GOLAND=`ls $PATH_PREFERENCES | grep -E '^GoLand' | sort -V -r | head -n 1`
 	PATH_GOLAND=${PATH_PREFERENCES}/${NAME_GOLAND}
 	if [[ -d "$PATH_GOLAND"  ]]; then
 		rsync -avP --exclude=tasks/ $PATH_GOLAND $DOTFILES/GoLand
 	fi
 }
+
+backup_iTerm() {
+	NAME_ITERM=`ls $PATH_PREFERENCES | grep -E '^com.googlecode.iterm' | sort -V -r | head -n 1`
+	PATH_ITERM=${PATH_PREFERENCES}/$NAME_ITERM
+	if [[ -f "$PATH_ITERM" ]]; then
+		mkdir $DOTFILES/iTerm && cp -R $PATH_ITERM $DOTFILES/iTerm/$NAME_ITERM
+	fi
+
+}
+
 
 #########################################################################
 
@@ -56,6 +65,7 @@ backup_Alfred
 backup_App
 backup_AppCode
 backup_GoLand
+backup_iTerm
 
 echo "The configuration file is backed up successfully"
 
