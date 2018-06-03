@@ -1,0 +1,12 @@
+#!bin/bash
+
+set -e
+# set -x
+
+cd "$(dirname $0)"/..
+
+find . -name .backup.sh | while read LINE ; do sh "${LINE}"; done
+
+osascript << EOF
+    display notification "The configuration file is backed up successfully" with title "来自 dotfiles"
+EOF
