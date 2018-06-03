@@ -1,8 +1,10 @@
 #!/bin/bash
 
+set -e
+
 if [[ ! -e /usr/local/bin/brew ]]; then
     # quiet install brew
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" || (echo "command failed" && exit 1)
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
     echo "$(brew --version)\n"
 fi

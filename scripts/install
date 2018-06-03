@@ -1,13 +1,14 @@
 #!bin/bash
 
-source ./basic.sh
+source ./basic
 
-# echo $file_dotfiles
+set -e
+# set -x
 
 # 环境检查
-sh $file_dotfiles/scripts/bootstrap.sh
+sh $file_dotfiles/scripts/bootstrap
 
-brew_install stow || (echo "command failed" && exit 1)
+brew_install stow
 
 # 遍历所有需要软stow连接的文件
 cd $file_dotfiles/.files
@@ -29,4 +30,4 @@ done
 
 cd $file_dotfiles
 
-stow -v .files || (echo "command failed" && exit 1)
+stow -v .files
