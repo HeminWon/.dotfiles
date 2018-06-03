@@ -4,7 +4,7 @@ set -e
 
 source ./basic
 
-funcion installer() {
+function installer() {
 	file_applist=${file_dotfiles}/applist
 
 	mas_list=${file_applist}/MAS_AppList
@@ -15,6 +15,8 @@ funcion installer() {
 	temp_brew_list=${file_applist}/temp_Brew_AppList
 	temp_brewcask_list=${file_applist}/temp_BrewCask_AppList
 
+	file_installer=$file_applist/installer
+
 	# 生成本地的临时列表
 	brew list > $temp_brew_list
 	brew cask list > $temp_brewcask_list
@@ -22,13 +24,15 @@ funcion installer() {
 
 	# 找出本地未安装的软件列表
 	echo "#!/bin/bash" > $file_applist/installer
-	comm -2 -3 $mas_list $temp_mas_list | sed 's/^/mas install /g' | awk '$3=$3 " #"' >> $file_applist/installer
-	comm -2 -3 $brew_list $temp_brew_list | sed 's/^/brew install /g' >> $file_applist/installer
-	comm -2 -3 $brewcask_list $temp_brewcask_list | sed 's/^/brew cask install /g' >> $file_applist/installer
+	comm -2 -3 $mas_list $temp_mas_list | sed 's/^/mas install /g' | awk '$3=$3 " #"' >> $file_installer
+	comm -2 -3 $brew_list $temp_brew_list | sed 's/^/brew install /g' >> $file_installer
+	comm -2 -3 $brewcask_list $temp_brewcask_list | sed 's/^/brew cask install /g' >> $file_installer
 
 	rm $temp_mas_list
 	rm $temp_brew_list
 	rm $temp_brewcask_list	
+
+	cat $file_installer
 }
 
 
