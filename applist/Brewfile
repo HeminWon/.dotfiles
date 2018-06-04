@@ -2,12 +2,36 @@ tap "buo/cask-upgrade"
 tap "homebrew/core"
 tap "homebrew/cask"
 tap "homebrew/bundle"
+# C/C++ resolver library and DNS resolver utilities
+brew "adns"
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# GNU database manager
+brew "gdbm"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
+# GNU multiple precision arithmetic library
+brew "gmp"
+# Portable Foreign Function Interface library
+brew "libffi"
+# ASN.1 structure parser library
+brew "libtasn1"
+# C string library for manipulating Unicode strings
+brew "libunistring"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Common error values for all GnuPG components
+brew "libgpg-error"
+# Assuan IPC Library
+brew "libassuan"
+# Cryptographic library based on the code from GnuPG
+brew "libgcrypt"
+# X.509 and CMS library
+brew "libksba"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
@@ -54,6 +78,7 @@ cask "iterm2"
 cask "keycastr"
 cask "lepton"
 cask "licecap"
+cask "save-hollywood"
 cask "shuttle"
 cask "sourcetree"
 cask "sublime-text"
