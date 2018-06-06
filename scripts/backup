@@ -2,9 +2,13 @@
 
 set -e
 
+success () {
+  printf "##### ✔︎  $1\n"
+}
+
 cd "$(dirname $0)"/..
 
-find . -name .backup.sh | while read LINE ; do sh "${LINE}"; done
+find . -name .backup.sh | while read LINE ; do sh "${LINE}"; success "${LINE}"; done
 
 osascript << EOF
     display notification "The configuration file is backed up successfully" with title "来自 dotfiles"
