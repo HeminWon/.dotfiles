@@ -1,11 +1,10 @@
 #!/bin/bash
 
 set -e
-set -x
 
 # backup app
 backup_App() {
-	brew bundle dump --describe --force --file="~/dotfiles/applist/Brewfile"
+	/usr/local/bin/brew bundle dump --describe --force --file="~/dotfiles/applist/Brewfile"
 
 	# All Apps
 	ls /Applications > ~/dotfiles/applist/All_AppList

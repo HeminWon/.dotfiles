@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [[ ! -e /Applications/iTerm.app ]]; then
     brew cask install iterm2

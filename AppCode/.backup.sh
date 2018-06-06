@@ -1,7 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -e
-set -x
 
 # backup AppCode
 backup_AppCode() {

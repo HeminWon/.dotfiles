@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -e
-set -x
 
 # backup Keyboard Maestro
 backup_KeyboardMaestro() {
