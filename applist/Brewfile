@@ -10,6 +10,8 @@ brew "autoconf"
 brew "automake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Program that can automate interactive applications
+brew "expect"
 # GNU database manager
 brew "gdbm"
 # GNU internationalization (i18n) and localization (l10n) library

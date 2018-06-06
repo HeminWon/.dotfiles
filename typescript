@@ -1,0 +1,7 @@
+Script started on Wed Jun  6 14:29:01 2018
+    display notification "The configuration file is backed up successfully" with title "来自 dotfiles"
+^D%                                                                               [01;32m➜  [36mdotfiles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [?2004h    display notification "The configuration fil<ay notification "The configuration file                                       is backed up successfully" with title< is backed up successfully" with title                                       "<00e6><009d><00a5><00e8><0087><00aa> <"<00e6><009d><00a5><00e8><0087><00aa> d                                      otfiles"[?2004l
+zsh: command not found: display
+%                                                                               [01;31m➜  [36mdotfiles[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [?2004h[?2004l
+
+Script done on Wed Jun  6 14:29:01 2018

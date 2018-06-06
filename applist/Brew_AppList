@@ -2,6 +2,7 @@ adns
 autoconf
 automake
 coreutils
+expect
 gdbm
 gettext
 gmp

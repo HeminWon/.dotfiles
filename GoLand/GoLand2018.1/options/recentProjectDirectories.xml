@@ -18,6 +18,12 @@
         <option value="/private/var/folders/52/5qd8yg5s6mbg83n1c79yy0xm0000gp/T/hello.go" />
       </list>
     </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/go/src" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/go/src" />
     <option name="pid" value="" />
     <option name="additionalInfo">
       <map>
@@ -170,8 +176,8 @@
               <option name="build" value="GO-181.4668.90" />
               <option name="productionCode" value="GO" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1527746163890" />
-              <option name="buildTimestamp" value="1524765586349" />
+              <option name="projectOpenTimestamp" value="1528263400725" />
+              <option name="buildTimestamp" value="1524765545609" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
