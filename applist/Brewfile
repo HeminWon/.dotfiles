@@ -10,6 +10,10 @@ brew "autoconf"
 brew "automake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Go dependency management tool
+brew "dep"
 # Program that can automate interactive applications
 brew "expect"
 # GNU database manager
@@ -36,8 +40,6 @@ brew "libgcrypt"
 brew "libksba"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
 # Generic library support script
 brew "libtool"
 # YAML Parser
@@ -82,6 +84,7 @@ cask "lepton"
 cask "licecap"
 cask "save-hollywood"
 cask "shuttle"
+cask "sogouinput"
 cask "sourcetree"
 cask "sublime-text"
 cask "typora"
