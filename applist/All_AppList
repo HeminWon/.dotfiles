@@ -6,6 +6,7 @@ Automator.app
 BaiduNetdisk_mac.app
 Bartender 3.app
 BitBar.app
+Books.app
 Calculator.app
 Calendar.app
 Captin.app
@@ -15,7 +16,6 @@ Chess.app
 Cisco
 Contacts.app
 Contexts.app
-DVD Player.app
 Dash.app
 Dashboard.app
 Dictionary.app
@@ -28,6 +28,7 @@ Go2Shell.app
 GoLand.app
 Google Chrome.app
 Hammerspoon.app
+Home.app
 IINA.app
 Image Capture.app
 KeyCastr.app
@@ -48,6 +49,7 @@ Microsoft Word.app
 MindNode.app
 Mission Control.app
 NeteaseMusic.app
+News.app
 Notes.app
 Numbers.app
 OhMyStar2.app
@@ -68,7 +70,7 @@ Shuttle.app
 Siri.app
 Sourcetree.app
 Stickies.app
-Sublime Text.app
+Stocks.app
 System Preferences.app
 TextEdit.app
 ThoughtTrain.app
@@ -77,11 +79,13 @@ Time Machine.app
 Typora.app
 Utilities
 VirtualBox.app
+Visual Studio Code.app
+VoiceMemos.app
 WeChat.app
 XMind.app
+Xcode-beta.app
 Xcode.app
 YSoft SafeQ Client.app
-iBooks.app
 iMovie.app
 iTerm.app
 iTunes.app

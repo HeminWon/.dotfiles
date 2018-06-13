@@ -86,7 +86,6 @@ cask "save-hollywood"
 cask "shuttle"
 cask "sogouinput"
 cask "sourcetree"
-cask "sublime-text"
 cask "typora"
 cask "xmind"
 mas "GarageBand", id: 682658836

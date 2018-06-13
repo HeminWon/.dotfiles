@@ -1,0 +1,5 @@
+<application>
+  <component name="DlvSettings">
+    <option name="useNativeBackend" value="true" />
+  </component>
+</application>

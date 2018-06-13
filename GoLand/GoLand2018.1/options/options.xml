@@ -7,14 +7,15 @@
     <property name="FileTemplates.SelectedTemplate" value="Go File" />
     <property name="GO_IDE_DEFAULT_PROJECT_PATH" value="$USER_HOME$/go/src" />
     <property name="LayoutCode.optimizeImports" value="true" />
-    <property name="PLUGIN_FILTER" value="bash&#10;shell&#10;python" />
-    <property name="SettingsSearchHistory" value="on save" />
+    <property name="MoveFile.OpenInEditor" value="true" />
+    <property name="PLUGIN_FILTER" value="json&#10;bash&#10;shell&#10;python" />
+    <property name="SettingsSearchHistory" value="backend&#10;on save" />
     <property name="evlsprt3.181" value="14" />
-    <property name="file.gist.reindex.count" value="229" />
-    <property name="fileTypeChangedCounter" value="1" />
+    <property name="file.gist.reindex.count" value="280" />
+    <property name="fileTypeChangedCounter" value="3" />
     <property name="go.init.cfg.2" value="true" />
     <property name="go.init.cfg.line.markers" value="true" />
-    <property name="go.last.update.timestamp" value="1528258449867" />
+    <property name="go.last.update.timestamp" value="1528794234981" />
     <property name="go.libraries.notification.had.been.shown" value="true" />
     <property name="go.optimizeImportsByDefault" value="true" />
     <property name="go.settings.notification.shown" value="true" />
