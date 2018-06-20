@@ -21,6 +21,7 @@ libunistring
 libusb
 libyaml
 lua
+makedepend
 mas
 mitmproxy
 ncdu

@@ -2,11 +2,11 @@
   <component name="RecentDirectoryProjectsManager">
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/go/src/DawnServer" />
+        <option value="$USER_HOME$/go/src/awesomeProject" />
         <option value="$USER_HOME$/go/src" />
         <option value="$USER_HOME$/go/src/douban-movie" />
-        <option value="$USER_HOME$/go/src/DawnServer" />
         <option value="$USER_HOME$/go/src/imooc.com/ccmouse/learngo/functional" />
-        <option value="$USER_HOME$/go/src/awesomeProject" />
         <option value="$USER_HOME$/go/src/imooc.com/ccmouse/learngo/retriever" />
         <option value="$USER_HOME$/go/src/imooc.com/ccmouse/learngo/tree" />
         <option value="$USER_HOME$/Downloads/GO语言/课件代码/u2pppw/tree" />
@@ -20,10 +20,10 @@
     </option>
     <option name="openPaths">
       <list>
-        <option value="$USER_HOME$/go/src" />
+        <option value="$USER_HOME$/go/src/DawnServer" />
       </list>
     </option>
-    <option name="lastPath" value="$USER_HOME$/go/src" />
+    <option name="lastPath" value="$USER_HOME$/go/src/DawnServer" />
     <option name="pid" value="" />
     <option name="additionalInfo">
       <map>
@@ -176,8 +176,8 @@
               <option name="build" value="GO-181.4668.90" />
               <option name="productionCode" value="GO" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1528820401038" />
-              <option name="buildTimestamp" value="1524765545967" />
+              <option name="projectOpenTimestamp" value="1529035464756" />
+              <option name="buildTimestamp" value="1524765553379" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
@@ -187,8 +187,8 @@
               <option name="build" value="GO-181.4668.90" />
               <option name="productionCode" value="GO" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1526630445014" />
-              <option name="buildTimestamp" value="1524765553344" />
+              <option name="projectOpenTimestamp" value="1529416700272" />
+              <option name="buildTimestamp" value="1524765584540" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
@@ -198,8 +198,8 @@
               <option name="build" value="GO-181.4668.90" />
               <option name="productionCode" value="GO" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1526528833180" />
-              <option name="buildTimestamp" value="1524765540620" />
+              <option name="projectOpenTimestamp" value="1529401314248" />
+              <option name="buildTimestamp" value="1524765584540" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
