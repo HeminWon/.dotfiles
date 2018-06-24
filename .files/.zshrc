@@ -96,6 +96,9 @@ export PATH="/usr/local/sbin:$PATH"
 
 
 # HeminWon
+export NVM_DIR="/Users/heminwon/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
 function proxy() {
     launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.polipo.plist
     launchctl load ~/Library/LaunchAgents/homebrew.mxcl.polipo.plist
