@@ -50,6 +50,7 @@
         <option value="Css.ampersand.selector" />
         <option value="dom.elementClass" />
         <option value="dom.namespaceKey" />
+        <option value="markdown.header" />
         <option value="bash.var" />
         <option value="bash.vardef" />
         <option value="bash.scriptCommandReference" />

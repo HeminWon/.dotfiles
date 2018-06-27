@@ -11,6 +11,8 @@
 	</array>
 	<key>showArchives</key>
 	<true/>
+	<key>showContacts</key>
+	<false/>
 	<key>showFolders</key>
 	<true/>
 	<key>showTextFiles</key>

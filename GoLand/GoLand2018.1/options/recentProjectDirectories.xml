@@ -4,6 +4,9 @@
       <list>
         <option value="$USER_HOME$/go/src/DawnServer" />
         <option value="$USER_HOME$/go/src/awesomeProject" />
+        <option value="$USER_HOME$/go/src/Meizar" />
+        <option value="$USER_HOME$/go/src/quickstart" />
+        <option value="$USER_HOME$/go/src/github.com/TimothyYe/ydict" />
         <option value="$USER_HOME$/go/src" />
         <option value="$USER_HOME$/go/src/douban-movie" />
         <option value="$USER_HOME$/go/src/imooc.com/ccmouse/learngo/functional" />
@@ -187,8 +190,19 @@
               <option name="build" value="GO-181.4668.90" />
               <option name="productionCode" value="GO" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1529416700272" />
-              <option name="buildTimestamp" value="1524765584540" />
+              <option name="projectOpenTimestamp" value="1530018066817" />
+              <option name="buildTimestamp" value="1524765564300" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/Meizar">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1529750704985" />
+              <option name="buildTimestamp" value="1524765555149" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
@@ -198,8 +212,8 @@
               <option name="build" value="GO-181.4668.90" />
               <option name="productionCode" value="GO" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1529401314248" />
-              <option name="buildTimestamp" value="1524765584540" />
+              <option name="projectOpenTimestamp" value="1530009404538" />
+              <option name="buildTimestamp" value="1524765564300" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
@@ -222,6 +236,17 @@
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="projectOpenTimestamp" value="1526886402911" />
               <option name="buildTimestamp" value="1524765570810" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/github.com/TimothyYe/ydict">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1529653626332" />
+              <option name="buildTimestamp" value="1524765575978" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
@@ -255,6 +280,17 @@
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="projectOpenTimestamp" value="1526467467283" />
               <option name="buildTimestamp" value="1524765580330" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/quickstart">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1529676903011" />
+              <option name="buildTimestamp" value="1524765567153" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
