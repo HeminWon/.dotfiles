@@ -1,7 +1,7 @@
 tap "buo/cask-upgrade"
-tap "homebrew/core"
-tap "homebrew/cask"
 tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
 # C/C++ resolver library and DNS resolver utilities
 brew "adns"
 # Automatic configure script builder

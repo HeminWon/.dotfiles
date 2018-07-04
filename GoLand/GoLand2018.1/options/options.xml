@@ -1,6 +1,6 @@
 <application>
   <component name="PropertiesComponent">
-    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.5411061" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.60807604" />
     <property name="CommitChangeListDialog.SPLITTER_PROPORTION_2" value="0.81363636" />
     <property name="Copy.OpenInEditor" value="true" />
     <property name="Default.savedEditorTheme" value="_@user_Default" />
@@ -10,7 +10,7 @@
     <property name="GO_IDE_DEFAULT_PROJECT_PATH" value="$USER_HOME$/go/src" />
     <property name="LayoutCode.optimizeImports" value="true" />
     <property name="MoveFile.OpenInEditor" value="true" />
-    <property name="PLUGIN_FILTER" value="json&#10;bash&#10;shell&#10;python" />
+    <property name="PLUGIN_FILTER" value="expect&#10;json&#10;bash&#10;shell&#10;python" />
     <property name="SearchEveryWhereHistory" value="i" />
     <property name="SettingsSearchHistory" value="backend&#10;on save" />
     <property name="evlsprt3.181" value="14" />
@@ -19,7 +19,7 @@
     <property name="go.call.hierarchy.browser.recursive" value="true" />
     <property name="go.init.cfg.2" value="true" />
     <property name="go.init.cfg.line.markers" value="true" />
-    <property name="go.last.update.timestamp" value="1529983896340" />
+    <property name="go.last.update.timestamp" value="1530603231625" />
     <property name="go.libraries.notification.had.been.shown" value="true" />
     <property name="go.optimizeImportsByDefault" value="true" />
     <property name="go.settings.notification.shown" value="true" />
