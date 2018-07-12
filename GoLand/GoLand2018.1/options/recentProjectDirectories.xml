@@ -2,8 +2,8 @@
   <component name="RecentDirectoryProjectsManager">
     <option name="recentPaths">
       <list>
-        <option value="$USER_HOME$/go/src/awesomeProject" />
         <option value="$USER_HOME$/go/src/DawnServer" />
+        <option value="$USER_HOME$/go/src/awesomeProject" />
         <option value="$USER_HOME$/go/src/golang-design-pattern/10_observer" />
         <option value="$USER_HOME$/go/src/Meizar" />
         <option value="$USER_HOME$/go/src/quickstart" />
@@ -22,13 +22,6 @@
         <option value="/private/var/folders/52/5qd8yg5s6mbg83n1c79yy0xm0000gp/T/hello.go" />
       </list>
     </option>
-    <option name="openPaths">
-      <list>
-        <option value="$USER_HOME$/go/src/DawnServer" />
-        <option value="$USER_HOME$/go/src/awesomeProject" />
-      </list>
-    </option>
-    <option name="lastPath" value="$USER_HOME$/go/src/awesomeProject" />
     <option name="pid" value="" />
     <option name="additionalInfo">
       <map>
@@ -192,8 +185,8 @@
               <option name="build" value="GO-181.4668.90" />
               <option name="productionCode" value="GO" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1530623741031" />
-              <option name="buildTimestamp" value="1524765548404" />
+              <option name="projectOpenTimestamp" value="1531226147468" />
+              <option name="buildTimestamp" value="1524765553310" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
@@ -214,8 +207,8 @@
               <option name="build" value="GO-181.4668.90" />
               <option name="productionCode" value="GO" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1530623741031" />
-              <option name="buildTimestamp" value="1524765548404" />
+              <option name="projectOpenTimestamp" value="1530701275867" />
+              <option name="buildTimestamp" value="1524765556479" />
             </RecentProjectMetaInfo>
           </value>
         </entry>

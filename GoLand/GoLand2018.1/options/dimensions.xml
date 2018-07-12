@@ -10,7 +10,7 @@
     <location key="#xdebugger.evaluate.0.0.3360.2100@192dpi" x="1464" y="436" />
     <location key="#Notifications.0.0.3360.2100@192dpi" x="1192" y="464" />
     <location key="#Inspections.1680.0.1920.1080" x="2280" y="203" />
-    <location key="WELCOME_SCREEN.1680.0.1920.1080" x="2583" y="458" />
+    <location key="WELCOME_SCREEN.1680.0.1920.1080" x="2863" y="500" />
     <location key="#com.intellij.fileTypes.FileTypeChooser.1680.0.1920.1080" x="2257" y="322" />
     <location key="find.popup.1680.0.1920.1080" x="2403" y="191" />
     <location key="SettingsEditor.1680.0.1920.1080" x="2229" y="215" />
@@ -49,14 +49,14 @@
     <size key="GridCell.Tab.1.right.0.0.3360.2100@192dpi" width="3276" height="542" />
     <size key="GridCell.Tab.1.bottom.0.0.3360.2100@192dpi" width="3276" height="542" />
     <size key="DebuggerActiveHint.0.0.3360.2100@192dpi" width="1232" height="882" />
-    <size key="GridCell.Tab.0.left.1680.0.1920.1080" width="1878" height="280" />
-    <size key="GridCell.Tab.0.center.1680.0.1920.1080" width="1878" height="280" />
-    <size key="GridCell.Tab.0.right.1680.0.1920.1080" width="1878" height="280" />
-    <size key="GridCell.Tab.0.bottom.1680.0.1920.1080" width="1878" height="280" />
-    <size key="GridCell.Tab.1.left.1680.0.1920.1080" width="1878" height="280" />
-    <size key="GridCell.Tab.1.center.1680.0.1920.1080" width="1878" height="280" />
-    <size key="GridCell.Tab.1.right.1680.0.1920.1080" width="1878" height="280" />
-    <size key="GridCell.Tab.1.bottom.1680.0.1920.1080" width="1878" height="280" />
+    <size key="GridCell.Tab.0.left.1680.0.1920.1080" width="1878" height="315" />
+    <size key="GridCell.Tab.0.center.1680.0.1920.1080" width="1878" height="315" />
+    <size key="GridCell.Tab.0.right.1680.0.1920.1080" width="1878" height="315" />
+    <size key="GridCell.Tab.0.bottom.1680.0.1920.1080" width="1878" height="315" />
+    <size key="GridCell.Tab.1.left.1680.0.1920.1080" width="1878" height="315" />
+    <size key="GridCell.Tab.1.center.1680.0.1920.1080" width="1878" height="315" />
+    <size key="GridCell.Tab.1.right.1680.0.1920.1080" width="1878" height="315" />
+    <size key="GridCell.Tab.1.bottom.1680.0.1920.1080" width="1878" height="315" />
     <size key="DebuggerActiveHint.1680.0.1920.1080" width="733" height="441" />
     <size key="find.popup.1680.0.1920.1080" width="715" height="805" />
     <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1638" height="305" />
