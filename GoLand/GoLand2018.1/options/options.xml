@@ -1,6 +1,6 @@
 <application>
   <component name="PropertiesComponent">
-    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.60807604" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.6935725" />
     <property name="CommitChangeListDialog.SPLITTER_PROPORTION_2" value="0.81363636" />
     <property name="Copy.OpenInEditor" value="true" />
     <property name="Default.savedEditorTheme" value="_@user_Default" />
@@ -14,12 +14,12 @@
     <property name="SearchEveryWhereHistory" value="i" />
     <property name="SettingsSearchHistory" value="backend&#10;on save" />
     <property name="evlsprt3.181" value="14" />
-    <property name="file.gist.reindex.count" value="280" />
+    <property name="file.gist.reindex.count" value="281" />
     <property name="fileTypeChangedCounter" value="4" />
     <property name="go.call.hierarchy.browser.recursive" value="true" />
     <property name="go.init.cfg.2" value="true" />
     <property name="go.init.cfg.line.markers" value="true" />
-    <property name="go.last.update.timestamp" value="1531128615902" />
+    <property name="go.last.update.timestamp" value="1531827383734" />
     <property name="go.libraries.notification.had.been.shown" value="true" />
     <property name="go.optimizeImportsByDefault" value="true" />
     <property name="go.settings.notification.shown" value="true" />
