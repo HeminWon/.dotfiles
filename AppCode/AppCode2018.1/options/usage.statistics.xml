@@ -13,7 +13,7 @@
       <entry action="CIDR.Lang.ImportsHierarchy" count="1" />
       <entry action="CallHierarchy" count="11" />
       <entry action="ChangesView.Revert" count="1" />
-      <entry action="CheckForUpdate" count="2" />
+      <entry action="CheckForUpdate" count="3" />
       <entry action="CollapseAllRegions" count="4" />
       <entry action="CollapseRegion" count="3" />
       <entry action="CollapseRegionRecursively" count="5" />
@@ -242,7 +242,7 @@
       <entry action="Rerun@DebuggerToolbar" count="2" />
       <entry action="Resume@DebuggerToolbar" count="4" />
       <entry action="Run@NavBarToolbar" count="11" />
-      <entry action="RunConfiguration@NavBarToolbar" count="4" />
+      <entry action="RunConfiguration@NavBarToolbar" count="5" />
       <entry action="Show Options@ToolWindowHeader" count="1" />
       <entry action="Stop@DebuggerToolbar" count="1" />
       <entry action="Stop@NavBarToolbar" count="3" />
@@ -287,14 +287,15 @@
       <entry feature="ide.settings.GitHub" count="1" />
       <entry feature="ide.settings.Keymap" count="5" />
       <entry feature="idea.caches.invalidated" count="1" />
-      <entry feature="ideaapp.started" count="18" />
-      <entry feature="project.view.pane.Cidr.FilesView" count="6" />
-      <entry feature="project.view.pane.ProjectPane" count="2" />
+      <entry feature="ideaapp.started" count="21" />
+      <entry feature="project.view.pane.Cidr.FilesView" count="7" />
+      <entry feature="project.view.pane.ProjectPane" count="3" />
       <entry feature="project.view.pane.Scope.Project Non-Source Files" count="1" />
       <entry feature="project.view.pane.Scope.Project Source Files" count="3" />
       <entry feature="terminal.mac" count="6" />
       <entry feature="tips.of.the.day.next" count="23" />
-      <entry feature="welcome.screen.OpenXcodeProject" count="4" />
+      <entry feature="welcome.screen.CreateXcodeProject" count="1" />
+      <entry feature="welcome.screen.OpenXcodeProject" count="8" />
     </counts>
   </component>
 </application>

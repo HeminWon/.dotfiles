@@ -4,6 +4,7 @@
       <list>
         <option value="$USER_HOME$/go/src/DawnServer" />
         <option value="$USER_HOME$/go/src/awesomeProject" />
+        <option value="$USER_HOME$/go/src/go-config" />
         <option value="$USER_HOME$/go/src/golang-design-pattern/10_observer" />
         <option value="$USER_HOME$/go/src/Meizar" />
         <option value="$USER_HOME$/go/src/quickstart" />
@@ -22,12 +23,6 @@
         <option value="/private/var/folders/52/5qd8yg5s6mbg83n1c79yy0xm0000gp/T/hello.go" />
       </list>
     </option>
-    <option name="openPaths">
-      <list>
-        <option value="$USER_HOME$/go/src/DawnServer" />
-      </list>
-    </option>
-    <option name="lastPath" value="$USER_HOME$/go/src/DawnServer" />
     <option name="pid" value="" />
     <option name="additionalInfo">
       <map>
@@ -188,11 +183,11 @@
         <entry key="$USER_HOME$/go/src/DawnServer">
           <value>
             <RecentProjectMetaInfo>
-              <option name="build" value="GO-181.4668.90" />
+              <option name="build" value="GO-181.4892.55" />
               <option name="productionCode" value="GO" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1531828742662" />
-              <option name="buildTimestamp" value="1524765561820" />
+              <option name="projectOpenTimestamp" value="1532055410077" />
+              <option name="buildTimestamp" value="1525957660731" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
@@ -210,11 +205,11 @@
         <entry key="$USER_HOME$/go/src/awesomeProject">
           <value>
             <RecentProjectMetaInfo>
-              <option name="build" value="GO-181.4668.90" />
+              <option name="build" value="GO-181.4892.55" />
               <option name="productionCode" value="GO" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1530701275867" />
-              <option name="buildTimestamp" value="1524765556479" />
+              <option name="projectOpenTimestamp" value="1532004155984" />
+              <option name="buildTimestamp" value="1525957664061" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
@@ -248,6 +243,17 @@
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="projectOpenTimestamp" value="1529653626332" />
               <option name="buildTimestamp" value="1524765575978" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/go-config">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4892.55" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1531995442219" />
+              <option name="buildTimestamp" value="1525957639243" />
             </RecentProjectMetaInfo>
           </value>
         </entry>

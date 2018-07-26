@@ -3,6 +3,7 @@
     <option name="selectedXcode" value="/Applications/Xcode.app/Contents/Developer" />
     <option name="detectedXcodes">
       <list>
+        <option value="/Applications/Xcode-beta.app/Contents/Developer" />
         <option value="/Applications/Xcode.app/Contents/Developer" />
       </list>
     </option>
