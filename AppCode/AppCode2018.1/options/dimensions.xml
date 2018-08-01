@@ -1,6 +1,6 @@
 <application>
   <component name="DimensionService">
-    <location key="WELCOME_SCREEN.0.0.3360.2100@192dpi" x="1678" y="904" />
+    <location key="WELCOME_SCREEN.0.0.3360.2100@192dpi" x="1678" y="906" />
     <location key="com.intellij.ide.util.TipDialog.0.0.3360.2100@192dpi" x="954" y="662" />
     <location key="SettingsEditor.0.0.3360.2100@192dpi" x="654" y="300" />
     <location key="com.intellij.ide.util.TipDialog.1680.0.1920.1080" x="2297" y="382" />
@@ -26,5 +26,13 @@
     <size key="bookmarks.1680.0.1920.1080" width="1075" height="340" />
     <size key="ProcessPopupWindow.1680.0.1920.1080" width="400" height="108" />
     <size key="find.popup.1680.0.1920.1080" width="972" height="627" />
+    <size key="GridCell.Tab.0.left.0.0.3360.2100@192dpi" width="3318" height="692" />
+    <size key="GridCell.Tab.0.center.0.0.3360.2100@192dpi" width="3318" height="692" />
+    <size key="GridCell.Tab.0.right.0.0.3360.2100@192dpi" width="3318" height="692" />
+    <size key="GridCell.Tab.0.bottom.0.0.3360.2100@192dpi" width="3318" height="692" />
+    <size key="GridCell.Tab.1.left.0.0.3360.2100@192dpi" width="3318" height="692" />
+    <size key="GridCell.Tab.1.center.0.0.3360.2100@192dpi" width="3318" height="692" />
+    <size key="GridCell.Tab.1.right.0.0.3360.2100@192dpi" width="3318" height="692" />
+    <size key="GridCell.Tab.1.bottom.0.0.3360.2100@192dpi" width="3318" height="692" />
   </component>
 </application>

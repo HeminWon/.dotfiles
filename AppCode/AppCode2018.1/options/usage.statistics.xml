@@ -14,19 +14,20 @@
       <entry action="CallHierarchy" count="11" />
       <entry action="ChangesView.Revert" count="1" />
       <entry action="CheckForUpdate" count="3" />
+      <entry action="Clean" count="1" />
       <entry action="CollapseAllRegions" count="4" />
       <entry action="CollapseRegion" count="3" />
       <entry action="CollapseRegionRecursively" count="5" />
       <entry action="CommentByBlockComment" count="2" />
       <entry action="CommentByLineComment" count="7" />
-      <entry action="Debug" count="28" />
+      <entry action="Debug" count="38" />
       <entry action="DialogOkAction ⏎" count="1" />
       <entry action="EditSource" count="3" />
       <entry action="EditorBackSpace" count="303" />
       <entry action="EditorChooseLookupItem" count="43" />
       <entry action="EditorCodeBlockEnd" count="1" />
       <entry action="EditorCompleteStatement" count="1" />
-      <entry action="EditorCopy" count="30" />
+      <entry action="EditorCopy" count="31" />
       <entry action="EditorCut" count="2" />
       <entry action="EditorDown" count="79" />
       <entry action="EditorDuplicate" count="3" />
@@ -64,25 +65,27 @@
       <entry action="HideActiveWindow" count="3" />
       <entry action="ImplementMethods" count="1" />
       <entry action="InsertLiveTemplate" count="4" />
-      <entry action="Instruments" count="1" />
+      <entry action="Instruments" count="2" />
       <entry action="InvalidateCaches" count="1" />
       <entry action="NewObjcClass" count="2" />
       <entry action="NextTemplateParameter" count="12" />
       <entry action="OverrideMethods" count="2" />
       <entry action="ParameterInfo" count="1" />
+      <entry action="Pause" count="1" />
       <entry action="PinToolwindowTab" count="1" />
       <entry action="QuickJavaDoc" count="3" />
       <entry action="RecentFiles" count="1" />
       <entry action="Replace" count="2" />
-      <entry action="Rerun" count="2" />
-      <entry action="Resume" count="4" />
+      <entry action="Rerun" count="4" />
+      <entry action="Resume" count="5" />
       <entry action="RevealIn" count="2" />
-      <entry action="Run" count="16" />
+      <entry action="Run" count="17" />
+      <entry action="Runner.RestoreLayout" count="1" />
       <entry action="SelectIn" count="5" />
       <entry action="ShowBookmarks" count="4" />
       <entry action="ShowNavBar" count="4" />
       <entry action="Start.Use.Vcs" count="1" />
-      <entry action="Stop" count="4" />
+      <entry action="Stop" count="5" />
       <entry action="ToggleBookmark" count="12" />
       <entry action="ToggleLineBreakpoint" count="8" />
       <entry action="ViewBreakpoints" count="2" />
@@ -188,7 +191,7 @@
       <entry shortcut="Meta+Alt+Minus" count="5" />
       <entry shortcut="Meta+Alt+O" count="1" />
       <entry shortcut="Meta+B" count="2" />
-      <entry shortcut="Meta+C" count="30" />
+      <entry shortcut="Meta+C" count="31" />
       <entry shortcut="Meta+Close Bracket" count="49" />
       <entry shortcut="Meta+Ctrl+Down" count="14" />
       <entry shortcut="Meta+Ctrl+Equals" count="6" />
@@ -218,6 +221,7 @@
       <entry shortcut="Meta+Shift+F" count="1" />
       <entry shortcut="Meta+Shift+G" count="6" />
       <entry shortcut="Meta+Shift+J" count="5" />
+      <entry shortcut="Meta+Shift+K" count="1" />
       <entry shortcut="Meta+Shift+Minus" count="4" />
       <entry shortcut="Meta+Shift+O" count="19" />
       <entry shortcut="Meta+Shift+Slash" count="2" />
@@ -236,16 +240,18 @@
   <component name="ToolbarClicksCollector">
     <counts>
       <entry action="ChangesView.Revert@ChangesViewToolbar" count="1" />
-      <entry action="Debug@NavBarToolbar" count="28" />
-      <entry action="Instruments@NavBarToolbar" count="1" />
+      <entry action="Debug@NavBarToolbar" count="38" />
+      <entry action="Instruments@NavBarToolbar" count="2" />
+      <entry action="Pause@DebuggerToolbar" count="1" />
       <entry action="PinToolwindowTab@CallHierarchyViewToolbar" count="1" />
-      <entry action="Rerun@DebuggerToolbar" count="2" />
-      <entry action="Resume@DebuggerToolbar" count="4" />
-      <entry action="Run@NavBarToolbar" count="11" />
+      <entry action="Rerun@DebuggerToolbar" count="4" />
+      <entry action="Resume@DebuggerToolbar" count="5" />
+      <entry action="Run@NavBarToolbar" count="12" />
       <entry action="RunConfiguration@NavBarToolbar" count="5" />
+      <entry action="Runner.RestoreLayout@DebuggerToolbar" count="1" />
       <entry action="Show Options@ToolWindowHeader" count="1" />
       <entry action="Stop@DebuggerToolbar" count="1" />
-      <entry action="Stop@NavBarToolbar" count="3" />
+      <entry action="Stop@NavBarToolbar" count="4" />
       <entry action="ViewBreakpoints@DebuggerToolbar" count="2" />
       <entry action="com.intellij.application.options.schemes.AbstractSchemesPanel$ShowSchemesActionsListAction@NavBarToolbar" count="3" />
       <entry action="com.intellij.find.SearchTextArea$ClearAction@unknown" count="4" />
@@ -253,6 +259,7 @@
       <entry action="com.intellij.find.editorHeaderActions.PrevOccurrenceAction@EditorToolbar" count="2" />
       <entry action="com.intellij.ide.actions.ExpandAllToolbarAction@KeymapEdit" count="1" />
       <entry action="com.intellij.ide.actions.ExpandAllToolbarAction@TodoViewToolbar" count="2" />
+      <entry action="com.intellij.ide.browsers.actions.BaseWebBrowserAction@ContextToolbar" count="1" />
       <entry action="com.intellij.ide.errorTreeView.NewErrorTreeViewPanel$5@CompilerMessagesToolbar" count="1" />
       <entry action="com.intellij.ide.favoritesTreeView.actions.DeleteFromFavoritesAction@ToolbarDecorator" count="1" />
       <entry action="com.intellij.ide.structureView.newStructureView.TreeActionWrapper@StructureViewToolbar" count="2" />
@@ -269,15 +276,16 @@
   </component>
   <component name="UsageTrigger">
     <counts>
+      <entry feature="OpenInBrowser.Chrome" count="1" />
       <entry feature="StripeButton[Version Control].shown" count="2" />
-      <entry feature="appcode.build.buildservice" count="37" />
+      <entry feature="appcode.build.buildservice" count="53" />
       <entry feature="appcode.build.xcodebuild" count="11" />
       <entry feature="appcode.reveal.inject" count="17" />
       <entry feature="appcode.reveal.showInReveal" count="10" />
       <entry feature="cidr.completion.qualified" count="5" />
-      <entry feature="execute.AppleRunConfiguration.Debug" count="30" />
-      <entry feature="execute.AppleRunConfiguration.Instruments" count="1" />
-      <entry feature="execute.AppleRunConfiguration.Run" count="15" />
+      <entry feature="execute.AppleRunConfiguration.Debug" count="43" />
+      <entry feature="execute.AppleRunConfiguration.Instruments" count="2" />
+      <entry feature="execute.AppleRunConfiguration.Run" count="16" />
       <entry feature="ide.help.CocoaPodsSettings" count="1" />
       <entry feature="ide.help.NewXcodeProject" count="1" />
       <entry feature="ide.help.preferences.keymap" count="1" />
@@ -287,11 +295,11 @@
       <entry feature="ide.settings.GitHub" count="1" />
       <entry feature="ide.settings.Keymap" count="5" />
       <entry feature="idea.caches.invalidated" count="1" />
-      <entry feature="ideaapp.started" count="21" />
+      <entry feature="ideaapp.started" count="27" />
       <entry feature="project.view.pane.Cidr.FilesView" count="7" />
       <entry feature="project.view.pane.ProjectPane" count="3" />
       <entry feature="project.view.pane.Scope.Project Non-Source Files" count="1" />
-      <entry feature="project.view.pane.Scope.Project Source Files" count="3" />
+      <entry feature="project.view.pane.Scope.Project Source Files" count="4" />
       <entry feature="terminal.mac" count="6" />
       <entry feature="tips.of.the.day.next" count="23" />
       <entry feature="welcome.screen.CreateXcodeProject" count="1" />

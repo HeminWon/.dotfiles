@@ -29,22 +29,21 @@
         <option name="window" value="0" />
       </ViewImpl>
       <ViewImpl>
-        <option name="ID" value="ConsoleContent" />
-        <option name="minimizedInGrid" value="false" />
-        <option name="placeInGrid" value="bottom" />
-        <option name="tabIndex" value="1" />
-        <option name="window" value="0" />
-      </ViewImpl>
-      <ViewImpl>
         <option name="ID" value="DEBUGGER_BACKEND_CONSOLE" />
         <option name="minimizedInGrid" value="false" />
         <option name="placeInGrid" value="center" />
         <option name="tabIndex" value="0" />
         <option name="window" value="0" />
       </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="ConsoleContent" />
+        <option name="minimizedInGrid" value="false" />
+        <option name="placeInGrid" value="bottom" />
+        <option name="tabIndex" value="1" />
+        <option name="window" value="0" />
+      </ViewImpl>
       <TabImpl>
         <option name="displayName" value="Debugger" />
-        <option name="leftProportion" value="0.19892761" />
       </TabImpl>
       <TabImpl>
         <option name="bottomProportion" value="0.0" />

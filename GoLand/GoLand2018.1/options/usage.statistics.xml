@@ -449,7 +449,7 @@
       <entry feature="ide.settings.GOPATH" count="2" />
       <entry feature="ide.settings.GOROOT" count="9" />
       <entry feature="ide.settings.Plugins" count="3" />
-      <entry feature="ideaapp.started" count="102" />
+      <entry feature="ideaapp.started" count="103" />
       <entry feature="json.schema.builtin.completion" count="78" />
       <entry feature="terminal.mac" count="93" />
       <entry feature="vcs.history." count="20" />

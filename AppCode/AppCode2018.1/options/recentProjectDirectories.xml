@@ -2,15 +2,11 @@
   <component name="RecentDirectoryProjectsManager">
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/Documents/HeminWon/IssueTrain/IssueTrain" />
         <option value="$USER_HOME$/Documents/OneTravel2" />
+        <option value="$USER_HOME$/Desktop/iGlance/iGlance" />
       </list>
     </option>
-    <option name="openPaths">
-      <list>
-        <option value="$USER_HOME$/Documents/OneTravel2" />
-      </list>
-    </option>
-    <option name="lastPath" value="$USER_HOME$/Documents/OneTravel2" />
     <option name="pid" value="" />
     <option name="additionalInfo">
       <map>
@@ -22,6 +18,17 @@
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="projectOpenTimestamp" value="1527512155907" />
               <option name="buildTimestamp" value="1519729768582" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/iGlance/iGlance">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="OC-181.5540.5" />
+              <option name="productionCode" value="OC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1532768759395" />
+              <option name="buildTimestamp" value="1531222580092" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
@@ -80,6 +87,17 @@
             </RecentProjectMetaInfo>
           </value>
         </entry>
+        <entry key="$USER_HOME$/Documents/HeminWon/IssueTrain/IssueTrain">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="OC-181.5540.5" />
+              <option name="productionCode" value="OC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1532772730150" />
+              <option name="buildTimestamp" value="1531222588548" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Documents/OneTravel">
           <value>
             <RecentProjectMetaInfo>
@@ -97,8 +115,8 @@
               <option name="build" value="OC-181.5540.5" />
               <option name="productionCode" value="OC" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1531976004129" />
-              <option name="buildTimestamp" value="1531222612895" />
+              <option name="projectOpenTimestamp" value="1532769168711" />
+              <option name="buildTimestamp" value="1531222565137" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
