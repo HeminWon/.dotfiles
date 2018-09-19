@@ -30,9 +30,15 @@
       {
         "name": "Turn off HTTP(S) Proxy",
         "cmd": "echo didi | sudo -S networksetup -setwebproxystate 'Wi-Fi' off && sudo networksetup -setsecurewebproxystate 'Wi-Fi' off"
-      },
+      }
     ],
-  },
+    "mac": [
+      {
+        "name": "cleanMyMac",
+        "cmd": "curl https://raw.githubusercontent.com/HeminWon/CleanMyMac/develop/cleanmymac.sh | sh"
+      }
+    ]
+  }
   ]
 }
 
