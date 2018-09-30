@@ -20,3 +20,6 @@ defaults write com.apple.finder AppleShowAllFiles -boolean true && killall Finde
 # Allow MAC to install any source
 sudo spctl --master-disable
 spctl --status
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume="%00"
