@@ -72,6 +72,8 @@ brew "stow"
 brew "tree"
 # Extract, view, and test RAR archives
 brew "unrar"
+# JavaScript package manager
+brew "yarn"
 cask "bitbar"
 cask "captin"
 cask "cheatsheet"

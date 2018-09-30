@@ -10,6 +10,7 @@ gmp
 gnupg
 gnutls
 go
+icu4c
 libassuan
 libffi
 libgcrypt
@@ -26,6 +27,7 @@ mas
 mitmproxy
 ncdu
 nettle
+node
 npth
 openssl
 p11-kit
@@ -47,3 +49,4 @@ stow
 tree
 unrar
 xz
+yarn
