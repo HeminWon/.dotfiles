@@ -8,7 +8,7 @@ backup_AppCode() {
 	PATH_APPCODE=~/Library/Preferences/${NAME_APPCODE}
 	echo $PATH_APPCODE
 	if [[ -d "$PATH_APPCODE" ]]; then
-		rsync -avP --exclude=tasks/ $PATH_APPCODE ~/dotfiles/AppCode
+		rsync -avP --delete --exclude=tasks/ $PATH_APPCODE ~/dotfiles/AppCode
 	fi
 }
 
