@@ -16,6 +16,28 @@ backup_vscode() {
 	if [[ -d "$PATH_VSCODE_CACHEDEXTENSIONS" ]]; then
 		rsync -avP --delete ~/Library/Application\ Support/Code/CachedExtensions ~/dotfiles/vscode/
 	fi
+
+	# PATH_VSCODE_EXTENSIONS=~/.vscode/extensions
+	# echo $PATH_VSCODE_EXTENSIONS
+	# if [[ -d "$PATH_VSCODE_EXTENSIONS" ]]; then
+	# 	rsync -avP --delete ~/.vscode/extensions ~/dotfiles/vscode/
+	# fi
+}
+
+backup_vscode_extensions () {
+	echo "extensions package list" > ~/dotfiles/vscode/extensions.txt
+	path_extensions=~/.vscode/extensions
+	for file in `ls $path_extensions`
+	do
+    	path_package=${path_extensions}/${file}/package.json
+    	if [ -f $path_package ]
+    	then
+        	echo -e "\r\n" >> ~/dotfiles/vscode/extensions.txt
+        	echo ">>>>>>>>>>>>>>>>>>>>>>>$file" >> ~/dotfiles/vscode/extensions.txt
+       	    cat $path_package >> ~/dotfiles/vscode/extensions.txt
+    fi
+done
 }
 
 backup_vscode
+backup_vscode_extensions

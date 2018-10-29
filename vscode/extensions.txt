@@ -1,0 +1,5169 @@
+extensions package list
+
+
+>>>>>>>>>>>>>>>>>>>>>>>agenric.cocoapods-snippets-0.0.8
+{
+	"name": "cocoapods-snippets",
+	"displayName": "CocoaPods Snippets",
+	"description": "A snippet extension for VSCode to set .podspec or .podfile files for CocoaPods.",
+	"version": "0.0.8",
+	"publisher": "Agenric",
+	"icon": "images/cocoapods.png",
+	"galleryBanner": {
+		"color": "#0273D4",
+		"theme": "dark"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Agenric/VSCode-CocoaPods-Snippets.git"
+	},
+	"engines": {
+		"vscode": "^1.10.0"
+	},
+	"categories": [
+		"Snippets",
+		"Other"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "ruby",
+				"path": "./snippets/podfile.json"
+			},
+			{
+				"language": "ruby",
+				"path": "./snippets/podspec.json"
+			}
+		]
+	},
+	"keywords": [
+		"Cocoapods",
+		"Podfile",
+		"podspec"
+	],
+	"bugs": {
+		"url": "https://github.com/Agenric/VSCode-CocoaPods-Snippets/issues"
+	},
+	"homepage": "https://github.com/Agenric/VSCode-CocoaPods-Snippets",
+	"author": {
+		"name": "agenric(Agenric Won)",
+		"email": "agenricwon@gmail.com",
+		"url": "http://blog.agenric.cn"
+	},
+	"__metadata": {
+		"id": "a9ccd344-e1f9-4e4b-9182-51a2219901f0",
+		"publisherId": "32c75ef4-ecc5-4bd9-8013-6a9c51c45fd0",
+		"publisherDisplayName": "Agenric"
+	}
+}
+
+>>>>>>>>>>>>>>>>>>>>>>>bbenoist.shell-0.3.0
+{
+	"name": "shell",
+	"displayName": "Shell",
+	"description": "Execute shell commands from VS Code",
+	"version": "0.3.0",
+	"publisher": "bbenoist",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"icon": "images/icon.png",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/bbenoist/vscode-shell/issues"
+	},
+	"homepage": "https://github.com/bbenoist/vscode-shell/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bbenoist/vscode-shell.git"
+	},
+	"galleryBanner": {
+		"theme": "light"
+	},
+	"activationEvents": [
+		"onCommand:shell.runCommand",
+		"onCommand:shell.runCommandAtFileLocation",
+		"onCommand:shell.showHistory",
+		"onCommand:shell.terminateCommand",
+		"onCommand:shell.showCommandLog"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "shell.runCommand",
+				"title": "Run Command",
+				"category": "Shell"
+			},
+			{
+				"command": "shell.runCommandAtFileLocation",
+				"title": "Run Command at Active File Location",
+				"category": "Shell"
+			},
+			{
+				"command": "shell.showHistory",
+				"title": "Show Command History",
+				"category": "Shell"
+			},
+			{
+				"command": "shell.terminateCommand",
+				"title": "Terminate Running Command",
+				"category": "Shell"
+			},
+			{
+				"command": "shell.showCommandLog",
+				"title": "Show Command Log",
+				"category": "Shell"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "shell.runCommand",
+				"key": "Ctrl+R"
+			},
+			{
+				"command": "shell.runCommandAtFileLocation",
+				"key": "Ctrl+Shift+R"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"typescript": "^1.8.10",
+		"vscode": "^0.11.12"
+	},
+	"dependencies": {
+		"spawn-command": "0.0.2-1",
+		"tree-kill": "^1.1.0"
+	},
+	"quickTips": [
+		{
+			"tip": "Quickly execute shell commands by pressing F1 and entering `Shell: Run Command`",
+			"url": "https://marketplace.visualstudio.com/items?itemName=bbenoist.shell#run-command"
+		},
+		{
+			"tip": "Print the shell command output by pressing F1 and entering `Shell: Show Command Log`",
+			"url": "https://marketplace.visualstudio.com/items?itemName=bbenoist.shell#show-command-log"
+		},
+		{
+			"tip": "Terminate running shell command by pressing F1 and entering `Shell: Terminate Running Command`",
+			"url": "https://marketplace.visualstudio.com/items?itemName=bbenoist.shell#terminate-running-command"
+		},
+		{
+			"tip": "With the bbenoist.shell extension, you can run any executable available in the PATH environment variable"
+		},
+		{
+			"tip": "With the bbenoist.shell extension, you can chain shell commands with &&"
+		},
+		{
+			"tip": "Ignore erroneous shell commands by adding `;exit 0` to them"
+		}
+	],
+	"__metadata": {
+		"id": "7c1ac6ae-5273-470b-8f8f-c8adc23c6538",
+		"publisherId": "787ce942-60d4-48d6-b14e-25bdc72bd145",
+		"publisherDisplayName": "Baptist BENOIST"
+	}
+}
+
+>>>>>>>>>>>>>>>>>>>>>>>formulahendry.code-runner-0.9.4
+{
+	"name": "code-runner",
+	"displayName": "Code Runner",
+	"description": "Run C, C++, Java, JS, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, CMD, BASH, F#, C#, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml, R, AppleScript, Elixir, VB.NET, Clojure, Haxe, Objective-C, Rust, Racket, AutoHotkey, AutoIt, Kotlin, Dart, Pascal, Haskell, Nim, D",
+	"version": "0.9.4",
+	"publisher": "formulahendry",
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.17.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Other"
+	],
+	"keywords": [
+		"javascript",
+		"php",
+		"python",
+		"perl",
+		"ruby",
+		"multi-root ready"
+	],
+	"bugs": {
+		"url": "https://github.com/formulahendry/vscode-code-runner/issues",
+		"email": "formulahendry@gmail.com"
+	},
+	"homepage": "https://github.com/formulahendry/vscode-code-runner/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/formulahendry/vscode-code-runner.git"
+	},
+	"activationEvents": [
+		"onCommand:code-runner.run",
+		"onCommand:code-runner.runCustomCommand",
+		"onCommand:code-runner.runByLanguage"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "code-runner.run",
+				"title": "Run Code",
+				"icon": {
+					"light": "./images/run-light.png",
+					"dark": "./images/run-dark.png"
+				}
+			},
+			{
+				"command": "code-runner.runCustomCommand",
+				"title": "Run Custom Command"
+			},
+			{
+				"command": "code-runner.runByLanguage",
+				"title": "Run By Language"
+			},
+			{
+				"command": "code-runner.stop",
+				"title": "Stop Code Run"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "code-runner.run",
+				"key": "ctrl+alt+n"
+			},
+			{
+				"command": "code-runner.runCustomCommand",
+				"key": "ctrl+alt+k"
+			},
+			{
+				"command": "code-runner.runByLanguage",
+				"key": "ctrl+alt+j"
+			},
+			{
+				"command": "code-runner.stop",
+				"key": "ctrl+alt+m"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"when": "!inOutput && config.code-runner.showRunCommandInEditorContextMenu",
+					"command": "code-runner.run",
+					"group": "navigation"
+				},
+				{
+					"when": "inOutput",
+					"command": "code-runner.stop",
+					"group": "stop-code-run"
+				}
+			],
+			"editor/title": [
+				{
+					"when": "config.code-runner.showRunIconInEditorTitleMenu",
+					"command": "code-runner.run",
+					"group": "navigation"
+				}
+			],
+			"explorer/context": [
+				{
+					"when": "!explorerResourceIsFolder",
+					"command": "code-runner.run",
+					"group": "navigation"
+				}
+			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "Run Code configuration",
+			"properties": {
+				"code-runner.executorMap": {
+					"type": "object",
+					"default": {
+						"javascript": "node",
+						"java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+						"c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+						"cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+						"objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+						"php": "php",
+						"python": "python -u",
+						"perl": "perl",
+						"perl6": "perl6",
+						"ruby": "ruby",
+						"go": "go run",
+						"lua": "lua",
+						"groovy": "groovy",
+						"powershell": "powershell -ExecutionPolicy ByPass -File",
+						"bat": "cmd /c",
+						"shellscript": "bash",
+						"fsharp": "fsi",
+						"csharp": "scriptcs",
+						"vbscript": "cscript //Nologo",
+						"typescript": "ts-node",
+						"coffeescript": "coffee",
+						"scala": "scala",
+						"swift": "swift",
+						"julia": "julia",
+						"crystal": "crystal",
+						"ocaml": "ocaml",
+						"r": "Rscript",
+						"applescript": "osascript",
+						"clojure": "lein exec",
+						"haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+						"rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+						"racket": "racket",
+						"ahk": "autohotkey",
+						"autoit": "autoit3",
+						"dart": "dart",
+						"pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+						"d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+						"haskell": "runhaskell",
+						"nim": "nim compile --verbosity:0 --hints:off --run"
+					},
+					"description": "Set the executor of each language.",
+					"scope": "resource"
+				},
+				"code-runner.executorMapByFileExtension": {
+					"type": "object",
+					"default": {
+						".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
+						".vbs": "cscript //Nologo",
+						".scala": "scala",
+						".jl": "julia",
+						".cr": "crystal",
+						".ml": "ocaml",
+						".exs": "elixir",
+						".hx": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+						".rkt": "racket",
+						".ahk": "autohotkey",
+						".au3": "autoit3",
+						".kt": "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar",
+						".kts": "kotlinc -script",
+						".dart": "dart",
+						".pas": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+						".pp": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+						".d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+						".hs": "runhaskell",
+						".nim": "nim compile --verbosity:0 --hints:off --run",
+						".csproj": "dotnet run --project",
+						".fsproj": "dotnet run --project"
+					},
+					"description": "Set the executor of each file extension.",
+					"scope": "resource"
+				},
+				"code-runner.customCommand": {
+					"type": "string",
+					"default": "echo Hello",
+					"description": "Set the custom command to run.",
+					"scope": "resource"
+				},
+				"code-runner.languageIdToFileExtensionMap": {
+					"type": "object",
+					"default": {
+						"bat": ".bat",
+						"powershell": ".ps1",
+						"typescript": ".ts"
+					},
+					"description": "Set the mapping of languageId to file extension.",
+					"scope": "resource"
+				},
+				"code-runner.defaultLanguage": {
+					"type": "string",
+					"default": "",
+					"description": "Set the default language to run.",
+					"scope": "resource"
+				},
+				"code-runner.cwd": {
+					"type": "string",
+					"default": "",
+					"description": "Set the working directory.",
+					"scope": "resource"
+				},
+				"code-runner.fileDirectoryAsCwd": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to use the directory of the file to be executed as the working directory.",
+					"scope": "resource"
+				},
+				"code-runner.clearPreviousOutput": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to clear previous output before each run.",
+					"scope": "resource"
+				},
+				"code-runner.saveAllFilesBeforeRun": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to save all files before running.",
+					"scope": "resource"
+				},
+				"code-runner.saveFileBeforeRun": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to save the current file before running.",
+					"scope": "resource"
+				},
+				"code-runner.enableAppInsights": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to enable AppInsights to track user telemetry data.",
+					"scope": "resource"
+				},
+				"code-runner.showExecutionMessage": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to show extra execution message like [Running] ... and [Done] ...",
+					"scope": "resource"
+				},
+				"code-runner.runInTerminal": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to run code in Integrated Terminal.",
+					"scope": "resource"
+				},
+				"code-runner.terminalRoot": {
+					"type": "string",
+					"default": "",
+					"description": "For Windows system, replaces the Windows style drive letter in the command with a Unix style root when using a custom shell as the terminal, like Bash or Cgywin. Example: Setting this to '/mnt/' will replace 'C:\\path' with '/mnt/c/path'",
+					"scope": "resource"
+				},
+				"code-runner.preserveFocus": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to preserve focus on code editor after code run is triggered.",
+					"scope": "resource"
+				},
+				"code-runner.ignoreSelection": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to ignore selection to always run entire file.",
+					"scope": "resource"
+				},
+				"code-runner.showRunIconInEditorTitleMenu": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to show 'Run Code' icon in editor title menu.",
+					"scope": "resource"
+				},
+				"code-runner.showRunCommandInEditorContextMenu": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to show 'Run Code' command in editor context menu.",
+					"scope": "resource"
+				},
+				"code-runner.temporaryFileName": {
+					"type": "string",
+					"default": "tempCodeRunnerFile",
+					"description": "Temporary file name used in running selected code snippet. When it is set as empty, the file name will be random.",
+					"scope": "resource"
+				},
+				"code-runner.respectShebang": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to respect Shebang to run code.",
+					"scope": "resource"
+				}
+			}
+		},
+		"languages": [
+			{
+				"id": "code-runner-output",
+				"mimetypes": [
+					"text/x-code-output"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "code-runner-output",
+				"scopeName": "code-runner.output",
+				"path": "./syntaxes/code-runner-output.tmLanguage"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"tslint": "tslint -t verbose src/**/*.ts"
+	},
+	"dependencies": {
+		"applicationinsights": "^0.19.0",
+		"tree-kill": "^1.1.0"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.32",
+		"@types/node": "^6.0.40",
+		"mocha": "^2.3.3",
+		"tslint": "^5.5.0",
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0"
+	},
+	"__metadata": {
+		"id": "a6a0c5b2-d078-4bf5-a9ee-4e37054414b3",
+		"publisherId": "38bbe3f0-5204-4170-845e-c2f966d979b8",
+		"publisherDisplayName": "Jun Han"
+	}
+}
+
+>>>>>>>>>>>>>>>>>>>>>>>ms-ceintl.vscode-language-pack-zh-hans-1.28.2
+{
+	"name": "vscode-language-pack-zh-hans",
+	"displayName": "Chinese (Simplified) Language Pack for Visual Studio Code",
+	"description": "Language pack extension for Chinese (Simplified)",
+	"version": "1.28.2",
+	"publisher": "MS-CEINTL",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-loc"
+	},
+	"license": "SEE MIT LICENSE IN LICENSE.md",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"icon": "languagepack.png",
+	"categories": [
+		"Language Packs"
+	],
+	"contributes": {
+		"localizations": [
+			{
+				"languageId": "zh-cn",
+				"languageName": "Chinese Simplified",
+				"localizedLanguageName": "中文(简体)",
+				"translations": [
+					{
+						"id": "vscode",
+						"path": "./translations/main.i18n.json"
+					},
+					{
+						"id": "vscode.bat",
+						"path": "./translations/extensions/bat.i18n.json"
+					},
+					{
+						"id": "vscode.clojure",
+						"path": "./translations/extensions/clojure.i18n.json"
+					},
+					{
+						"id": "vscode.coffeescript",
+						"path": "./translations/extensions/coffeescript.i18n.json"
+					},
+					{
+						"id": "vscode.configuration-editing",
+						"path": "./translations/extensions/configuration-editing.i18n.json"
+					},
+					{
+						"id": "vscode.cpp",
+						"path": "./translations/extensions/cpp.i18n.json"
+					},
+					{
+						"id": "vscode.csharp",
+						"path": "./translations/extensions/csharp.i18n.json"
+					},
+					{
+						"id": "vscode.css",
+						"path": "./translations/extensions/css.i18n.json"
+					},
+					{
+						"id": "vscode.css-language-features",
+						"path": "./translations/extensions/css-language-features.i18n.json"
+					},
+					{
+						"id": "vscode.debug-auto-launch",
+						"path": "./translations/extensions/debug-auto-launch.i18n.json"
+					},
+					{
+						"id": "vscode.docker",
+						"path": "./translations/extensions/docker.i18n.json"
+					},
+					{
+						"id": "vscode.emmet",
+						"path": "./translations/extensions/emmet.i18n.json"
+					},
+					{
+						"id": "vscode.extension-editing",
+						"path": "./translations/extensions/extension-editing.i18n.json"
+					},
+					{
+						"id": "vscode.fsharp",
+						"path": "./translations/extensions/fsharp.i18n.json"
+					},
+					{
+						"id": "vscode.groovy",
+						"path": "./translations/extensions/groovy.i18n.json"
+					},
+					{
+						"id": "vscode.go",
+						"path": "./translations/extensions/go.i18n.json"
+					},
+					{
+						"id": "vscode.git",
+						"path": "./translations/extensions/git.i18n.json"
+					},
+					{
+						"id": "vscode.grunt",
+						"path": "./translations/extensions/grunt.i18n.json"
+					},
+					{
+						"id": "vscode.gulp",
+						"path": "./translations/extensions/gulp.i18n.json"
+					},
+					{
+						"id": "vscode.handlebars",
+						"path": "./translations/extensions/handlebars.i18n.json"
+					},
+					{
+						"id": "vscode.hlsl",
+						"path": "./translations/extensions/hlsl.i18n.json"
+					},
+					{
+						"id": "vscode.html-language-features",
+						"path": "./translations/extensions/html-language-features.i18n.json"
+					},
+					{
+						"id": "vscode.html",
+						"path": "./translations/extensions/html.i18n.json"
+					},
+					{
+						"id": "vscode.ini",
+						"path": "./translations/extensions/ini.i18n.json"
+					},
+					{
+						"id": "vscode.jake",
+						"path": "./translations/extensions/jake.i18n.json"
+					},
+					{
+						"id": "vscode.java",
+						"path": "./translations/extensions/java.i18n.json"
+					},
+					{
+						"id": "vscode.javascript",
+						"path": "./translations/extensions/javascript.i18n.json"
+					},
+					{
+						"id": "vscode.json-language-features",
+						"path": "./translations/extensions/json-language-features.i18n.json"
+					},
+					{
+						"id": "vscode.json",
+						"path": "./translations/extensions/json.i18n.json"
+					},
+					{
+						"id": "vscode.less",
+						"path": "./translations/extensions/less.i18n.json"
+					},
+					{
+						"id": "vscode.log",
+						"path": "./translations/extensions/log.i18n.json"
+					},
+					{
+						"id": "vscode.lua",
+						"path": "./translations/extensions/lua.i18n.json"
+					},
+					{
+						"id": "vscode.make",
+						"path": "./translations/extensions/make.i18n.json"
+					},
+					{
+						"id": "vscode.markdown-basics",
+						"path": "./translations/extensions/markdown-basics.i18n.json"
+					},
+					{
+						"id": "vscode.markdown-language-features",
+						"path": "./translations/extensions/markdown-language-features.i18n.json"
+					},
+					{
+						"id": "vscode.merge-conflict",
+						"path": "./translations/extensions/merge-conflict.i18n.json"
+					},
+					{
+						"id": "vscode.objective-c",
+						"path": "./translations/extensions/objective-c.i18n.json"
+					},
+					{
+						"id": "vscode.npm",
+						"path": "./translations/extensions/npm.i18n.json"
+					},
+					{
+						"id": "vscode.perl",
+						"path": "./translations/extensions/perl.i18n.json"
+					},
+					{
+						"id": "vscode.php-language-features",
+						"path": "./translations/extensions/php-language-features.i18n.json"
+					},
+					{
+						"id": "vscode.php",
+						"path": "./translations/extensions/php.i18n.json"
+					},
+					{
+						"id": "vscode.powershell",
+						"path": "./translations/extensions/powershell.i18n.json"
+					},
+					{
+						"id": "vscode.pug",
+						"path": "./translations/extensions/pug.i18n.json"
+					},
+					{
+						"id": "vscode.python",
+						"path": "./translations/extensions/python.i18n.json"
+					},
+					{
+						"id": "vscode.razor",
+						"path": "./translations/extensions/razor.i18n.json"
+					},
+					{
+						"id": "vscode.r",
+						"path": "./translations/extensions/r.i18n.json"
+					},
+					{
+						"id": "vscode.ruby",
+						"path": "./translations/extensions/ruby.i18n.json"
+					},
+					{
+						"id": "vscode.rust",
+						"path": "./translations/extensions/rust.i18n.json"
+					},
+					{
+						"id": "vscode.scss",
+						"path": "./translations/extensions/scss.i18n.json"
+					},
+					{
+						"id": "vscode.search-rg",
+						"path": "./translations/extensions/search-rg.i18n.json"
+					},
+					{
+						"id": "vscode.shaderlab",
+						"path": "./translations/extensions/shaderlab.i18n.json"
+					},
+					{
+						"id": "vscode.shellscript",
+						"path": "./translations/extensions/shellscript.i18n.json"
+					},
+					{
+						"id": "vscode.sql",
+						"path": "./translations/extensions/sql.i18n.json"
+					},
+					{
+						"id": "vscode.swift",
+						"path": "./translations/extensions/swift.i18n.json"
+					},
+					{
+						"id": "vscode.theme-abyss",
+						"path": "./translations/extensions/theme-abyss.i18n.json"
+					},
+					{
+						"id": "vscode.theme-defaults",
+						"path": "./translations/extensions/theme-defaults.i18n.json"
+					},
+					{
+						"id": "vscode.theme-kimbie-dark",
+						"path": "./translations/extensions/theme-kimbie-dark.i18n.json"
+					},
+					{
+						"id": "vscode.theme-monokai-dimmed",
+						"path": "./translations/extensions/theme-monokai-dimmed.i18n.json"
+					},
+					{
+						"id": "vscode.theme-monokai",
+						"path": "./translations/extensions/theme-monokai.i18n.json"
+					},
+					{
+						"id": "vscode.theme-red",
+						"path": "./translations/extensions/theme-red.i18n.json"
+					},
+					{
+						"id": "vscode.theme-seti",
+						"path": "./translations/extensions/theme-seti.i18n.json"
+					},
+					{
+						"id": "vscode.theme-solarized-dark",
+						"path": "./translations/extensions/theme-solarized-dark.i18n.json"
+					},
+					{
+						"id": "vscode.theme-solarized-light",
+						"path": "./translations/extensions/theme-solarized-light.i18n.json"
+					},
+					{
+						"id": "vscode.theme-tomorrow-night-blue",
+						"path": "./translations/extensions/theme-tomorrow-night-blue.i18n.json"
+					},
+					{
+						"id": "vscode.typescript-basics",
+						"path": "./translations/extensions/typescript-basics.i18n.json"
+					},
+					{
+						"id": "vscode.vb",
+						"path": "./translations/extensions/vb.i18n.json"
+					},
+					{
+						"id": "vscode.xml",
+						"path": "./translations/extensions/xml.i18n.json"
+					},
+					{
+						"id": "vscode.theme-quietlight",
+						"path": "./translations/extensions/theme-quietlight.i18n.json"
+					},
+					{
+						"id": "vscode.typescript-language-features",
+						"path": "./translations/extensions/typescript-language-features.i18n.json"
+					},
+					{
+						"id": "vscode.yaml",
+						"path": "./translations/extensions/yaml.i18n.json"
+					},
+					{
+						"id": "msjsdiag.debugger-for-chrome",
+						"path": "./translations/extensions/vscode-chrome-debug.i18n.json"
+					},
+					{
+						"id": "ms-vscode.node-debug2",
+						"path": "./translations/extensions/vscode-node-debug2.i18n.json"
+					},
+					{
+						"id": "ms-vscode.node-debug",
+						"path": "./translations/extensions/vscode-node-debug.i18n.json"
+					}
+				]
+			}
+		]
+	},
+	"scripts": {
+		"update": "cd ../vscode && npm run update-localization-extension zh-hans"
+	},
+	"__metadata": {
+		"id": "e4ee7751-6514-4731-9cdb-7580ffa9e70b",
+		"publisherId": "0b0882c3-aee3-4d7c-b5f9-872f9be0a115",
+		"publisherDisplayName": "Microsoft"
+	}
+}
+
+>>>>>>>>>>>>>>>>>>>>>>>ms-python.python-2018.9.1
+{
+	"name": "python",
+	"displayName": "Python",
+	"description": "Linting, Debugging (multi-threaded, remote), Intellisense, code formatting, refactoring, unit tests, snippets, and more.",
+	"version": "2018.9.1",
+	"publisher": "ms-python",
+	"author": {
+		"name": "Microsoft Corporation"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/Microsoft/vscode-python",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-python"
+	},
+	"bugs": {
+		"url": "https://github.com/Microsoft/vscode-python/issues"
+	},
+	"qna": "https://stackoverflow.com/questions/tagged/visual-studio-code+python",
+	"badges": [
+		{
+			"url": "https://vscode-python.visualstudio.com/VSCode-Python/_apis/build/status/VSCode-Python-Rolling-CI?branchName=master",
+			"href": "https://vscode-python.visualstudio.com/VSCode-Python/VSCode-Python%20Team/_build/index?context=allDefinitions&path=&definitionId=9",
+			"description": "Continuous integration (VSTS)"
+		},
+		{
+			"url": "https://travis-ci.org/Microsoft/vscode-python.svg?branch=master",
+			"href": "https://travis-ci.org/Microsoft/vscode-python",
+			"description": "Continuous integration (Travis)"
+		},
+		{
+			"url": "https://codecov.io/gh/Microsoft/vscode-python/branch/master/graph/badge.svg",
+			"href": "https://codecov.io/gh/Microsoft/vscode-python",
+			"description": "Test coverage"
+		}
+	],
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#1e415e",
+		"theme": "dark"
+	},
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"recommendations": [
+		"donjayamanne.jupyter"
+	],
+	"keywords": [
+		"python",
+		"django",
+		"unittest",
+		"multi-root ready"
+	],
+	"categories": [
+		"Programming Languages",
+		"Debuggers",
+		"Linters",
+		"Snippets",
+		"Formatters",
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:python",
+		"onDebugResolve:python",
+		"onDebugResolve:python",
+		"onCommand:python.execInTerminal",
+		"onCommand:python.sortImports",
+		"onCommand:python.runtests",
+		"onCommand:python.debugtests",
+		"onCommand:python.setInterpreter",
+		"onCommand:python.setShebangInterpreter",
+		"onCommand:python.viewTestUI",
+		"onCommand:python.viewTestOutput",
+		"onCommand:python.selectAndRunTestMethod",
+		"onCommand:python.selectAndDebugTestMethod",
+		"onCommand:python.selectAndRunTestFile",
+		"onCommand:python.runCurrentTestFile",
+		"onCommand:python.runFailedTests",
+		"onCommand:python.execSelectionInTerminal",
+		"onCommand:python.execSelectionInDjangoShell",
+		"onCommand:python.buildWorkspaceSymbols",
+		"onCommand:python.updateSparkLibrary",
+		"onCommand:python.startREPL",
+		"onCommand:python.goToPythonObject",
+		"onCommand:python.setLinter",
+		"onCommand:python.enableLinting",
+		"onCommand:python.createTerminal",
+		"onCommand:python.discoverTests"
+	],
+	"main": "./out/client/extension",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "python",
+				"path": "./snippets/python.json"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "python.execSelectionInTerminal",
+				"key": "shift+enter",
+				"when": "editorFocus && editorLangId == python && !findInputFocussed && !replaceInputFocussed"
+			}
+		],
+		"commands": [
+			{
+				"command": "python.sortImports",
+				"title": "%python.command.python.sortImports.title%",
+				"category": "Python Refactor"
+			},
+			{
+				"command": "python.startREPL",
+				"title": "%python.command.python.startREPL.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.createTerminal",
+				"title": "%python.command.python.createTerminal.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.buildWorkspaceSymbols",
+				"title": "%python.command.python.buildWorkspaceSymbols.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.runtests",
+				"title": "%python.command.python.runtests.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.debugtests",
+				"title": "%python.command.python.debugtests.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.execInTerminal",
+				"title": "%python.command.python.execInTerminal.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.setInterpreter",
+				"title": "%python.command.python.setInterpreter.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.updateSparkLibrary",
+				"title": "%python.command.python.updateSparkLibrary.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.refactorExtractVariable",
+				"title": "%python.command.python.refactorExtractVariable.title%",
+				"category": "Python Refactor"
+			},
+			{
+				"command": "python.refactorExtractMethod",
+				"title": "%python.command.python.refactorExtractMethod.title%",
+				"category": "Python Refactor"
+			},
+			{
+				"command": "python.viewTestOutput",
+				"title": "%python.command.python.viewTestOutput.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.selectAndRunTestMethod",
+				"title": "%python.command.python.selectAndRunTestMethod.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.selectAndDebugTestMethod",
+				"title": "%python.command.python.selectAndDebugTestMethod.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.selectAndRunTestFile",
+				"title": "%python.command.python.selectAndRunTestFile.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.runCurrentTestFile",
+				"title": "%python.command.python.runCurrentTestFile.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.runFailedTests",
+				"title": "%python.command.python.runFailedTests.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.discoverTests",
+				"title": "%python.command.python.discoverTests.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.execSelectionInTerminal",
+				"title": "%python.command.python.execSelectionInTerminal.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.execSelectionInDjangoShell",
+				"title": "%python.command.python.execSelectionInDjangoShell.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.goToPythonObject",
+				"title": "%python.command.python.goToPythonObject.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.setLinter",
+				"title": "%python.command.python.setLinter.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.enableLinting",
+				"title": "%python.command.python.enableLinting.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.runLinting",
+				"title": "%python.command.python.runLinting.title%",
+				"category": "Python"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "python.refactorExtractVariable",
+					"title": "Refactor: Extract Variable",
+					"group": "Refactor",
+					"when": "editorHasSelection && editorLangId == python"
+				},
+				{
+					"command": "python.refactorExtractMethod",
+					"title": "Refactor: Extract Method",
+					"group": "Refactor",
+					"when": "editorHasSelection && editorLangId == python"
+				},
+				{
+					"command": "python.sortImports",
+					"title": "Refactor: Sort Imports",
+					"group": "Refactor",
+					"when": "editorLangId == python"
+				},
+				{
+					"command": "python.execSelectionInTerminal",
+					"group": "Python",
+					"when": "editorFocus && editorLangId == python"
+				},
+				{
+					"command": "python.execSelectionInDjangoShell",
+					"group": "Python",
+					"when": "editorHasSelection && editorLangId == python && python.isDjangoProject"
+				},
+				{
+					"when": "resourceLangId == python",
+					"command": "python.execInTerminal",
+					"group": "Python"
+				},
+				{
+					"when": "resourceLangId == python",
+					"command": "python.runCurrentTestFile",
+					"group": "Python"
+				}
+			],
+			"explorer/context": [
+				{
+					"when": "resourceLangId == python",
+					"command": "python.runtests",
+					"group": "Python"
+				},
+				{
+					"when": "resourceLangId == python",
+					"command": "python.debugtests",
+					"group": "Python"
+				},
+				{
+					"when": "resourceLangId == python",
+					"command": "python.execInTerminal",
+					"group": "Python"
+				}
+			]
+		},
+		"debuggers": [
+			{
+				"type": "python",
+				"label": "Python",
+				"languages": [
+					"python"
+				],
+				"enableBreakpointsFor": {
+					"languageIds": [
+						"python",
+						"html",
+						"jinja"
+					]
+				},
+				"aiKey": "AIF-d9b70cd4-b9f9-4d70-929b-a071c400b217",
+				"program": "./out/client/debugger/mainV2.js",
+				"runtime": "node",
+				"configurationSnippets": [
+					{
+						"label": "Python: Terminal (integrated)",
+						"description": "%python.snippet.launch.terminal.description%",
+						"body": {
+							"name": "Python: Terminal (integrated)",
+							"type": "python",
+							"request": "launch",
+							"program": "^\"\\${file}\"",
+							"console": "integratedTerminal"
+						}
+					},
+					{
+						"label": "Python: Terminal (external)",
+						"description": "%python.snippet.launch.externalTerminal.description%",
+						"body": {
+							"name": "Python: Terminal (external)",
+							"type": "python",
+							"request": "launch",
+							"program": "^\"\\${file}\"",
+							"console": "externalTerminal"
+						}
+					},
+					{
+						"label": "Python: Module",
+						"description": "%python.snippet.launch.module.description%",
+						"body": {
+							"name": "Python: Module",
+							"type": "python",
+							"request": "launch",
+							"module": "enter-your-module-name-here",
+							"console": "integratedTerminal"
+						}
+					},
+					{
+						"label": "Python: Django",
+						"description": "%python.snippet.launch.django.description%",
+						"body": {
+							"name": "Django",
+							"type": "python",
+							"request": "launch",
+							"program": "^\"\\${workspaceFolder}/manage.py\"",
+							"args": [
+								"runserver",
+								"--noreload",
+								"--nothreading"
+							],
+							"django": true
+						}
+					},
+					{
+						"label": "Python: Flask",
+						"description": "%python.snippet.launch.flask.description%",
+						"body": {
+							"name": "Flask",
+							"type": "python",
+							"request": "launch",
+							"module": "flask",
+							"env": {
+								"FLASK_APP": "app.py",
+								"FLASK_ENV": "development",
+								"FLASK_DEBUG": "0"
+							},
+							"args": [
+								"run",
+								"--no-debugger",
+								"--no-reload"
+							],
+							"jinja": true
+						}
+					},
+					{
+						"label": "Python: Gevent",
+						"description": "%python.snippet.launch.gevent.description%",
+						"body": {
+							"name": "Gevent",
+							"type": "python",
+							"request": "launch",
+							"program": "^\"\\${file}\"",
+							"gevent": true
+						}
+					},
+					{
+						"label": "Python: PySpark",
+						"description": "%python.snippet.launch.pyspark.description%",
+						"body": {
+							"name": "PySpark",
+							"type": "python",
+							"request": "launch",
+							"osx": {
+								"pythonPath": "^\"\\${env:SPARK_HOME}/bin/spark-submit\""
+							},
+							"windows": {
+								"pythonPath": "^\"\\${env:SPARK_HOME}/bin/spark-submit.cmd\""
+							},
+							"linux": {
+								"pythonPath": "^\"\\${env:SPARK_HOME}/bin/spark-submit\""
+							},
+							"program": "^\"\\${file}\""
+						}
+					},
+					{
+						"label": "Python: Watson",
+						"description": "%python.snippet.launch.watson.description%",
+						"body": {
+							"name": "Watson",
+							"type": "python",
+							"request": "launch",
+							"program": "^\"\\${workspaceFolder}/console.py\"",
+							"args": [
+								"dev",
+								"runserver",
+								"--noreload=True"
+							],
+							"jinja": true
+						}
+					},
+					{
+						"label": "Python: Scrapy",
+						"description": "%python.snippet.launch.scrapy.description%",
+						"body": {
+							"name": "Scrapy",
+							"type": "python",
+							"request": "launch",
+							"module": "scrapy",
+							"args": [
+								"crawl",
+								"specs",
+								"-o",
+								"bikes.json"
+							]
+						}
+					},
+					{
+						"label": "Python: Pyramid",
+						"description": "%python.snippet.launch.pyramid.description%",
+						"body": {
+							"name": "Pyramid",
+							"type": "python",
+							"request": "launch",
+							"args": [
+								"^\"\\${workspaceFolder}/development.ini\""
+							],
+							"pyramid": true,
+							"jinja": true
+						}
+					},
+					{
+						"label": "Python: Attach",
+						"description": "%python.snippet.launch.attach.description%",
+						"body": {
+							"name": "Attach (Remote Debug)",
+							"type": "python",
+							"request": "attach",
+							"port": 5678,
+							"host": "localhost"
+						}
+					}
+				],
+				"configurationAttributes": {
+					"launch": {
+						"properties": {
+							"module": {
+								"type": "string",
+								"description": "Name of the module to be debugged.",
+								"default": ""
+							},
+							"program": {
+								"type": "string",
+								"description": "Absolute path to the program.",
+								"default": "${file}"
+							},
+							"pythonPath": {
+								"type": "string",
+								"description": "Path (fully qualified) to python executable. Defaults to the value in settings.json",
+								"default": "${config:python.pythonPath}"
+							},
+							"args": {
+								"type": "array",
+								"description": "Command line arguments passed to the program",
+								"default": [],
+								"items": {
+									"type": "string"
+								}
+							},
+							"stopOnEntry": {
+								"type": "boolean",
+								"description": "Automatically stop after launch.",
+								"default": false
+							},
+							"console": {
+								"enum": [
+									"none",
+									"integratedTerminal",
+									"externalTerminal"
+								],
+								"description": "Where to launch the debug target: internal console, integrated terminal, or external terminal.",
+								"default": "integratedTerminal"
+							},
+							"cwd": {
+								"type": "string",
+								"description": "Absolute path to the working directory of the program being debugged. Default is the root directory of the file (leave empty).",
+								"default": "${workspaceFolder}"
+							},
+							"env": {
+								"type": "object",
+								"description": "Environment variables defined as a key value pair. Property ends up being the Environment Variable and the value of the property ends up being the value of the Env Variable.",
+								"default": {}
+							},
+							"envFile": {
+								"type": "string",
+								"description": "Absolute path to a file containing environment variable definitions.",
+								"default": "${workspaceFolder}/.env"
+							},
+							"port": {
+								"type": "number",
+								"description": "Debug port (default is 0, resulting in the use of a dynamic port).",
+								"default": 0
+							},
+							"host": {
+								"type": "string",
+								"description": "IP address of the of the local debug server (default is localhost).",
+								"default": "localhost"
+							},
+							"logToFile": {
+								"type": "boolean",
+								"description": "Enable logging of debugger events to a log file.",
+								"default": false
+							},
+							"redirectOutput": {
+								"type": "boolean",
+								"description": "Redirect output.",
+								"default": true
+							},
+							"debugStdLib": {
+								"type": "boolean",
+								"description": "Debug standard library code.",
+								"default": false
+							},
+							"gevent": {
+								"type": "boolean",
+								"description": "Enable debugging of gevent monkey-patched code.",
+								"default": false
+							},
+							"django": {
+								"type": "boolean",
+								"description": "Django debugging.",
+								"default": false
+							},
+							"jinja": {
+								"enum": [
+									true,
+									false,
+									null
+								],
+								"description": "Jinja template debugging (e.g. Flask).",
+								"default": null
+							},
+							"sudo": {
+								"type": "boolean",
+								"description": "Running debug program under elevated permissions (on Unix).",
+								"default": false
+							},
+							"pyramid": {
+								"type": "boolean",
+								"description": "Whether debugging Pyramid applications",
+								"default": false
+							}
+						}
+					},
+					"attach": {
+						"required": [
+							"port"
+						],
+						"properties": {
+							"port": {
+								"type": "number",
+								"description": "Debug port to attach",
+								"default": 0
+							},
+							"host": {
+								"type": "string",
+								"description": "IP Address of the of remote server (default is localhost or use 127.0.0.1).",
+								"default": "localhost"
+							},
+							"pathMappings": {
+								"type": "array",
+								"label": "Path mappings.",
+								"items": {
+									"type": "object",
+									"label": "Path mapping",
+									"required": [
+										"localRoot",
+										"remoteRoot"
+									],
+									"properties": {
+										"localRoot": {
+											"type": "string",
+											"label": "Local source root.",
+											"default": "${workspaceFolder}"
+										},
+										"remoteRoot": {
+											"type": "string",
+											"label": "Remote source root.",
+											"default": ""
+										}
+									}
+								},
+								"default": []
+							},
+							"logToFile": {
+								"type": "boolean",
+								"description": "Enable logging of debugger events to a log file.",
+								"default": false
+							},
+							"redirectOutput": {
+								"type": "boolean",
+								"description": "Redirect output.",
+								"default": true
+							},
+							"debugStdLib": {
+								"type": "boolean",
+								"description": "Debug standard library code.",
+								"default": false
+							},
+							"django": {
+								"type": "boolean",
+								"description": "Django debugging.",
+								"default": false
+							},
+							"jinja": {
+								"enum": [
+									true,
+									false,
+									null
+								],
+								"description": "Jinja template debugging (e.g. Flask).",
+								"default": null
+							}
+						}
+					}
+				},
+				"initialConfigurations": [
+					{
+						"name": "Python: Current File (Integrated Terminal)",
+						"type": "python",
+						"request": "launch",
+						"program": "${file}",
+						"console": "integratedTerminal"
+					},
+					{
+						"name": "Python: Attach",
+						"type": "python",
+						"request": "attach",
+						"port": 5678,
+						"host": "localhost"
+					},
+					{
+						"name": "Python: Module",
+						"type": "python",
+						"request": "launch",
+						"module": "enter-your-module-name-here",
+						"console": "integratedTerminal"
+					},
+					{
+						"name": "Python: Django",
+						"type": "python",
+						"request": "launch",
+						"program": "${workspaceFolder}/manage.py",
+						"console": "integratedTerminal",
+						"args": [
+							"runserver",
+							"--noreload",
+							"--nothreading"
+						],
+						"django": true
+					},
+					{
+						"name": "Python: Flask",
+						"type": "python",
+						"request": "launch",
+						"module": "flask",
+						"env": {
+							"FLASK_APP": "app.py"
+						},
+						"args": [
+							"run",
+							"--no-debugger",
+							"--no-reload"
+						],
+						"jinja": true
+					},
+					{
+						"name": "Python: Current File (External Terminal)",
+						"type": "python",
+						"request": "launch",
+						"program": "${file}",
+						"console": "externalTerminal"
+					}
+				]
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Python Configuration",
+			"properties": {
+				"python.autoComplete.addBrackets": {
+					"type": "boolean",
+					"default": false,
+					"description": "Automatically add brackets for functions.",
+					"scope": "resource"
+				},
+				"python.autoComplete.extraPaths": {
+					"type": "array",
+					"default": [],
+					"description": "List of paths to libraries and the like that need to be imported by auto complete engine. E.g. when using Google App SDK, the paths are not in system path, hence need to be added into this list.",
+					"scope": "resource"
+				},
+				"python.autoComplete.showAdvancedMembers": {
+					"type": "boolean",
+					"default": true,
+					"description": "Controls appearance of methods with double underscores in the completion list.",
+					"scope": "resource"
+				},
+				"python.autoComplete.typeshedPaths": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [],
+					"description": "Specifies paths to local typeshed repository clone(s) for the Python language server.",
+					"scope": "resource"
+				},
+				"python.autoUpdateLanguageServer": {
+					"type": "boolean",
+					"default": true,
+					"description": "Automatically update the language server.",
+					"scope": "application"
+				},
+				"python.disableInstallationCheck": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to check if Python is installed (also warn when using the macOS-installed Python).",
+					"scope": "resource"
+				},
+				"python.envFile": {
+					"type": "string",
+					"description": "Absolute path to a file containing environment variable definitions.",
+					"default": "${workspaceFolder}/.env",
+					"scope": "resource"
+				},
+				"python.formatting.autopep8Args": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.formatting.autopep8Path": {
+					"type": "string",
+					"default": "autopep8",
+					"description": "Path to autopep8, you can use a custom version of autopep8 by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.formatting.provider": {
+					"type": "string",
+					"default": "autopep8",
+					"description": "Provider for formatting. Possible options include 'autopep8', 'black', and 'yapf'.",
+					"enum": [
+						"autopep8",
+						"black",
+						"yapf",
+						"none"
+					],
+					"scope": "resource"
+				},
+				"python.formatting.blackArgs": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.formatting.blackPath": {
+					"type": "string",
+					"default": "black",
+					"description": "Path to Black, you can use a custom version of Black by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.formatting.yapfArgs": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.formatting.yapfPath": {
+					"type": "string",
+					"default": "yapf",
+					"description": "Path to yapf, you can use a custom version of yapf by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.globalModuleInstallation": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to install Python modules globally when not using an environment.",
+					"scope": "resource"
+				},
+				"python.jediEnabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enables Jedi as IntelliSense engine instead of Microsoft Python Analysis Engine.",
+					"scope": "resource"
+				},
+				"python.jediMemoryLimit": {
+					"type": "number",
+					"default": 0,
+					"description": "Memory limit for the Jedi completion engine in megabytes. Zero (default) means 1024 MB. -1 means unlimited (disable memory limit check)",
+					"scope": "resource"
+				},
+				"python.jediPath": {
+					"type": "string",
+					"default": "",
+					"description": "Path to directory containing the Jedi library (this path will contain the 'Jedi' sub directory).",
+					"scope": "resource"
+				},
+				"python.analysis.openFilesOnly": {
+					"type": "boolean",
+					"default": true,
+					"description": "Only show errors and warnings for open files rather than for the entire workspace.",
+					"scope": "resource"
+				},
+				"python.analysis.diagnosticPublishDelay": {
+					"type": "integer",
+					"default": 1000,
+					"description": "Delay before diagnostic messages are transferred to the problems list (in milliseconds).",
+					"scope": "resource"
+				},
+				"python.analysis.typeshedPaths": {
+					"type": "array",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"description": "Paths to look for typeshed modules.",
+					"scope": "resource"
+				},
+				"python.analysis.errors": {
+					"type": "array",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"description": "List of diagnostics messages to be shown as errors.",
+					"scope": "resource"
+				},
+				"python.analysis.warnings": {
+					"type": "array",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"description": "List of diagnostics messages to be shown as warnings.",
+					"scope": "resource"
+				},
+				"python.analysis.information": {
+					"type": "array",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"description": "List of diagnostics messages to be shown as information.",
+					"scope": "resource"
+				},
+				"python.analysis.disabled": {
+					"type": "array",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"description": "List of suppressed diagnostic messages.",
+					"scope": "resource"
+				},
+				"python.analysis.logLevel": {
+					"type": "string",
+					"enum": [
+						"Error",
+						"Warning",
+						"Information",
+						"Trace"
+					],
+					"default": "Error",
+					"description": "Defines type of log messages language server writes into the output window.",
+					"scope": "resource"
+				},
+				"python.analysis.symbolsHierarchyDepthLimit": {
+					"type": "integer",
+					"default": 10,
+					"description": "Limits depth of the symbol tree in the document outline.",
+					"scope": "resource"
+				},
+				"python.linting.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to lint Python files.",
+					"scope": "resource"
+				},
+				"python.linting.flake8Args": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.linting.flake8CategorySeverity.E": {
+					"type": "string",
+					"default": "Error",
+					"description": "Severity of Flake8 message type 'E'.",
+					"enum": [
+						"Hint",
+						"Error",
+						"Information",
+						"Warning"
+					],
+					"scope": "resource"
+				},
+				"python.linting.flake8CategorySeverity.F": {
+					"type": "string",
+					"default": "Error",
+					"description": "Severity of Flake8 message type 'F'.",
+					"enum": [
+						"Hint",
+						"Error",
+						"Information",
+						"Warning"
+					],
+					"scope": "resource"
+				},
+				"python.linting.flake8CategorySeverity.W": {
+					"type": "string",
+					"default": "Warning",
+					"description": "Severity of Flake8 message type 'W'.",
+					"enum": [
+						"Hint",
+						"Error",
+						"Information",
+						"Warning"
+					],
+					"scope": "resource"
+				},
+				"python.linting.flake8Enabled": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to lint Python files using flake8",
+					"scope": "resource"
+				},
+				"python.linting.flake8Path": {
+					"type": "string",
+					"default": "flake8",
+					"description": "Path to flake8, you can use a custom version of flake8 by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.linting.ignorePatterns": {
+					"type": "array",
+					"description": "Patterns used to exclude files or folders from being linted.",
+					"default": [
+						".vscode/*.py",
+						"**/site-packages/**/*.py"
+					],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.linting.lintOnSave": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to lint Python files when saved.",
+					"scope": "resource"
+				},
+				"python.linting.maxNumberOfProblems": {
+					"type": "number",
+					"default": 100,
+					"description": "Controls the maximum number of problems produced by the server.",
+					"scope": "resource"
+				},
+				"python.linting.mypyArgs": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [
+						"--ignore-missing-imports",
+						"--follow-imports=silent"
+					],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.linting.mypyCategorySeverity.error": {
+					"type": "string",
+					"default": "Error",
+					"description": "Severity of Mypy message type 'Error'.",
+					"enum": [
+						"Hint",
+						"Error",
+						"Information",
+						"Warning"
+					],
+					"scope": "resource"
+				},
+				"python.linting.mypyCategorySeverity.note": {
+					"type": "string",
+					"default": "Information",
+					"description": "Severity of Mypy message type 'Note'.",
+					"enum": [
+						"Hint",
+						"Error",
+						"Information",
+						"Warning"
+					],
+					"scope": "resource"
+				},
+				"python.linting.mypyEnabled": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to lint Python files using mypy.",
+					"scope": "resource"
+				},
+				"python.linting.mypyPath": {
+					"type": "string",
+					"default": "mypy",
+					"description": "Path to mypy, you can use a custom version of mypy by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.linting.pep8Args": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.linting.pep8CategorySeverity.E": {
+					"type": "string",
+					"default": "Error",
+					"description": "Severity of Pep8 message type 'E'.",
+					"enum": [
+						"Hint",
+						"Error",
+						"Information",
+						"Warning"
+					],
+					"scope": "resource"
+				},
+				"python.linting.pep8CategorySeverity.W": {
+					"type": "string",
+					"default": "Warning",
+					"description": "Severity of Pep8 message type 'W'.",
+					"enum": [
+						"Hint",
+						"Error",
+						"Information",
+						"Warning"
+					],
+					"scope": "resource"
+				},
+				"python.linting.pep8Enabled": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to lint Python files using pep8",
+					"scope": "resource"
+				},
+				"python.linting.pep8Path": {
+					"type": "string",
+					"default": "pep8",
+					"description": "Path to pep8, you can use a custom version of pep8 by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.linting.prospectorArgs": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.linting.prospectorEnabled": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to lint Python files using prospector.",
+					"scope": "resource"
+				},
+				"python.linting.prospectorPath": {
+					"type": "string",
+					"default": "prospector",
+					"description": "Path to Prospector, you can use a custom version of prospector by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.linting.pydocstyleArgs": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.linting.pydocstyleEnabled": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to lint Python files using pydocstyle",
+					"scope": "resource"
+				},
+				"python.linting.pydocstylePath": {
+					"type": "string",
+					"default": "pydocstyle",
+					"description": "Path to pydocstyle, you can use a custom version of pydocstyle by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.linting.pylamaArgs": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.linting.pylamaEnabled": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to lint Python files using pylama.",
+					"scope": "resource"
+				},
+				"python.linting.pylamaPath": {
+					"type": "string",
+					"default": "pylama",
+					"description": "Path to pylama, you can use a custom version of pylama by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.linting.pylintArgs": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.linting.pylintCategorySeverity.convention": {
+					"type": "string",
+					"default": "Information",
+					"description": "Severity of Pylint message type 'Convention/C'.",
+					"enum": [
+						"Hint",
+						"Error",
+						"Information",
+						"Warning"
+					],
+					"scope": "resource"
+				},
+				"python.linting.pylintCategorySeverity.error": {
+					"type": "string",
+					"default": "Error",
+					"description": "Severity of Pylint message type 'Error/E'.",
+					"enum": [
+						"Hint",
+						"Error",
+						"Information",
+						"Warning"
+					],
+					"scope": "resource"
+				},
+				"python.linting.pylintCategorySeverity.fatal": {
+					"type": "string",
+					"default": "Error",
+					"description": "Severity of Pylint message type 'Fatal/F'.",
+					"enum": [
+						"Hint",
+						"Error",
+						"Information",
+						"Warning"
+					],
+					"scope": "resource"
+				},
+				"python.linting.pylintCategorySeverity.refactor": {
+					"type": "string",
+					"default": "Hint",
+					"description": "Severity of Pylint message type 'Refactor/R'.",
+					"enum": [
+						"Hint",
+						"Error",
+						"Information",
+						"Warning"
+					],
+					"scope": "resource"
+				},
+				"python.linting.pylintCategorySeverity.warning": {
+					"type": "string",
+					"default": "Warning",
+					"description": "Severity of Pylint message type 'Warning/W'.",
+					"enum": [
+						"Hint",
+						"Error",
+						"Information",
+						"Warning"
+					],
+					"scope": "resource"
+				},
+				"python.linting.pylintEnabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to lint Python files using pylint.",
+					"scope": "resource"
+				},
+				"python.linting.pylintPath": {
+					"type": "string",
+					"default": "pylint",
+					"description": "Path to Pylint, you can use a custom version of pylint by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.linting.pylintUseMinimalCheckers": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to run Pylint with minimal set of rules.",
+					"scope": "resource"
+				},
+				"python.pythonPath": {
+					"type": "string",
+					"default": "python",
+					"description": "Path to Python, you can use a custom version of Python by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.condaPath": {
+					"type": "string",
+					"default": "",
+					"description": "Path to the conda executable to use for activation (version 4.4+).",
+					"scope": "resource"
+				},
+				"python.sortImports.args": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.sortImports.path": {
+					"type": "string",
+					"description": "Path to isort script, default using inner version",
+					"default": "",
+					"scope": "resource"
+				},
+				"python.terminal.activateEnvironment": {
+					"type": "boolean",
+					"default": true,
+					"description": "Activate Python Environment in Terminal created using the Extension.",
+					"scope": "resource"
+				},
+				"python.terminal.executeInFileDir": {
+					"type": "boolean",
+					"default": false,
+					"description": "When executing a file in the terminal, whether to use execute in the file's directory, instead of the current open folder.",
+					"scope": "resource"
+				},
+				"python.terminal.launchArgs": {
+					"type": "array",
+					"default": [],
+					"description": "Python launch arguments to use when executing a file in the terminal.",
+					"scope": "resource"
+				},
+				"python.unitTest.cwd": {
+					"type": "string",
+					"default": null,
+					"description": "Optional working directory for unit tests.",
+					"scope": "resource"
+				},
+				"python.unitTest.debugPort": {
+					"type": "number",
+					"default": 3000,
+					"description": "Port number used for debugging of unittests.",
+					"scope": "resource"
+				},
+				"python.unitTest.nosetestArgs": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.unitTest.nosetestsEnabled": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to enable or disable unit testing using nosetests.",
+					"scope": "resource"
+				},
+				"python.unitTest.nosetestPath": {
+					"type": "string",
+					"default": "nosetests",
+					"description": "Path to nosetests, you can use a custom version of nosetests by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.unitTest.promptToConfigure": {
+					"type": "boolean",
+					"default": true,
+					"description": "Where to prompt to configure a test framework if potential tests directories are discovered.",
+					"scope": "resource"
+				},
+				"python.unitTest.pyTestArgs": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.unitTest.pyTestEnabled": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to enable or disable unit testing using pytest.",
+					"scope": "resource"
+				},
+				"python.unitTest.pyTestPath": {
+					"type": "string",
+					"default": "pytest",
+					"description": "Path to pytest (pytest), you can use a custom version of pytest by modifying this setting to include the full path.",
+					"scope": "resource"
+				},
+				"python.unitTest.unittestArgs": {
+					"type": "array",
+					"description": "Arguments passed in. Each argument is a separate item in the array.",
+					"default": [
+						"-v",
+						"-s",
+						".",
+						"-p",
+						"*test*.py"
+					],
+					"items": {
+						"type": "string"
+					},
+					"scope": "resource"
+				},
+				"python.unitTest.unittestEnabled": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether to enable or disable unit testing using unittest.",
+					"scope": "resource"
+				},
+				"python.unitTest.autoTestDiscoverOnSaveEnabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to enable or disable auto run test discovery when saving a unit test file.",
+					"scope": "resource"
+				},
+				"python.venvFolders": {
+					"type": "array",
+					"default": [
+						"envs",
+						".pyenv",
+						".direnv"
+					],
+					"description": "Folders in your home directory to look into for virtual environments.",
+					"scope": "resource",
+					"items": {
+						"type": "string"
+					}
+				},
+				"python.venvPath": {
+					"type": "string",
+					"default": "",
+					"description": "Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).",
+					"scope": "resource"
+				},
+				"python.workspaceSymbols.ctagsPath": {
+					"type": "string",
+					"default": "ctags",
+					"description": "Fully qualified path to the ctags executable (else leave as ctags, assuming it is in current path).",
+					"scope": "resource"
+				},
+				"python.workspaceSymbols.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Set to 'false' to disable Workspace Symbol provider using ctags.",
+					"scope": "resource"
+				},
+				"python.workspaceSymbols.exclusionPatterns": {
+					"type": "array",
+					"default": [
+						"**/site-packages/**"
+					],
+					"items": {
+						"type": "string"
+					},
+					"description": "Pattern used to exclude files and folders from ctags See http://ctags.sourceforge.net/ctags.html.",
+					"scope": "resource"
+				},
+				"python.workspaceSymbols.rebuildOnFileSave": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to re-build the tags file on when changes made to python files are saved.",
+					"scope": "resource"
+				},
+				"python.workspaceSymbols.rebuildOnStart": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to re-build the tags file on start (defaults to true).",
+					"scope": "resource"
+				},
+				"python.workspaceSymbols.tagFilePath": {
+					"type": "string",
+					"default": "${workspaceFolder}/.vscode/tags",
+					"description": "Fully qualified path to tag file (exuberant ctag file), used to provide workspace symbols.",
+					"scope": "resource"
+				}
+			}
+		},
+		"languages": [
+			{
+				"id": "pip-requirements",
+				"aliases": [
+					"pip requirements",
+					"requirements.txt"
+				],
+				"filenames": [
+					"requirements.txt",
+					"constraints.txt",
+					"requirements.in"
+				],
+				"filenamePatterns": [
+					"*-requirements.txt",
+					"requirements-*.txt",
+					"constraints-*.txt",
+					"*-constraints.txt",
+					"*-requirements.in",
+					"requirements-*.in"
+				],
+				"configuration": "./languages/pip-requirements.json"
+			},
+			{
+				"id": "yaml",
+				"filenames": [
+					".condarc"
+				]
+			},
+			{
+				"id": "toml",
+				"filenames": [
+					"Pipfile"
+				]
+			},
+			{
+				"id": "json",
+				"filenames": [
+					"Pipfile.lock"
+				]
+			},
+			{
+				"id": "jinja",
+				"extensions": [
+					".jinja2",
+					".j2"
+				],
+				"aliases": [
+					"Jinja"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "pip-requirements",
+				"scopeName": "source.pip-requirements",
+				"path": "./syntaxes/pip-requirements.tmLanguage.json"
+			}
+		],
+		"jsonValidation": [
+			{
+				"fileMatch": ".condarc",
+				"url": "./schemas/condarc.json"
+			},
+			{
+				"fileMatch": "environment.yml",
+				"url": "./schemas/conda-environment.json"
+			},
+			{
+				"fileMatch": "meta.yaml",
+				"url": "./schemas/conda-meta.json"
+			}
+		],
+		"yamlValidation": [
+			{
+				"fileMatch": ".condarc",
+				"url": "./schemas/condarc.json"
+			},
+			{
+				"fileMatch": "environment.yml",
+				"url": "./schemas/conda-environment.json"
+			},
+			{
+				"fileMatch": "meta.yaml",
+				"url": "./schemas/conda-meta.json"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "gulp checkNativeDependencies && tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./out/test/standardTest.js && node ./out/test/multiRootTest.js",
+		"test:unittests": "node ./out/test/unittests.js",
+		"testDebugger": "node ./out/test/debuggerTest.js",
+		"testSingleWorkspace": "node ./out/test/standardTest.js",
+		"testMultiWorkspace": "node ./out/test/multiRootTest.js",
+		"testAnalysisEngine": "node ./out/test/analysisEngineTest.js",
+		"testPerformance": "node ./out/test/performanceTest.js",
+		"precommit": "node gulpfile.js",
+		"lint-staged": "node gulpfile.js",
+		"lint": "tslint src/**/*.ts -t verbose",
+		"clean": "gulp clean",
+		"clean:ptvsd": "gulp clean:ptvsd",
+		"cover:enable": "gulp cover:enable",
+		"debugger-coverage": "gulp debugger-coverage",
+		"cover:inlinesource": "gulp inlinesource"
+	},
+	"dependencies": {
+		"arch": "2.1.0",
+		"azure-storage": "2.10.1",
+		"diff-match-patch": "1.0.0",
+		"dotenv": "5.0.1",
+		"fs-extra": "4.0.3",
+		"fuzzy": "0.1.3",
+		"get-port": "3.2.0",
+		"getos": "3.1.0",
+		"glob": "7.1.2",
+		"iconv-lite": "0.4.21",
+		"inversify": "4.11.1",
+		"line-by-line": "0.1.6",
+		"lodash": "4.17.5",
+		"md5": "2.2.1",
+		"minimatch": "3.0.4",
+		"named-js-regexp": "1.3.3",
+		"node-stream-zip": "1.6.0",
+		"opn": "5.3.0",
+		"pidusage": "1.2.0",
+		"reflect-metadata": "0.1.12",
+		"request": "2.87.0",
+		"request-progress": "3.0.0",
+		"rxjs": "5.5.9",
+		"semver": "5.5.0",
+		"sudo-prompt": "8.2.0",
+		"tmp": "0.0.29",
+		"tree-kill": "1.2.0",
+		"typescript-char": "0.0.0",
+		"uint64be": "1.0.1",
+		"unicode": "10.0.0",
+		"untildify": "3.0.2",
+		"vscode-debugadapter": "1.28.0",
+		"vscode-debugprotocol": "1.28.0",
+		"vscode-extension-telemetry": "0.0.22",
+		"vscode-languageclient": "4.4.0",
+		"vscode-languageserver": "4.4.0",
+		"vscode-languageserver-protocol": "3.10.3",
+		"winreg": "1.2.4",
+		"xml2js": "0.4.19"
+	},
+	"devDependencies": {
+		"@types/chai": "^4.1.2",
+		"@types/chai-arrays": "^1.0.2",
+		"@types/chai-as-promised": "^7.1.0",
+		"@types/del": "^3.0.0",
+		"@types/dotenv": "^4.0.3",
+		"@types/download": "^6.2.2",
+		"@types/event-stream": "^3.3.33",
+		"@types/fs-extra": "^5.0.1",
+		"@types/get-port": "^3.2.0",
+		"@types/glob": "^5.0.35",
+		"@types/iconv-lite": "^0.0.1",
+		"@types/istanbul": "^0.4.29",
+		"@types/lodash": "^4.14.104",
+		"@types/md5": "^2.1.32",
+		"@types/mocha": "^2.2.48",
+		"@types/node": "9.4.7",
+		"@types/request": "^2.47.0",
+		"@types/semver": "^5.5.0",
+		"@types/shortid": "^0.0.29",
+		"@types/sinon": "^4.3.0",
+		"@types/tmp": "0.0.33",
+		"@types/untildify": "^3.0.0",
+		"@types/uuid": "^3.4.3",
+		"@types/winreg": "^1.2.30",
+		"@types/xml2js": "^0.4.2",
+		"JSONStream": "^1.3.2",
+		"chai": "^4.1.2",
+		"chai-arrays": "^2.0.0",
+		"chai-as-promised": "^7.1.1",
+		"codecov": "^3.0.0",
+		"colors": "^1.2.1",
+		"cross-spawn": "^6.0.5",
+		"debounce": "^1.1.0",
+		"decache": "^4.4.0",
+		"del": "^3.0.0",
+		"download": "^7.0.0",
+		"event-stream": "^3.3.4",
+		"flat": "^4.0.0",
+		"gulp": "^3.9.1",
+		"gulp-debounced-watch": "^1.0.4",
+		"gulp-filter": "^5.1.0",
+		"gulp-gitmodified": "^1.1.1",
+		"gulp-inline-source": "^3.2.0",
+		"gulp-json-editor": "^2.2.2",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-typescript": "^4.0.1",
+		"gulp-watch": "^5.0.0",
+		"husky": "^0.14.3",
+		"is-running": "^2.1.0",
+		"istanbul": "^0.4.5",
+		"mocha": "^5.0.4",
+		"mocha-junit-reporter": "^1.17.0",
+		"node-has-native-dependencies": "^1.0.2",
+		"relative": "^3.0.2",
+		"remap-istanbul": "^0.10.1",
+		"retyped-diff-match-patch-tsd-ambient": "^1.0.0-0",
+		"shortid": "^2.2.8",
+		"sinon": "^4.4.5",
+		"tslint": "^5.9.1",
+		"tslint-eslint-rules": "^5.1.0",
+		"tslint-microsoft-contrib": "^5.0.3",
+		"typemoq": "^2.1.0",
+		"typescript": "^2.9.1",
+		"typescript-formatter": "^7.1.0",
+		"uuid": "^3.2.1",
+		"vscode": "^1.1.21",
+		"vscode-debugadapter-testsupport": "^1.27.0"
+	},
+	"__metadata": {
+		"id": "f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5",
+		"publisherId": "998b010b-e2af-44a5-a6cd-0b5fd3b9b6f8",
+		"publisherDisplayName": "Microsoft"
+	}
+}
+
+>>>>>>>>>>>>>>>>>>>>>>>ms-vscode.go-0.6.93
+{
+	"name": "Go",
+	"version": "0.6.93",
+	"publisher": "ms-vscode",
+	"description": "Rich Go language support for Visual Studio Code",
+	"author": {
+		"name": "Microsoft Corporation - Development Labs"
+	},
+	"icon": "images/goIcon.png",
+	"categories": [
+		"Programming Languages",
+		"Snippets",
+		"Linters",
+		"Debuggers",
+		"Formatters"
+	],
+	"galleryBanner": {
+		"color": "#CFB69A",
+		"theme": "light"
+	},
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-go.git"
+	},
+	"keywords": [
+		"multi-root ready"
+	],
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test",
+		"lint": "node ./node_modules/tslint/bin/tslint ./src/*.ts ./src/debugAdapter/*.ts ./test/*.ts"
+	},
+	"extensionDependencies": [],
+	"dependencies": {
+		"console-stamp": "^0.2.2",
+		"diff": "~3.3.0",
+		"json-rpc2": "^1.0.2",
+		"vscode-debug-logger": "^0.0.4",
+		"vscode-debugadapter": "^1.30.0",
+		"vscode-debugprotocol": "^1.11.0",
+		"vscode-extension-telemetry": "^0.1.0",
+		"vscode-languageclient": "~4.3.0"
+	},
+	"devDependencies": {
+		"@types/fs-extra": "0.0.35",
+		"@types/mocha": "^2.2.33",
+		"@types/node": "^6.0.50",
+		"fs-extra": "^1.0.0",
+		"tslint": "^4.0.2",
+		"typescript": "^2.1.5",
+		"vscode": "^1.1.21"
+	},
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"activationEvents": [
+		"onLanguage:go",
+		"onCommand:go.gopath",
+		"onCommand:go.tools.install",
+		"onDebugResolve:go"
+	],
+	"main": "./out/src/goMain",
+	"contributes": {
+		"languages": [
+			{
+				"id": "go",
+				"extensions": [
+					".go"
+				],
+				"aliases": [
+					"Go"
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "go",
+				"path": "./snippets/go.json"
+			}
+		],
+		"configurationDefaults": {
+			"[go]": {
+				"editor.insertSpaces": false,
+				"editor.formatOnSave": true
+			}
+		},
+		"commands": [
+			{
+				"command": "go.gopath",
+				"title": "Go: Current GOPATH",
+				"description": "See the currently set GOPATH."
+			},
+			{
+				"command": "go.test.cursor",
+				"title": "Go: Test Function At Cursor",
+				"description": "Runs a unit test at the cursor."
+			},
+			{
+				"command": "go.benchmark.cursor",
+				"title": "Go: Benchmark Function At Cursor",
+				"description": "Runs a benchmark at the cursor."
+			},
+			{
+				"command": "go.test.file",
+				"title": "Go: Test File",
+				"description": "Runs all unit tests in the current file."
+			},
+			{
+				"command": "go.test.package",
+				"title": "Go: Test Package",
+				"description": "Runs all unit tests in the package of the current file."
+			},
+			{
+				"command": "go.benchmark.package",
+				"title": "Go: Benchmark Package",
+				"description": "Runs all benchmarks in the package of the current file."
+			},
+			{
+				"command": "go.benchmark.file",
+				"title": "Go: Benchmark File",
+				"description": "Runs all benchmarks in the current file."
+			},
+			{
+				"command": "go.test.workspace",
+				"title": "Go: Test All Packages In Workspace",
+				"description": "Runs all unit tests from all packages in the current workspace."
+			},
+			{
+				"command": "go.test.previous",
+				"title": "Go: Test Previous",
+				"description": "Re-runs the last executed test."
+			},
+			{
+				"command": "go.test.coverage",
+				"title": "Go: Toggle Test Coverage In Current Package",
+				"description": "Displays test coverage in the current package."
+			},
+			{
+				"command": "go.test.generate.package",
+				"title": "Go: Generate Unit Tests For Package",
+				"description": "Generates unit tests for the current package"
+			},
+			{
+				"command": "go.test.generate.file",
+				"title": "Go: Generate Unit Tests For File",
+				"description": "Generates unit tests for the current file"
+			},
+			{
+				"command": "go.test.generate.function",
+				"title": "Go: Generate Unit Tests For Function",
+				"description": "Generates unit tests for the selected function in the current file"
+			},
+			{
+				"command": "go.impl.cursor",
+				"title": "Go: Generate Interface Stubs",
+				"description": "Generates method stub for implementing the provided interface and inserts at the cursor."
+			},
+			{
+				"command": "go.import.add",
+				"title": "Go: Add Import",
+				"description": "Add an import declaration"
+			},
+			{
+				"command": "go.add.package.workspace",
+				"title": "Go: Add Package to Workspace",
+				"description": "Add a package from the imports list to the workspace."
+			},
+			{
+				"command": "go.tools.install",
+				"title": "Go: Install/Update Tools",
+				"description": "install/update the required go packages"
+			},
+			{
+				"command": "go.toggle.test.file",
+				"title": "Go: Toggle Test File",
+				"description": "Toggles between file in current active editor and the corresponding test file."
+			},
+			{
+				"command": "go.add.tags",
+				"title": "Go: Add Tags To Struct Fields",
+				"description": "Add tags configured in go.addTags setting to selected struct using gomodifytags"
+			},
+			{
+				"command": "go.remove.tags",
+				"title": "Go: Remove Tags From Struct Fields",
+				"description": "Remove tags configured in go.removeTags setting from selected struct using gomodifytags"
+			},
+			{
+				"command": "go.fill.struct",
+				"title": "Go: Fill struct",
+				"description": "Fill a struct literal with default values"
+			},
+			{
+				"command": "go.show.commands",
+				"title": "Go: Show All Commands...",
+				"description": "Shows all commands from the Go extension in the quick pick"
+			},
+			{
+				"command": "go.browse.packages",
+				"title": "Go: Browse Packages",
+				"description": "Browse packages and Go files inside the packages."
+			},
+			{
+				"command": "go.get.package",
+				"title": "Go: Get Package",
+				"description": "Run `go get -v` on the package on the current line."
+			},
+			{
+				"command": "go.playground",
+				"title": "Go: Run on Go Playground",
+				"description": "Upload the current selection or file to the Go Playground"
+			},
+			{
+				"command": "go.lint.package",
+				"title": "Go: Lint Current Package",
+				"description": "Run linter in the package of the current file."
+			},
+			{
+				"command": "go.lint.workspace",
+				"title": "Go: Lint Workspace",
+				"description": "Run linter in the current workspace."
+			},
+			{
+				"command": "go.vet.package",
+				"title": "Go: Vet Current Package",
+				"description": "Run go vet in the package of the current file."
+			},
+			{
+				"command": "go.vet.workspace",
+				"title": "Go: Vet Workspace",
+				"description": "Run go vet in the current workspace."
+			},
+			{
+				"command": "go.build.package",
+				"title": "Go: Build Current Package",
+				"description": "Build the package of the current file."
+			},
+			{
+				"command": "go.build.workspace",
+				"title": "Go: Build Workspace",
+				"description": "Build the current workspace."
+			},
+			{
+				"command": "go.install.package",
+				"title": "Go: Install Current Package",
+				"description": "Install the current package."
+			},
+			{
+				"command": "go.test.cancel",
+				"title": "Go: Cancel Running Tests",
+				"description": "Cancels running tests."
+			}
+		],
+		"debuggers": [
+			{
+				"type": "go",
+				"label": "Go",
+				"enableBreakpointsFor": {
+					"languageIds": [
+						"go"
+					]
+				},
+				"program": "./out/src/debugAdapter/goDebug.js",
+				"runtime": "node",
+				"languages": [
+					"go"
+				],
+				"configurationSnippets": [
+					{
+						"label": "Go: Launch package",
+						"description": "Debug the package in the program attribute",
+						"body": {
+							"name": "${2:Launch Package}",
+							"type": "go",
+							"request": "launch",
+							"mode": "debug",
+							"program": "^\"\\${workspaceFolder}${1:}\""
+						}
+					},
+					{
+						"label": "Go: Launch file",
+						"description": "Debug the file in the program attribute",
+						"body": {
+							"name": "${2:Launch file}",
+							"type": "go",
+							"request": "launch",
+							"mode": "debug",
+							"program": "^\"${1:\\${file}}\""
+						}
+					},
+					{
+						"label": "Go: Launch test package",
+						"description": "Debug the test package in the program attribute",
+						"body": {
+							"name": "${2:Launch test package}",
+							"type": "go",
+							"request": "launch",
+							"mode": "test",
+							"program": "^\"\\${workspaceFolder}${1:}\""
+						}
+					},
+					{
+						"label": "Go: Launch test function",
+						"description": "Debug the test function in the args, ensure program attributes points to right package",
+						"body": {
+							"name": "${3:Launch test function}",
+							"type": "go",
+							"request": "launch",
+							"mode": "test",
+							"program": "^\"\\${workspaceFolder}${1:}\"",
+							"args": [
+								"-test.run",
+								"${2:MyTestFunction}"
+							]
+						}
+					},
+					{
+						"label": "Go: Connect to server",
+						"description": "Connect to a remote headless debug server",
+						"body": {
+							"name": "${3:Connect to server}",
+							"type": "go",
+							"request": "launch",
+							"mode": "remote",
+							"remotePath": "^\"\\${workspaceFolder}${1:}\"",
+							"port": 2345,
+							"host": "127.0.0.1",
+							"program": "^\"\\${workspaceFolder}${1:}\"",
+							"env": {},
+							"args": []
+						}
+					}
+				],
+				"configurationAttributes": {
+					"launch": {
+						"required": [],
+						"properties": {
+							"program": {
+								"type": "string",
+								"description": "Path to the program folder (or any file within that folder) when in 'debug' or 'test' mode, and to the pre-built binary file to debug in 'exec' mode.",
+								"default": "${workspaceFolder}"
+							},
+							"mode": {
+								"enum": [
+									"auto",
+									"debug",
+									"remote",
+									"test",
+									"exec"
+								],
+								"description": "One of 'auto', 'debug', 'remote', 'test', 'exec'.",
+								"default": "auto"
+							},
+							"stopOnEntry": {
+								"type": "boolean",
+								"description": "Automatically stop program after launch.",
+								"default": false
+							},
+							"args": {
+								"type": "array",
+								"description": "Command line arguments passed to the program.",
+								"items": {
+									"type": "string"
+								},
+								"default": []
+							},
+							"showLog": {
+								"type": "boolean",
+								"description": "Show log output from the delve debugger.",
+								"default": false
+							},
+							"cwd": {
+								"type": "string",
+								"description": "Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.",
+								"default": "."
+							},
+							"env": {
+								"type": "object",
+								"description": "Environment variables passed to the program.",
+								"default": {}
+							},
+							"buildFlags": {
+								"type": "string",
+								"description": "Build flags, to be passed to the Go compiler.",
+								"default": ""
+							},
+							"init": {
+								"type": "string",
+								"description": "Init file, executed by the terminal client.",
+								"default": ""
+							},
+							"remotePath": {
+								"type": "string",
+								"description": "If remote debugging, the path to the source code on the remote machine, if different from the local machine.",
+								"default": ""
+							},
+							"port": {
+								"type": "number",
+								"description": "The port that the delve debugger will be listening on.",
+								"default": 2345
+							},
+							"host": {
+								"type": "string",
+								"description": "The host name of the machine the delve debugger will be listening on.",
+								"default": "127.0.0.1"
+							},
+							"trace": {
+								"type": [
+									"boolean",
+									"string"
+								],
+								"enum": [
+									"verbose",
+									true
+								],
+								"default": true,
+								"description": "When 'true', the extension will log diagnostic info to a file. When 'verbose', it will also show logs in the console."
+							},
+							"envFile": {
+								"type": "string",
+								"description": "Absolute path to a file containing environment variable definitions.",
+								"default": "${workspaceFolder}/.env"
+							},
+							"backend": {
+								"type": "string",
+								"enum": [
+									"default",
+									"native",
+									"lldb"
+								],
+								"description": "Backend used by delve. Only available in delve version 0.12.2 and above."
+							},
+							"output": {
+								"type": "string",
+								"description": "Output path for the binary of delve",
+								"default": "debug"
+							},
+							"logOutput": {
+								"type": "string",
+								"enum": [
+									"debugger",
+									"gdbwire",
+									"lldbout",
+									"debuglineerr",
+									"rpc"
+								],
+								"description": "Comma separated list of components that should produce debug output.",
+								"default": "debugger"
+							},
+							"dlvLoadConfig": {
+								"type": "object",
+								"properties": {
+									"followPointers": {
+										"type": "boolean",
+										"description": "FollowPointers requests pointers to be automatically dereferenced",
+										"default": true
+									},
+									"maxVariableRecurse": {
+										"type": "number",
+										"description": "MaxVariableRecurse is how far to recurse when evaluating nested types",
+										"default": 1
+									},
+									"maxStringLen": {
+										"type": "number",
+										"description": "MaxStringLen is the maximum number of bytes read from a string",
+										"default": 64
+									},
+									"maxArrayValues": {
+										"type": "number",
+										"description": "MaxArrayValues is the maximum number of elements read from an array, a slice or a map",
+										"default": 64
+									},
+									"maxStructFields": {
+										"type": "number",
+										"description": "MaxStructFields is the maximum number of fields read from a struct, -1 will read all fields",
+										"default": -1
+									}
+								},
+								"description": "LoadConfig describes to delve, how to load values from target's memory",
+								"default": {
+									"followPointers": true,
+									"maxVariableRecurse": 1,
+									"maxStringLen": 64,
+									"maxArrayValues": 64,
+									"maxStructFields": -1
+								}
+							},
+							"apiVersion": {
+								"type": "number",
+								"enum": [
+									1,
+									2
+								],
+								"description": "Delve Api Version to use. Default value is 2.",
+								"default": 2
+							}
+						}
+					}
+				}
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Go configuration",
+			"properties": {
+				"go.buildOnSave": {
+					"type": "string",
+					"enum": [
+						"package",
+						"workspace",
+						"off"
+					],
+					"default": "package",
+					"description": "Compiles code on file save using 'go build -i' or 'go test -c -i'. Options are 'workspace', 'package or 'off'.",
+					"scope": "resource"
+				},
+				"go.buildFlags": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [],
+					"description": "Flags to `go build`/`go test` used during build-on-save or running tests. (e.g. ['-ldflags=\"-s\"'])",
+					"scope": "resource"
+				},
+				"go.buildTags": {
+					"type": "string",
+					"default": "",
+					"description": "The Go build tags to use for all commands, that support a `-tags '...'` argument. When running tests, go.testTags will be used instead if it was set.",
+					"scope": "resource"
+				},
+				"go.testTags": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": null,
+					"description": "The Go build tags to use for when running tests. If null, then buildTags will be used.",
+					"scope": "resource"
+				},
+				"go.installDependenciesWhenBuilding": {
+					"type": "boolean",
+					"default": true,
+					"description": "If true, then `-i` flag will be passed to `go build` everytime the code is compiled.",
+					"scope": "resource"
+				},
+				"go.lintOnSave": {
+					"type": "string",
+					"enum": [
+						"file",
+						"package",
+						"workspace",
+						"off"
+					],
+					"default": "package",
+					"description": "Lints code on file save using the configured Lint tool. Options are 'file', 'package', 'workspace' or 'off'.",
+					"scope": "resource"
+				},
+				"go.lintTool": {
+					"type": "string",
+					"default": "golint",
+					"description": "Specifies Lint tool name.",
+					"scope": "resource",
+					"enum": [
+						"golint",
+						"gometalinter",
+						"megacheck",
+						"golangci-lint",
+						"revive"
+					]
+				},
+				"go.lintFlags": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [],
+					"description": "Flags to pass to Lint tool (e.g. [\"-min_confidence=.8\"])",
+					"scope": "resource"
+				},
+				"go.vetOnSave": {
+					"type": "string",
+					"enum": [
+						"package",
+						"workspace",
+						"off"
+					],
+					"default": "package",
+					"description": "Vets code on file save using 'go tool vet'. Options are 'workspace', 'package or 'off'.",
+					"scope": "resource"
+				},
+				"go.vetFlags": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [],
+					"description": "Flags to pass to `go tool vet` (e.g. ['-all', '-shadow'])",
+					"scope": "resource"
+				},
+				"go.formatTool": {
+					"type": "string",
+					"default": "goreturns",
+					"description": "Pick 'gofmt', 'goimports', 'goreturns' or 'goformat' to run on format.",
+					"scope": "resource",
+					"enum": [
+						"gofmt",
+						"goimports",
+						"goreturns",
+						"goformat"
+					]
+				},
+				"go.formatFlags": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [],
+					"description": "Flags to pass to format tool (e.g. ['-s'])",
+					"scope": "resource"
+				},
+				"go.inferGopath": {
+					"type": "boolean",
+					"default": false,
+					"description": "Infer GOPATH from the workspace root.",
+					"scope": "resource"
+				},
+				"go.gopath": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": null,
+					"description": "Specify GOPATH here to override the one that is set as environment variable. The inferred GOPATH from workspace root overrides this, if go.inferGopath is set to true.",
+					"scope": "resource"
+				},
+				"go.toolsGopath": {
+					"type": "string",
+					"default": "",
+					"description": "Location to install the Go tools that the extension depends on if you don't want them in your GOPATH.",
+					"scope": "resource"
+				},
+				"go.goroot": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": null,
+					"description": "Specifies the GOROOT to use when no environment variable is set.",
+					"scope": "resource"
+				},
+				"go.testOnSave": {
+					"type": "boolean",
+					"default": false,
+					"description": "Run 'go test' on save for current package. It is not advised to set this to `true` when you have Auto Save enabled.",
+					"scope": "resource"
+				},
+				"go.coverOnSave": {
+					"type": "boolean",
+					"default": false,
+					"description": "If true, runs 'go test -coverprofile' on save and shows test coverage.",
+					"scope": "resource"
+				},
+				"go.coverOnTestPackage": {
+					"type": "boolean",
+					"default": true,
+					"description": "If true, shows test coverage when Go: Test Package command is run."
+				},
+				"go.coverOnSingleTest": {
+					"type": "boolean",
+					"default": false,
+					"description": "If true, shows test coverage when Go: Test Function at cursor command is run."
+				},
+				"go.coverageOptions": {
+					"type": "string",
+					"enum": [
+						"showCoveredCodeOnly",
+						"showUncoveredCodeOnly",
+						"showBothCoveredAndUncoveredCode"
+					],
+					"default": "showBothCoveredAndUncoveredCode",
+					"description": "Use these options to control whether only covered or only uncovered code or both should be highlighted after running test coverage",
+					"scope": "resource"
+				},
+				"go.coverageDecorator": {
+					"type": "object",
+					"properties": {
+						"type": {
+							"type": "string",
+							"default": "highlight",
+							"enum": [
+								"highlight",
+								"gutter"
+							]
+						},
+						"coveredHighlightColor": {
+							"type": "string",
+							"default": "rgba(64,128,128,0.5)",
+							"description": "Color in the rgba format to use to highlight covered code."
+						},
+						"uncoveredHighlightColor": {
+							"type": "string",
+							"default": "rgba(128,64,64,0.25)",
+							"description": "Color in the rgba format to use to highlight uncovered code."
+						},
+						"coveredGutterStyle": {
+							"type": "string",
+							"default": "blockblue",
+							"enum": [
+								"blockblue",
+								"blockred",
+								"blockgreen",
+								"blockyellow",
+								"slashred",
+								"slashgreen",
+								"slashblue",
+								"slashyellow",
+								"verticalred",
+								"verticalgreen",
+								"verticalblue",
+								"verticalyellow"
+							],
+							"description": "Gutter style to indicate covered code."
+						},
+						"uncoveredGutterStyle": {
+							"type": "string",
+							"default": "blockblue",
+							"enum": [
+								"blockblue",
+								"blockred",
+								"blockgreen",
+								"blockyellow",
+								"slashred",
+								"slashgreen",
+								"slashblue",
+								"slashyellow",
+								"verticalred",
+								"verticalgreen",
+								"verticalblue",
+								"verticalyellow"
+							],
+							"description": "Gutter style to indicate covered code."
+						}
+					},
+					"default": {
+						"type": "highlight",
+						"coveredHighlightColor": "rgba(64,128,128,0.5)",
+						"uncoveredHighlightColor": "rgba(128,64,64,0.25)",
+						"coveredGutterStyle": "blockblue",
+						"uncoveredGutterStyle": "slashyellow"
+					},
+					"description": "This option lets you choose the way to display code coverage. Choose either to highlight the complete line or to show a decorator in the gutter. You can customize the color for the former and the style for the latter.",
+					"scope": "resource"
+				},
+				"go.testTimeout": {
+					"type": "string",
+					"default": "30s",
+					"description": "Specifies the timeout for go test in ParseDuration format.",
+					"scope": "resource"
+				},
+				"go.testEnvVars": {
+					"type": "object",
+					"default": {},
+					"description": "Environment variables that will passed to the process that runs the Go tests",
+					"scope": "resource"
+				},
+				"go.testEnvFile": {
+					"type": "string",
+					"default": null,
+					"description": "Absolute path to a file containing environment variables definitions. File contents should be of the form key=value.",
+					"scope": "resource"
+				},
+				"go.testFlags": {
+					"type": [
+						"array",
+						"null"
+					],
+					"items": {
+						"type": "string"
+					},
+					"default": null,
+					"description": "Flags to pass to `go test`. If null, then buildFlags will be used.",
+					"scope": "resource"
+				},
+				"go.generateTestsFlags": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [],
+					"description": "Additional command line flags to pass to `gotests` for generating tests.",
+					"scope": "resource"
+				},
+				"go.toolsEnvVars": {
+					"type": "object",
+					"default": {},
+					"description": "Environment variables that will passed to the processes that run the Go tools (e.g. CGO_CFLAGS)",
+					"scope": "resource"
+				},
+				"go.gocodeAutoBuild": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enable gocode's autobuild feature",
+					"scope": "resource"
+				},
+				"go.gocodePackageLookupMode": {
+					"type": "string",
+					"enum": [
+						"go",
+						"gb",
+						"bzl"
+					],
+					"default": "go",
+					"description": "Used to determine the Go package lookup rules for completions by gocode. Only applies when using nsf/gocode. Latest versions of the Go extension uses mdempsky/gocode by default.",
+					"scope": "resource"
+				},
+				"go.useCodeSnippetsOnFunctionSuggest": {
+					"type": "boolean",
+					"default": false,
+					"description": "Complete functions with their parameter signature, including the variable types",
+					"scope": "resource"
+				},
+				"go.useCodeSnippetsOnFunctionSuggestWithoutType": {
+					"type": "boolean",
+					"default": false,
+					"description": "Complete functions with their parameter signature, excluding the variable types",
+					"scope": "resource"
+				},
+				"go.autocompleteUnimportedPackages": {
+					"type": "boolean",
+					"default": false,
+					"description": "Include unimported packages in auto-complete suggestions.",
+					"scope": "resource"
+				},
+				"go.docsTool": {
+					"type": "string",
+					"default": "godoc",
+					"description": "Pick 'godoc' or 'gogetdoc' to get documentation. In Go 1.5, godoc is used regardless of the choice here.",
+					"scope": "resource",
+					"enum": [
+						"godoc",
+						"gogetdoc",
+						"guru"
+					]
+				},
+				"go.useLanguageServer": {
+					"type": "boolean",
+					"default": false,
+					"description": "Experimental: Not available in Windows. Use Go language server from Sourcegraph for Hover, Definition, Find All References, Signature Help, File Outline and Workspace Symbol features instead of tools like guru, godef, go-outline and go-symbol"
+				},
+				"go.languageServerFlags": {
+					"type": "array",
+					"default": [],
+					"description": "Flags like -trace and -logfile to be used while running the language server."
+				},
+				"go.languageServerExperimentalFeatures": {
+					"type": "object",
+					"properties": {
+						"format": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, gofmt is used by the language server to format files."
+						},
+						"autoComplete": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, the language server will provide code completion results."
+						}
+					},
+					"default": {
+						"format": false,
+						"autoComplete": false
+					},
+					"description": "Use this setting to enable/disable experimental features from the language server."
+				},
+				"go.gotoSymbol.includeImports": {
+					"type": "boolean",
+					"default": false,
+					"description": "If false, the import statements will be excluded while using the Go to Symbol in File feature",
+					"scope": "resource"
+				},
+				"go.gotoSymbol.includeGoroot": {
+					"type": "boolean",
+					"default": false,
+					"description": "If false, the standard library located at $GOROOT will be excluded while using the Go to Symbol in File feature",
+					"scope": "resource"
+				},
+				"go.enableCodeLens": {
+					"type": "object",
+					"properties": {
+						"references": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, enables the references code lens. Uses guru. Recalculates when there is change to the document followed by scrolling."
+						},
+						"runtest": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, enables code lens for running and debugging tests"
+						}
+					},
+					"default": {
+						"references": false,
+						"runtest": true
+					},
+					"description": "Feature level setting to enable/disable code lens for references and run/debug tests",
+					"scope": "resource"
+				},
+				"go.addTags": {
+					"type": "object",
+					"properties": {
+						"promptForTags": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, Go: Add Tags command will prompt the user to provide tags and options instead of using the configured values"
+						},
+						"tags": {
+							"type": "string",
+							"default": "json",
+							"description": "Comma separated tags to be used by Go: Add Tags command"
+						},
+						"options": {
+							"type": "string",
+							"default": "json=omitempty",
+							"description": "Comma separated tag=options pairs to be used by Go: Add Tags command"
+						},
+						"transform": {
+							"type": "string",
+							"enum": [
+								"snakecase",
+								"camelcase"
+							],
+							"default": "snakecase",
+							"description": "Transformation rule used by Go: Add Tags command to add tags"
+						}
+					},
+					"default": {
+						"tags": "json",
+						"options": "json=omitempty",
+						"promptForTags": false,
+						"transform": "snakecase"
+					},
+					"description": "Tags and options configured here will be used by the Add Tags command to add tags to struct fields. If promptForTags is true, then user will be prompted for tags and options. By default, json tags are added.",
+					"scope": "resource"
+				},
+				"go.liveErrors": {
+					"type": "object",
+					"properties": {
+						"enabled": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, runs gotype on the file currently being edited and reports any semantic or syntactic errors found."
+						},
+						"delay": {
+							"type": "number",
+							"default": 500,
+							"description": "The number of milliseconds to delay before execution. Resets with each keystroke."
+						}
+					},
+					"default": {
+						"enabled": false,
+						"delay": 500
+					},
+					"description": "Use gotype on the file currently being edited and report any semantic or syntactic errors found after configured delay.",
+					"scope": "resource"
+				},
+				"go.removeTags": {
+					"type": "object",
+					"properties": {
+						"promptForTags": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, Go: Remove Tags command will prompt the user to provide tags and options instead of using the configured values"
+						},
+						"tags": {
+							"type": "string",
+							"default": "json",
+							"description": "Comma separated tags to be used by Go: Remove Tags command"
+						},
+						"options": {
+							"type": "string",
+							"default": "json=omitempty",
+							"description": "Comma separated tag=options pairs to be used by Go: Remove Tags command"
+						}
+					},
+					"default": {
+						"tags": "",
+						"options": "",
+						"promptForTags": false
+					},
+					"description": "Tags and options configured here will be used by the Remove Tags command to remove tags to struct fields. If promptForTags is true, then user will be prompted for tags and options. By default, all tags and options will be removed.",
+					"scope": "resource"
+				},
+				"go.playground": {
+					"type": "object",
+					"properties": {
+						"openbrowser": {
+							"type": "boolean",
+							"default": true,
+							"description": "Whether to open the created Go Playground in the default browser"
+						},
+						"share": {
+							"type": "boolean",
+							"default": true,
+							"description": "Whether to make the created Go Playground shareable"
+						},
+						"run": {
+							"type": "boolean",
+							"default": true,
+							"description": "Whether to run the created Go Playground after creation"
+						},
+						"description": "The flags configured here will be passed through to command `goplay`"
+					},
+					"default": {
+						"openbrowser": true,
+						"share": true,
+						"run": true
+					}
+				},
+				"go.editorContextMenuCommands": {
+					"type": "object",
+					"properties": {
+						"toggleTestFile": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to toggle between a Go file and its test file to the editor context menu"
+						},
+						"addTags": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to add configured tags from struct fields to the editor context menu"
+						},
+						"removeTags": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to remove configured tags from struct fields to the editor context menu"
+						},
+						"fillStruct": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to fill struct literal with default values to the editor context menu"
+						},
+						"testAtCursor": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to run the test under the cursor to the editor context menu"
+						},
+						"testFile": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to run all tests in the current file to the editor context menu"
+						},
+						"testPackage": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to run all tests in the current package to the editor context menu"
+						},
+						"generateTestForFunction": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to generate unit tests for function under the cursor to the editor context menu"
+						},
+						"generateTestForFile": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to generate unit tests for current file to the editor context menu"
+						},
+						"generateTestForPackage": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to generate unit tests for currnt package to the editor context menu"
+						},
+						"addImport": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to import a package to the editor context menu"
+						},
+						"testCoverage": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to run test coverage to the editor context menu"
+						},
+						"playground": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to upload the current file or selection to the Go Playground"
+						}
+					},
+					"default": {
+						"toggleTestFile": true,
+						"addTags": true,
+						"removeTags": false,
+						"testAtCursor": true,
+						"testFile": false,
+						"testPackage": false,
+						"generateTestForFunction": true,
+						"generateTestForFile": false,
+						"generateTestForPackage": false,
+						"addImport": true,
+						"testCoverage": true,
+						"playground": true
+					},
+					"description": "Experimental Feature: Enable/Disable entries from the context menu in the editor.",
+					"scope": "resource"
+				},
+				"go.gotoSymbol.ignoreFolders": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [],
+					"description": "Folder names (not paths) to ignore while using Go to Symbol in Workspace feature",
+					"scope": "resource"
+				},
+				"go.delveConfig": {
+					"type": "object",
+					"properties": {
+						"dlvLoadConfig": {
+							"type": "object",
+							"properties": {
+								"followPointers": {
+									"type": "boolean",
+									"description": "FollowPointers requests pointers to be automatically dereferenced",
+									"default": true
+								},
+								"maxVariableRecurse": {
+									"type": "number",
+									"description": "MaxVariableRecurse is how far to recurse when evaluating nested types",
+									"default": 1
+								},
+								"maxStringLen": {
+									"type": "number",
+									"description": "MaxStringLen is the maximum number of bytes read from a string",
+									"default": 64
+								},
+								"maxArrayValues": {
+									"type": "number",
+									"description": "MaxArrayValues is the maximum number of elements read from an array, a slice or a map",
+									"default": 64
+								},
+								"maxStructFields": {
+									"type": "number",
+									"description": "MaxStructFields is the maximum number of fields read from a struct, -1 will read all fields",
+									"default": -1
+								}
+							},
+							"description": "LoadConfig describes to delve, how to load values from target's memory",
+							"default": {
+								"followPointers": true,
+								"maxVariableRecurse": 1,
+								"maxStringLen": 64,
+								"maxArrayValues": 64,
+								"maxStructFields": -1
+							}
+						},
+						"apiVersion": {
+							"type": "number",
+							"enum": [
+								1,
+								2
+							],
+							"description": "Delve Api Version to use. Default value is 2.",
+							"default": 2
+						}
+					},
+					"scope": "resource"
+				},
+				"go.alternateTools": {
+					"type": "object",
+					"default": {},
+					"description": "Alternate tools or alternate paths for the same tools used by the Go extension. Provide either absolute path or the name of the binary in GOPATH/bin, GOROOT/bin or PATH. Useful when you want to use wrapper script for the Go tools or versioned tools from https://gopkg.in.",
+					"scope": "resource",
+					"properties": {
+						"go": {
+							"type": "string",
+							"default": "go",
+							"description": "Alternate tool to use instead of the go binary or alternate path to use for the go binary."
+						},
+						"gometalinter": {
+							"type": "string",
+							"default": "gometalinter",
+							"description": "Alternate tool to use instead of the gometalinter binary or alternate path to use for the gometalinter binary."
+						},
+						"gocode": {
+							"type": "string",
+							"default": "gocode",
+							"description": "Alternate tool to use instead of the gocode binary or alternate path to use for the gocode binary."
+						},
+						"gopkgs": {
+							"type": "string",
+							"default": "gopkgs",
+							"description": "Alternate tool to use instead of the gopkgs binary or alternate path to use for the gopkgs binary."
+						},
+						"godoc": {
+							"type": "string",
+							"default": "godoc",
+							"description": "Alternate tool to use instead of the godoc binary or alternate path to use for the godoc binary."
+						},
+						"go-outline": {
+							"type": "string",
+							"default": "go-outline",
+							"description": "Alternate tool to use instead of the go-outline binary or alternate path to use for the go-outline binary."
+						},
+						"guru": {
+							"type": "string",
+							"default": "guru",
+							"description": "Alternate tool to use instead of the guru binary or alternate path to use for the guru binary."
+						}
+					}
+				}
+			}
+		},
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.toggleTestFile && resourceLangId == go",
+					"command": "go.toggle.test.file",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.addTags && resourceLangId == go",
+					"command": "go.add.tags",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.removeTags && resourceLangId == go",
+					"command": "go.remove.tags",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.fillStruct && resourceLangId == go",
+					"command": "go.fill.struct",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.testAtCursor && resourceLangId == go && !config.editor.codeLens",
+					"command": "go.test.cursor",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.benchmarkAtCursor && resourceLangId == go && !config.editor.codeLens",
+					"command": "go.benchmark.cursor",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.testFile && resourceLangId == go",
+					"command": "go.test.file",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.testPackage && resourceLangId == go",
+					"command": "go.test.package",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.generateTestForFunction && resourceLangId == go",
+					"command": "go.test.generate.function",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.generateTestForFile && resourceLangId == go",
+					"command": "go.test.generate.file",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.generateTestForPackage && resourceLangId == go",
+					"command": "go.test.generate.package",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.addImport && resourceLangId == go",
+					"command": "go.import.add",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.testCoverage && resourceLangId == go",
+					"command": "go.test.coverage",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && resourceLangId == go",
+					"command": "go.show.commands",
+					"group": "Go group 2"
+				}
+			]
+		}
+	},
+	"__metadata": {
+		"id": "d6f6cfea-4b6f-41f4-b571-6ad2ab7918da",
+		"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+		"publisherDisplayName": "Microsoft"
+	}
+}
+
+>>>>>>>>>>>>>>>>>>>>>>>ms-vscode.powershell-1.9.0
+{
+	"name": "PowerShell",
+	"displayName": "PowerShell",
+	"version": "1.9.0",
+	"publisher": "ms-vscode",
+	"description": "Develop PowerShell scripts in Visual Studio Code!",
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"homepage": "https://github.com/PowerShell/vscode-powershell/blob/master/README.md",
+	"categories": [
+		"Debuggers",
+		"Programming Languages",
+		"Snippets",
+		"Linters"
+	],
+	"icon": "images/PowerShell_icon.png",
+	"galleryBanner": {
+		"color": "#ACD1EC",
+		"theme": "light"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PowerShell/vscode-powershell.git"
+	},
+	"main": "./out/src/main",
+	"activationEvents": [
+		"onDebugResolve:powershell",
+		"onLanguage:powershell",
+		"onCommand:PowerShell.NewProjectFromTemplate",
+		"onCommand:PowerShell.OpenExamplesFolder",
+		"onCommand:PowerShell.PickPSHostProcess",
+		"onCommand:PowerShell.SpecifyScriptArgs",
+		"onCommand:PowerShell.ShowSessionConsole",
+		"onCommand:PowerShell.ShowSessionMenu",
+		"onCommand:PowerShell.RestartSession"
+	],
+	"dependencies": {
+		"vscode": "~1.1.21",
+		"vscode-languageclient": "~5.0.0"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.32",
+		"@types/node": "~10.7.1",
+		"mocha": "^4.0.1",
+		"tslint": "~5.11.0",
+		"typescript": "~3.0.1",
+		"vsce": "~1.46.0"
+	},
+	"extensionDependencies": [
+		"vscode.powershell"
+	],
+	"scripts": {
+		"compile": "tsc -v && tsc -p ./ && tslint -p ./",
+		"compile-watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"contributes": {
+		"keybindings": [
+			{
+				"command": "PowerShell.ShowHelp",
+				"key": "ctrl+f1",
+				"when": "editorTextFocus && editorLangId == 'powershell'"
+			},
+			{
+				"command": "PowerShell.ExpandAlias",
+				"key": "shift+alt+e",
+				"when": "editorTextFocus && editorLangId == 'powershell'"
+			},
+			{
+				"command": "PowerShell.ShowAdditionalCommands",
+				"key": "shift+alt+s",
+				"when": "editorTextFocus && editorLangId == 'powershell'"
+			},
+			{
+				"command": "PowerShell.RunSelection",
+				"key": "f8",
+				"when": "editorTextFocus && editorLangId == 'powershell'"
+			}
+		],
+		"commands": [
+			{
+				"command": "PowerShell.ExpandAlias",
+				"title": "Expand Alias",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.OnlineHelp",
+				"title": "Get Online Help for Command (Deprecated)",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.ShowHelp",
+				"title": "Get Help for Command",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.RunSelection",
+				"title": "Run Selection",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.RestartSession",
+				"title": "Restart Current Session",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.ShowLogs",
+				"title": "Show PowerShell Extension Logs",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.OpenLogFolder",
+				"title": "Open PowerShell Extension Logs Folder",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.GenerateBugReport",
+				"title": "Upload Bug Report to Github",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.OpenInISE",
+				"title": "Open Current File in PowerShell ISE",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.PowerShellFindModule",
+				"title": "Find/Install PowerShell Modules from the Gallery",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.ShowAdditionalCommands",
+				"title": "Show Additional Commands from PowerShell Modules",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.ShowSessionMenu",
+				"title": "Show Session Menu",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.SelectPSSARules",
+				"title": "Select PSScriptAnalyzer Rules",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.ShowSessionConsole",
+				"title": "Show Integrated Console",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.NewProjectFromTemplate",
+				"title": "Create New Project from Plaster Template",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.OpenExamplesFolder",
+				"title": "Open Examples Folder",
+				"category": "PowerShell"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorLangId == powershell",
+					"command": "PowerShell.RunSelection",
+					"group": "2_powershell"
+				},
+				{
+					"when": "editorLangId == powershell",
+					"command": "PowerShell.ShowHelp",
+					"group": "2_powershell"
+				}
+			]
+		},
+		"problemMatchers": [
+			{
+				"name": "pester",
+				"owner": "powershell",
+				"fileLocation": [
+					"absolute"
+				],
+				"severity": "error",
+				"pattern": [
+					{
+						"regexp": "^\\s*(?:\\[-\\]\\s+)(.*?)(?:\\s+\\d+\\.?\\d*\\s*m?s)\\s*$",
+						"message": 1
+					},
+					{
+						"regexp": "^\\s+at\\s+[^,]+,\\s*(.*?):\\s+line\\s+(\\d+)$",
+						"file": 1,
+						"line": 2
+					}
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "powershell",
+				"path": "./snippets/PowerShell.json"
+			}
+		],
+		"debuggers": [
+			{
+				"type": "PowerShell",
+				"enableBreakpointsFor": {
+					"languageIds": [
+						"powershell"
+					]
+				},
+				"program": "./out/src/debugAdapter.js",
+				"runtime": "node",
+				"variables": {
+					"PickPSHostProcess": "PowerShell.PickPSHostProcess",
+					"SpecifyScriptArgs": "PowerShell.SpecifyScriptArgs"
+				},
+				"languages": [
+					"powershell"
+				],
+				"configurationSnippets": [
+					{
+						"label": "PowerShell: Launch Current File",
+						"description": "Launch current file (in active editor window) under debugger",
+						"body": {
+							"type": "PowerShell",
+							"request": "launch",
+							"name": "PowerShell Launch Current File",
+							"script": "^\"\\${file}\"",
+							"args": [],
+							"cwd": "^\"\\${file}\""
+						}
+					},
+					{
+						"label": "PowerShell: Launch Current File in Temporary Console",
+						"description": "Launch current file (in active editor window) under debugger in a temporary Integrated Console.",
+						"body": {
+							"type": "PowerShell",
+							"request": "launch",
+							"name": "PowerShell Launch Current File in Temporary Console",
+							"script": "^\"\\${file}\"",
+							"args": [],
+							"cwd": "^\"\\${file}\"",
+							"createTemporaryIntegratedConsole": true
+						}
+					},
+					{
+						"label": "PowerShell: Launch Current File w/Args Prompt",
+						"description": "Launch current file (in active editor window) under debugger, prompting first for script arguments",
+						"body": {
+							"type": "PowerShell",
+							"request": "launch",
+							"name": "PowerShell Launch Current File w/Args Prompt",
+							"script": "^\"\\${file}\"",
+							"args": [
+								"^\"\\${command:SpecifyScriptArgs}\""
+							],
+							"cwd": "^\"\\${file}\""
+						}
+					},
+					{
+						"label": "PowerShell: Launch Script",
+						"description": "Launch specified script or path to script under debugger",
+						"body": {
+							"type": "PowerShell",
+							"request": "launch",
+							"name": "PowerShell Launch ${Script}",
+							"script": "^\"\\${workspaceFolder}/${Script}\"",
+							"args": [],
+							"cwd": "^\"\\${workspaceFolder}\""
+						}
+					},
+					{
+						"label": "PowerShell: Pester Tests",
+						"description": "Invokes Pester tests under debugger",
+						"body": {
+							"type": "PowerShell",
+							"request": "launch",
+							"name": "PowerShell Pester Tests",
+							"script": "Invoke-Pester",
+							"args": [],
+							"cwd": "^\"\\${workspaceFolder}\""
+						}
+					},
+					{
+						"label": "PowerShell: Attach to PowerShell Host Process",
+						"description": "Open host process picker to select process to attach debugger to",
+						"body": {
+							"type": "PowerShell",
+							"request": "attach",
+							"name": "PowerShell Attach to Host Process",
+							"processId": "^\"\\${command:PickPSHostProcess}\"",
+							"runspaceId": 1
+						}
+					},
+					{
+						"label": "PowerShell: Interactive Session",
+						"description": "Start interactive session (Debug Console) under debugger",
+						"body": {
+							"type": "PowerShell",
+							"request": "launch",
+							"name": "PowerShell Interactive Session",
+							"cwd": ""
+						}
+					}
+				],
+				"configurationAttributes": {
+					"launch": {
+						"properties": {
+							"script": {
+								"type": "string",
+								"description": "Optional: Absolute path to the PowerShell script to launch under the debugger."
+							},
+							"args": {
+								"type": "array",
+								"description": "Command line arguments to pass to the PowerShell script.",
+								"items": {
+									"type": "string"
+								},
+								"default": []
+							},
+							"cwd": {
+								"type": "string",
+								"description": "Absolute path to the working directory. Default is the current workspace folder.",
+								"default": "${workspaceFolder}"
+							},
+							"createTemporaryIntegratedConsole": {
+								"type": "boolean",
+								"description": "Determines whether a temporary PowerShell Integrated Console is created for each debugging session, useful for debugging PowerShell classes and binary modules.  Overrides the user setting 'powershell.debugging.createTemporaryIntegratedConsole'.",
+								"default": false
+							}
+						}
+					},
+					"attach": {
+						"properties": {
+							"computerName": {
+								"type": "string",
+								"description": "Optional: The computer name to which a remote session will be established.  Works only on PowerShell 4 and above."
+							},
+							"processId": {
+								"type": "string",
+								"description": "The process id of the PowerShell host process to attach to.  Works only on PowerShell 5 and above.",
+								"default": "${command:PickPSHostProcess}"
+							},
+							"runspaceId": {
+								"type": "number",
+								"description": "Optional: The ID of the runspace to debug in the attached process.  Defaults to 1.  Works only on PowerShell 5 and above.",
+								"default": 1
+							}
+						}
+					}
+				},
+				"initialConfigurations": [
+					{
+						"type": "PowerShell",
+						"request": "launch",
+						"name": "PowerShell Launch Current File",
+						"script": "${file}",
+						"args": [],
+						"cwd": "${file}"
+					},
+					{
+						"type": "PowerShell",
+						"request": "launch",
+						"name": "PowerShell Launch Current File in Temporary Console",
+						"script": "${file}",
+						"args": [],
+						"cwd": "${file}",
+						"createTemporaryIntegratedConsole": true
+					},
+					{
+						"type": "PowerShell",
+						"request": "launch",
+						"name": "PowerShell Launch Current File w/Args Prompt",
+						"script": "${file}",
+						"args": [
+							"${command:SpecifyScriptArgs}"
+						],
+						"cwd": "${file}"
+					},
+					{
+						"type": "PowerShell",
+						"request": "attach",
+						"name": "PowerShell Attach to Host Process",
+						"processId": "${command:PickPSHostProcess}",
+						"runspaceId": 1
+					},
+					{
+						"type": "PowerShell",
+						"request": "launch",
+						"name": "PowerShell Interactive Session",
+						"cwd": ""
+					}
+				]
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "PowerShell Configuration",
+			"properties": {
+				"powershell.powerShellExePath": {
+					"type": "string",
+					"default": "",
+					"isExecutable": true,
+					"description": "Specifies the full path to a PowerShell executable. Changes the installation of PowerShell used for language and debugging services."
+				},
+				"powershell.powerShellAdditionalExePaths": {
+					"type": "array",
+					"description": "Specifies an array of versionName / exePath pairs where exePath points to a non-standard install location for PowerShell and versionName can be used to reference this path with the powershell.powerShellDefaultVersion setting.",
+					"isExecutable": true,
+					"uniqueItems": true,
+					"items": {
+						"type": "object",
+						"required": [
+							"versionName",
+							"exePath"
+						],
+						"properties": {
+							"versionName": {
+								"type": "string",
+								"description": "Specifies the version name of this PowerShell executable. The version name can be referenced via the powershell.powerShellDefaultVersion setting."
+							},
+							"exePath": {
+								"type": "string",
+								"description": "Specifies the path to the PowerShell executable. Typically this is a path to a non-standard install location."
+							}
+						}
+					}
+				},
+				"powershell.powerShellDefaultVersion": {
+					"type": "string",
+					"description": "Specifies the name of the PowerShell version used in the startup session when the extension loads e.g \"Windows PowerShell (x86)\" or \"PowerShell Core 6.0.2 (x64)\"."
+				},
+				"powershell.startAutomatically": {
+					"type": "boolean",
+					"default": true,
+					"description": "Starts PowerShell extension features automatically when a PowerShell file opens. If false, to start the extension, use the 'PowerShell: Restart Current Session' command. IntelliSense, code navigation, integrated console, code formatting, and other features are not enabled until the extension starts."
+				},
+				"powershell.useX86Host": {
+					"type": "boolean",
+					"default": false,
+					"description": "Uses the 32-bit language service on 64-bit Windows. This setting has no effect on 32-bit Windows or on the PowerShell extension debugger, which has its own architecture configuration."
+				},
+				"powershell.enableProfileLoading": {
+					"type": "boolean",
+					"default": true,
+					"description": "Loads user and system-wide PowerShell profiles (profile.ps1 and Microsoft.VSCode_profile.ps1) into the PowerShell session. This affects IntelliSense and interactive script execution, but it does not affect the debugger."
+				},
+				"powershell.bugReporting.project": {
+					"type": "string",
+					"default": "https://github.com/PowerShell/vscode-powershell",
+					"description": "Specifies the url of the GitHub project in which to generate bug reports."
+				},
+				"powershell.helpCompletion": {
+					"type": "string",
+					"enum": [
+						"Disabled",
+						"BlockComment",
+						"LineComment"
+					],
+					"default": "BlockComment",
+					"description": "Controls the comment-based help completion behavior triggered by typing '##'. Set the generated help style with 'BlockComment' or 'LineComment'. Disable the feature with 'Disabled'."
+				},
+				"powershell.scriptAnalysis.enable": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enables real-time script analysis from PowerShell Script Analyzer. Uses the newest installed version of the PSScriptAnalyzer module or the version bundled with this extension, if it is newer."
+				},
+				"powershell.scriptAnalysis.settingsPath": {
+					"type": "string",
+					"default": "",
+					"description": "Specifies the path to a PowerShell Script Analyzer settings file. To override the default settings for all projects, enter an absolute path, or enter a path relative to your workspace."
+				},
+				"powershell.codeFolding.enable": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enables syntax based code folding. When disabled, the default indentation based code folding is used."
+				},
+				"powershell.codeFormatting.preset": {
+					"type": "string",
+					"enum": [
+						"Custom",
+						"Allman",
+						"OTBS",
+						"Stroustrup"
+					],
+					"default": "Custom",
+					"description": "Sets the codeformatting options to follow the given indent style in a way that is compatible with PowerShell syntax. For more information about the brace styles please refer to https://github.com/PoshCode/PowerShellPracticeAndStyle/issues/81."
+				},
+				"powershell.codeFormatting.openBraceOnSameLine": {
+					"type": "boolean",
+					"default": true,
+					"description": "Places open brace on the same line as its associated statement."
+				},
+				"powershell.codeFormatting.newLineAfterOpenBrace": {
+					"type": "boolean",
+					"default": true,
+					"description": "Adds a newline (line break) after an open brace."
+				},
+				"powershell.codeFormatting.newLineAfterCloseBrace": {
+					"type": "boolean",
+					"default": true,
+					"description": "Adds a newline (line break) after a closing brace."
+				},
+				"powershell.codeFormatting.whitespaceBeforeOpenBrace": {
+					"type": "boolean",
+					"default": true,
+					"description": "Adds a space between a keyword and its associated scriptblock expression."
+				},
+				"powershell.codeFormatting.whitespaceBeforeOpenParen": {
+					"type": "boolean",
+					"default": true,
+					"description": "Adds a space between a keyword (if, elseif, while, switch, etc) and its associated conditional expression."
+				},
+				"powershell.codeFormatting.whitespaceAroundOperator": {
+					"type": "boolean",
+					"default": true,
+					"description": "Adds spaces before and after an operator ('=', '+', '-', etc.)."
+				},
+				"powershell.codeFormatting.whitespaceAfterSeparator": {
+					"type": "boolean",
+					"default": true,
+					"description": "Adds a space after a separator (',' and ';')."
+				},
+				"powershell.codeFormatting.ignoreOneLineBlock": {
+					"type": "boolean",
+					"default": true,
+					"description": "Does not reformat one-line code blocks, such as \"if (...) {...} else {...}\"."
+				},
+				"powershell.codeFormatting.alignPropertyValuePairs": {
+					"type": "boolean",
+					"default": true,
+					"description": "Align assignment statements in a hashtable or a DSC Configuration."
+				},
+				"powershell.integratedConsole.showOnStartup": {
+					"type": "boolean",
+					"default": true,
+					"description": "Shows the integrated console when the PowerShell extension is initialized."
+				},
+				"powershell.integratedConsole.focusConsoleOnExecute": {
+					"type": "boolean",
+					"default": true,
+					"description": "Switches focus to the console when a script selection is run or a script file is debugged. This is an accessibility feature. To disable it, set to false."
+				},
+				"powershell.debugging.createTemporaryIntegratedConsole": {
+					"type": "boolean",
+					"default": false,
+					"description": "Determines whether a temporary PowerShell Integrated Console is created for each debugging session, useful for debugging PowerShell classes and binary modules."
+				},
+				"powershell.developer.bundledModulesPath": {
+					"type": "string",
+					"description": "Specifies an alternate path to the folder containing modules that are bundled with the PowerShell extension (i.e. PowerShell Editor Services, PSScriptAnalyzer, Plaster)"
+				},
+				"powershell.developer.editorServicesLogLevel": {
+					"type": "string",
+					"enum": [
+						"Diagnostic",
+						"Verbose",
+						"Normal",
+						"Warning",
+						"Error"
+					],
+					"default": "Normal",
+					"description": "Sets the logging verbosity level for the PowerShell Editor Services host executable.  Valid values are 'Diagnostic', 'Verbose', 'Normal', 'Warning', and 'Error'"
+				},
+				"powershell.developer.editorServicesWaitForDebugger": {
+					"type": "boolean",
+					"default": false,
+					"description": "Launches the language service with the /waitForDebugger flag to force it to wait for a .NET debugger to attach before proceeding."
+				},
+				"powershell.developer.featureFlags": {
+					"type": "array",
+					"default": [],
+					"description": "An array of strings that enable experimental features in the PowerShell extension."
+				},
+				"powershell.developer.powerShellExeIsWindowsDevBuild": {
+					"type": "boolean",
+					"default": false,
+					"description": "Indicates that the powerShellExePath points to a developer build of Windows PowerShell and configures it for development."
+				},
+				"powershell.developer.powerShellExePath": {
+					"type": "string",
+					"default": "",
+					"isExecutable": true,
+					"description": "Deprecated. Please use the 'powershell.powerShellExePath' setting instead"
+				}
+			}
+		},
+		"themes": [
+			{
+				"label": "PowerShell ISE",
+				"uiTheme": "vs",
+				"path": "./themes/theme-psise/theme.json"
+			}
+		]
+	},
+	"private": true,
+	"__metadata": {
+		"id": "40d39ce9-c381-47a0-80c8-a6661f731eab",
+		"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+		"publisherDisplayName": "Microsoft"
+	}
+}
+
+>>>>>>>>>>>>>>>>>>>>>>>rebornix.ruby-0.20.0
+{
+	"name": "ruby",
+	"displayName": "Ruby",
+	"version": "0.20.0",
+	"publisher": "rebornix",
+	"description": "Provides Ruby language and debugging support for Visual Studio Code",
+	"author": {
+		"name": "Stafford Brunk"
+	},
+	"contributors": [
+		{
+			"name": "Peng Lyu",
+			"url": "https://github.com/rebornix"
+		},
+		{
+			"name": "Bryan Hoekstra",
+			"url": "https://github.com/HookyQR"
+		},
+		{
+			"name": "Drew Cain",
+			"url": "https://github.com/groksrc"
+		},
+		{
+			"name": "Lex Li",
+			"url": "https://github.com/lextm"
+		},
+		{
+			"name": "Stafford Brunk",
+			"url": "https://github.com/wingrunr21"
+		}
+	],
+	"engines": {
+		"vscode": "^1.25.0"
+	},
+	"license": "MIT",
+	"icon": "images/ruby.png",
+	"categories": [
+		"Languages",
+		"Debuggers",
+		"Linters",
+		"Snippets",
+		"Formatters"
+	],
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rubyide/vscode-ruby.git"
+	},
+	"bugs": {
+		"url": "https://github.com/rubyide/vscode-ruby/issues"
+	},
+	"dependencies": {
+		"async": "^2.3.0",
+		"lodash": "^4.17.3",
+		"minimatch": "^3.0.3",
+		"ruby-method-locate": "*",
+		"vscode": "^1.1.4",
+		"vscode-debugadapter": "^1.19.0",
+		"vscode-debugprotocol": "^1.19.0",
+		"xmldom": "^0.1.19"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.33",
+		"@types/node": "^6.0.50",
+		"cson-parser": "^2.0.1",
+		"mocha": "^2.4.5",
+		"prettier": "^1.11.1",
+		"run-sequence": "*",
+		"tslint": "^5.9.1",
+		"tslint-config-prettier": "^1.10.0",
+		"tslint-microsoft-contrib": "^5.0.3",
+		"typescript": "^2.9.2",
+		"vscode-debugadapter-testsupport": "^1.19.0"
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run clean:server && npm run compile",
+		"clean:server": "cd server && npm run remove-binaries",
+		"compile:legacy": "rm -rf out && tsc -p ./src",
+		"compile:client": "rm -rf ./client/out && tsc -p ./client/tsconfig.json",
+		"compile:server": "rm -rf ./server/out && tsc -p ./server/tsconfig.json",
+		"watch": "tsc -w -p ./src",
+		"watch:client": "tsc -w -p ./client/tsconfig.json",
+		"watch:server": "tsc -w -p ./server/tsconfig.json",
+		"compile": "npm run compile:legacy && npm run compile:client && npm run compile:server",
+		"test": "node ./node_modules/mocha/bin/mocha --recursive ./out/*.test.js",
+		"test-debugger": "node ./node_modules/mocha/bin/mocha --timeout 15000 -u tdd ./out/debugger/tests/*.js",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"update-all-grammars": "node scripts/update-all-grammars",
+		"update-grammar": "node scripts/update-grammar atom/language-ruby",
+		"lint": "tslint -c tslint.json 'src/**/*.ts'"
+	},
+	"activationEvents": [
+		"onLanguage:ruby",
+		"onLanguage:erb",
+		"onCommand:workbench.action.tasks.runTask"
+	],
+	"main": "./out/ruby.js",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "ruby",
+				"path": "./snippets/ruby.json"
+			},
+			{
+				"language": "erb",
+				"path": "./snippets/erb.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "ruby.reloadProject",
+				"title": "Ruby: Reload Project"
+			}
+		],
+		"configuration": {
+			"title": "ruby language settings",
+			"properties": {
+				"ruby.locate": {
+					"type": "object",
+					"description": "Defines where the Ruby extension will look to find Modules, Classes and methods.",
+					"default": {
+						"exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}",
+						"include": "**/*.rb"
+					},
+					"properties": {
+						"include": {
+							"type": "string",
+							"description": "glob pattern to select files to parse. Matches are performed against the path relative to the workspace root",
+							"default": "**/*.rb"
+						},
+						"exclude": {
+							"type": "string",
+							"description": "glob pattern to select files to ignore, this is also run against paths for exclusion from walking. Matches are performed against the path relative to the workspace root",
+							"default": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}"
+						}
+					}
+				},
+				"ruby.interpreter.commandPath": {
+					"type": "string",
+					"default": "ruby",
+					"description": "Path to the Ruby interpreter.  Set this to an absolute path to select from multiple installed Ruby versions.",
+					"isExecutable": true
+				},
+				"ruby.useLanguageServer": {
+					"type": "boolean",
+					"default": false,
+					"description": "Use built-in language server"
+				},
+				"ruby.codeCompletion": {
+					"type": [
+						"boolean",
+						"string"
+					],
+					"enum": [
+						false,
+						"rcodetools"
+					],
+					"default": false,
+					"description": "Method to use for code completion. Use `false` to disable or if another extension provides this feature."
+				},
+				"ruby.intellisense": {
+					"type": [
+						"boolean",
+						"string"
+					],
+					"enum": [
+						false,
+						"rubyLocate"
+					],
+					"default": false,
+					"description": "Method to use for intellisense (go to definition, etc.). Use `false` to disable or if another extension provides this feature."
+				},
+				"ruby.useBundler": {
+					"type": "boolean",
+					"default": false,
+					"description": "Whether ruby tools should be started using Bundler"
+				},
+				"ruby.pathToBundler": {
+					"type": "string",
+					"default": "bundle",
+					"description": "Path to the bundler executable (used if useBundler is true)"
+				},
+				"ruby.rctComplete.commandPath": {
+					"type": "string",
+					"default": "rct-complete",
+					"description": "Path to the rct-complete command.  Set this to an absolute path to select from multiple installed Ruby versions.",
+					"isExecutable": true
+				},
+				"ruby.lintDebounceTime": {
+					"type": "integer",
+					"default": 500,
+					"description": "Time (ms) to wait after keypress before running enabled linters. Ensures linters are only run when typing has finished and not for every keypress"
+				},
+				"ruby.lint": {
+					"type": "object",
+					"description": "Set individual ruby linters to use",
+					"properties": {
+						"ruby": {
+							"type": [
+								"boolean",
+								"object"
+							],
+							"default": false,
+							"description": "Use ruby -wc to lint"
+						},
+						"debride": {
+							"type": [
+								"boolean",
+								"object"
+							],
+							"default": false,
+							"properties": {
+								"rails": {
+									"type": "boolean",
+									"default": "true",
+									"description": "Add some rails call conversions"
+								}
+							},
+							"description": "Use debride to lint"
+						},
+						"fasterer": {
+							"type": "boolean",
+							"default": false,
+							"description": "Use fasterer to lint"
+						},
+						"reek": {
+							"type": "boolean",
+							"default": false,
+							"description": "Use reek to lint"
+						},
+						"rubocop": {
+							"type": [
+								"boolean",
+								"object"
+							],
+							"default": false,
+							"description": "Use RuboCop to lint",
+							"properties": {
+								"lint": {
+									"type": "boolean",
+									"default": false,
+									"description": "Enable Lint cops: Lint cops check for possible errors and very bad practices in your code. RuboCop implements in a portable way all built-in MRI lint checks (ruby -wc) and adds a lot of extra lint checks of its own."
+								},
+								"only": {
+									"type": "array",
+									"description": "Run only the specified cop(s) and/or cops in the specified departments",
+									"items": {
+										"type": "string"
+									}
+								},
+								"except": {
+									"type": "array",
+									"description": "Run all cops enabled by configuration except the specified cop(s) and/or departments",
+									"items": {
+										"type": "string"
+									}
+								},
+								"require": {
+									"type": "array",
+									"description": "Require Ruby files",
+									"items": {
+										"type": "string"
+									}
+								},
+								"rails": {
+									"type": "boolean",
+									"default": false,
+									"description": "Rails cops are specific to the Ruby on Rails framework"
+								}
+							}
+						},
+						"ruby-lint": {
+							"type": [
+								"boolean",
+								"object"
+							],
+							"default": false,
+							"description": "Use ruby-lint to lint",
+							"properties": {
+								"levels": {
+									"type": "array",
+									"description": "Level of offenses to show",
+									"items": {
+										"type": "string",
+										"enum": [
+											"error",
+											"warning",
+											"info"
+										]
+									}
+								},
+								"classes": {
+									"type": "array",
+									"description": "Classes of offenses to show",
+									"items": {
+										"type": "string",
+										"enum": [
+											"argument_amount",
+											"loop_keywords",
+											"pedantics",
+											"shadowing_variables",
+											"undefined_methods",
+											"undefined_variables",
+											"unused_variables",
+											"useless_equality_checks"
+										]
+									}
+								}
+							}
+						}
+					}
+				},
+				"ruby.format": {
+					"type": [
+						"boolean",
+						"string"
+					],
+					"enum": [
+						false,
+						"rubocop"
+					],
+					"default": false,
+					"description": "Which system to use for formatting. Use `false` to disable or if another extension provides this feature."
+				}
+			}
+		},
+		"languages": [
+			{
+				"id": "ruby",
+				"aliases": [
+					"Ruby",
+					"ruby"
+				],
+				"firstLine": "^#!\\s*/.*(?:ruby|rbx|rake)\\b",
+				"extensions": [
+					".arb",
+					".builder",
+					".cgi",
+					".fcgi",
+					".gemspec",
+					".god",
+					".irbrc",
+					".jbuilder",
+					".mspec",
+					".pluginspec",
+					".podspec",
+					".prawn",
+					".pryrc",
+					".rabl",
+					".rake",
+					".rb",
+					".rbuild",
+					".rbw",
+					".rbx",
+					".rjs",
+					".ru",
+					".ruby",
+					".spec",
+					".thor",
+					".watchr"
+				],
+				"filenames": [
+					"appfile",
+					"appraisals",
+					"berksfile",
+					"brewfile",
+					"capfile",
+					"fastfile",
+					"guardfile",
+					"podfile",
+					"puppetfile",
+					"rakefile",
+					"snapfile",
+					"thorfile",
+					"vagrantfile",
+					"dangerfile"
+				],
+				"configuration": "./language-configuration-ruby.json"
+			},
+			{
+				"id": "erb",
+				"aliases": [
+					"erb",
+					"Encapsulated Ruby"
+				],
+				"extensions": [
+					".erb",
+					".rhtml",
+					".rhtm"
+				],
+				"configuration": "./language-configuration-erb.json"
+			},
+			{
+				"id": "gemfile",
+				"aliases": [
+					"Gemfile",
+					"Bundler",
+					"bundler"
+				],
+				"filenames": [
+					"Gemfile"
+				],
+				"configuration": "./language-configuration-ruby.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "ruby",
+				"scopeName": "source.ruby",
+				"path": "./syntaxes/ruby.cson.json"
+			},
+			{
+				"language": "erb",
+				"scopeName": "text.html.erb",
+				"path": "./syntaxes/erb.cson.json",
+				"embeddedLanguages": {
+					"source.css": "css",
+					"source.js": "javascript",
+					"source.ruby": "ruby"
+				}
+			},
+			{
+				"language": "gemfile",
+				"scopeName": "source.ruby.gemfile",
+				"path": "./syntaxes/gemfile.cson.json"
+			}
+		],
+		"debuggers": [
+			{
+				"type": "Ruby",
+				"label": "Ruby",
+				"enableBreakpointsFor": {
+					"languageIds": [
+						"ruby",
+						"erb"
+					]
+				},
+				"program": "./out/debugger/main.js",
+				"runtime": "node",
+				"configurationAttributes": {
+					"launch": {
+						"required": [
+							"program"
+						],
+						"properties": {
+							"program": {
+								"type": "string",
+								"description": "Absolute path to the program.",
+								"default": "${workspaceRoot}/main.rb"
+							},
+							"stopOnEntry": {
+								"type": "boolean",
+								"description": "Automatically stop after launch.",
+								"default": true
+							},
+							"showDebuggerOutput": {
+								"type": "boolean",
+								"description": "Show output of the debugger in the console.",
+								"default": false
+							},
+							"args": {
+								"type": "array",
+								"description": "Command line arguments passed to the program.",
+								"items": {
+									"type": "string"
+								},
+								"default": []
+							},
+							"env": {
+								"type": "object",
+								"description": "Additional environment variables to pass to the debugging (and debugged) process.",
+								"default": {}
+							},
+							"cwd": {
+								"type": "string",
+								"description": "Absolute path to the working directory of the program being debugged.",
+								"default": "${workspaceRoot}"
+							},
+							"useBundler": {
+								"type": "boolean",
+								"description": "Use `bundle exec` to run rdebug-ide. Enable this option if you have used bundle install --path with rdebug-ide as a bundled gem.",
+								"default": false
+							},
+							"pathToRuby": {
+								"type": "string",
+								"description": "Path to the Ruby executable if it is not 'ruby', used to run the program without the debugger (under CTRL+F5)",
+								"default": "ruby"
+							},
+							"pathToBundler": {
+								"type": "string",
+								"description": "If you use the `useBunder` option, and `bundle` is not in your path, provide the absolute path to `bundle` (eg. \"/usr/bin/bundle\" )",
+								"default": "bundle"
+							},
+							"pathToRDebugIDE": {
+								"type": "string",
+								"description": "If `rdebug-ide` is not in your path, provide the absolute path to `rdebug-ide` (eg. \"c:\\ruby\\rdebug-ide.bat\" )",
+								"default": "rdebug-ide"
+							},
+							"debuggerPort": {
+								"type": "string",
+								"description": "If you want to run more than one debugger, you can specify the port here.",
+								"default": "1234"
+							},
+							"includes": {
+								"type": "array",
+								"description": "Additional paths to be added to Ruby's include path",
+								"default": []
+							}
+						}
+					},
+					"attach": {
+						"required": [
+							"cwd",
+							"remoteHost",
+							"remotePort",
+							"remoteWorkspaceRoot"
+						],
+						"properties": {
+							"cwd": {
+								"type": "string",
+								"description": "Absolute path to the working directory of the program being debugged.",
+								"default": "${workspaceRoot}"
+							},
+							"remoteHost": {
+								"type": "string",
+								"description": "Host address for remote debugging.",
+								"default": "127.0.0.1"
+							},
+							"remotePort": {
+								"type": "string",
+								"description": "Port for remote debugging.",
+								"default": "1234"
+							},
+							"remoteWorkspaceRoot": {
+								"type": "string",
+								"description": "Remote workspace root, this parameter is required for remote debugging.",
+								"default": "${workspaceRoot}"
+							},
+							"showDebuggerOutput": {
+								"type": "boolean",
+								"description": "Show output of the debugger in the console.",
+								"default": false
+							}
+						}
+					}
+				},
+				"initialConfigurations": [
+					{
+						"name": "Debug Local File",
+						"type": "Ruby",
+						"request": "launch",
+						"cwd": "${workspaceRoot}",
+						"program": "${workspaceRoot}/main.rb"
+					},
+					{
+						"name": "Listen for rdebug-ide",
+						"type": "Ruby",
+						"request": "attach",
+						"cwd": "${workspaceRoot}",
+						"remoteHost": "127.0.0.1",
+						"remotePort": "1234",
+						"remoteWorkspaceRoot": "${workspaceRoot}"
+					},
+					{
+						"name": "Rails server",
+						"type": "Ruby",
+						"request": "launch",
+						"cwd": "${workspaceRoot}",
+						"program": "${workspaceRoot}/bin/rails",
+						"args": [
+							"server"
+						]
+					},
+					{
+						"name": "RSpec - all",
+						"type": "Ruby",
+						"request": "launch",
+						"cwd": "${workspaceRoot}",
+						"program": "${workspaceRoot}/bin/rspec",
+						"args": [
+							"-I",
+							"${workspaceRoot}"
+						]
+					},
+					{
+						"name": "RSpec - active spec file only",
+						"type": "Ruby",
+						"request": "launch",
+						"cwd": "${workspaceRoot}",
+						"program": "${workspaceRoot}/bin/rspec",
+						"args": [
+							"-I",
+							"${workspaceRoot}",
+							"${file}"
+						]
+					},
+					{
+						"name": "Cucumber",
+						"type": "Ruby",
+						"request": "launch",
+						"cwd": "${workspaceRoot}",
+						"program": "${workspaceRoot}/bin/cucumber"
+					}
+				]
+			}
+		]
+	},
+	"__metadata": {
+		"id": "ae062c8a-c68e-4b92-9ecf-8f1d4288b05d",
+		"publisherId": "d30b9513-547b-4112-9c9c-0fcffa960258",
+		"publisherDisplayName": "Peng Lv"
+	}
+}
+
+>>>>>>>>>>>>>>>>>>>>>>>ryu1kn.edit-with-shell-1.0.1
+{
+	"name": "edit-with-shell",
+	"displayName": "Edit with Shell Command",
+	"description": "Leverage your favourite shell commands to edit text",
+	"version": "1.0.1",
+	"publisher": "ryu1kn",
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"icon": "images/edit-with-shell.png",
+	"bugs": {
+		"url": "https://github.com/ryu1kn/vscode-edit-with-shell/issues"
+	},
+	"homepage": "https://github.com/ryu1kn/vscode-edit-with-shell/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ryu1kn/vscode-edit-with-shell.git"
+	},
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"shell",
+		"command",
+		"filter"
+	],
+	"activationEvents": [
+		"onCommand:editWithShell.clearCommandHistory",
+		"onCommand:editWithShell.runCommand"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "editWithShell.clearCommandHistory",
+				"title": "Clear command history",
+				"category": "EditWithShell"
+			},
+			{
+				"command": "editWithShell.runCommand",
+				"title": "Run command",
+				"category": "EditWithShell"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Edit with Shell Command configurations",
+			"properties": {
+				"editWithShell.currentDirectoryKind": {
+					"description": "Current directory for shell commands",
+					"type": "string",
+					"enum": [
+						"currentFile",
+						"workspaceRoot"
+					],
+					"default": "currentFile"
+				},
+				"editWithShell.processEntireTextIfNoneSelected": {
+					"description": "Pipe the entire text to the shell command if no text is selected",
+					"type": "boolean",
+					"default": false
+				},
+				"editWithShell.shell.linux": {
+					"description": "The path of the shell that this extension uses on Linux",
+					"type": "string",
+					"default": "/bin/sh"
+				},
+				"editWithShell.shellArgs.linux": {
+					"description": "Arguments to the shell to be used on Linux",
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"-c"
+					]
+				},
+				"editWithShell.shell.osx": {
+					"description": "The path of the shell that this extension uses on OS X",
+					"type": "string",
+					"default": "/bin/sh"
+				},
+				"editWithShell.shellArgs.osx": {
+					"description": "Arguments to the shell to be used on OS X",
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"-c"
+					]
+				},
+				"editWithShell.shell.windows": {
+					"description": "The path of the shell that this extension uses on Windows",
+					"type": "string",
+					"default": "cmd.exe"
+				},
+				"editWithShell.shellArgs.windows": {
+					"description": "Arguments to the shell to be used on Windows",
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"/d",
+						"/s",
+						"/c"
+					]
+				}
+			}
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"coverage": "nyc yarn test",
+		"lint": "tslint -p .",
+		"test": "mocha --opts cli-test-mocha.opts",
+		"test-mode": "mocha --opts cli-test-mocha.opts --watch",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"prep": "yarn run lint && yarn run compile && yarn test",
+		"vscode:prepublish": "yarn run compile",
+		"vscode:postpublish": "./tag-release.sh"
+	},
+	"devDependencies": {
+		"@types/mocha": "^5.2.5",
+		"@types/node": "^7.0.67",
+		"mocha": "^5.2.0",
+		"nyc": "^12.0.2",
+		"testdouble": "^3.8.1",
+		"ts-node": "^7.0.0",
+		"tslint": "^5.11.0",
+		"typescript": "^3.0.1",
+		"vscode": "^1.1.18"
+	},
+	"__metadata": {
+		"id": "370f75d3-459d-498a-80ed-e380c87750c5",
+		"publisherId": "78c9c61d-8fc2-48eb-bf5e-7dd8b068702c",
+		"publisherDisplayName": "Ryuichi Inagaki"
+	}
+}
