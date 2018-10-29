@@ -27,7 +27,7 @@ backup_vscode() {
 backup_vscode_extensions () {
 	echo "extensions package list" > ~/dotfiles/vscode/extensions.txt
 	path_extensions=~/.vscode/extensions
-	for file in `ls $path_extensions`
+	for file in `ls $path_extensions | sort -b`
 	do
     	path_package=${path_extensions}/${file}/package.json
     	if [ -f $path_package ]
