@@ -32,7 +32,7 @@ backup_vscode_extensions () {
     	path_package=${path_extensions}/${file}/package.json
     	if [ -f $path_package ]
     	then
-        	echo -e "\r\n" >> ~/dotfiles/vscode/extensions.txt
+        	echo "\r\n" >> ~/dotfiles/vscode/extensions.txt
         	echo ">>>>>>>>>>>>>>>>>>>>>>>$file" >> ~/dotfiles/vscode/extensions.txt
        	    cat $path_package >> ~/dotfiles/vscode/extensions.txt
     fi
