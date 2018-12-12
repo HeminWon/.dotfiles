@@ -4030,11 +4030,11 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>ms-vscode.powershell-1.9.0
+>>>>>>>>>>>>>>>>>>>>>>>ms-vscode.powershell-1.10.1
 {
 	"name": "PowerShell",
 	"displayName": "PowerShell",
-	"version": "1.9.0",
+	"version": "1.10.1",
 	"publisher": "ms-vscode",
 	"description": "Develop PowerShell scripts in Visual Studio Code!",
 	"engines": {
@@ -4067,19 +4067,20 @@ extensions package list
 		"onCommand:PowerShell.SpecifyScriptArgs",
 		"onCommand:PowerShell.ShowSessionConsole",
 		"onCommand:PowerShell.ShowSessionMenu",
-		"onCommand:PowerShell.RestartSession"
+		"onCommand:PowerShell.RestartSession",
+		"onView:PowerShellCommands"
 	],
 	"dependencies": {
-		"vscode": "~1.1.21",
-		"vscode-languageclient": "~5.0.0"
+		"vscode-languageclient": "~5.1.1"
 	},
 	"devDependencies": {
-		"@types/mocha": "^2.2.32",
-		"@types/node": "~10.7.1",
-		"mocha": "^4.0.1",
+		"@types/mocha": "~2.2.32",
+		"@types/node": "~10.12.12",
+		"mocha": "~4.0.1",
 		"tslint": "~5.11.0",
-		"typescript": "~3.0.1",
-		"vsce": "~1.46.0"
+		"typescript": "~3.2.1",
+		"vsce": "~1.46.0",
+		"vscode": "~1.1.22"
 	},
 	"extensionDependencies": [
 		"vscode.powershell"
@@ -4091,6 +4092,23 @@ extensions package list
 		"test": "node ./node_modules/vscode/bin/test"
 	},
 	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "PowerShellCommandExplorer",
+					"title": "PowerShell Command Explorer",
+					"icon": "media/pwsh.svg"
+				}
+			]
+		},
+		"views": {
+			"PowerShellCommandExplorer": [
+				{
+					"id": "PowerShellCommands",
+					"name": "PowerShell Commands"
+				}
+			]
+		},
 		"keybindings": [
 			{
 				"command": "PowerShell.ShowHelp",
@@ -4111,12 +4129,33 @@ extensions package list
 				"command": "PowerShell.RunSelection",
 				"key": "f8",
 				"when": "editorTextFocus && editorLangId == 'powershell'"
+			},
+			{
+				"command": "editor.action.insertSnippet",
+				"when": "editorTextFocus && editorLangId == 'powershell'",
+				"mac": "cmd+alt+j",
+				"win": "ctrl+alt+j",
+				"linux": "ctrl+alt+j"
 			}
 		],
 		"commands": [
 			{
 				"command": "PowerShell.ExpandAlias",
 				"title": "Expand Alias",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.RefreshCommandsExplorer",
+				"title": "Refresh",
+				"icon": {
+					"light": "resources/light/refresh.svg",
+					"dark": "resources/dark/refresh.svg"
+				},
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.InsertCommand",
+				"title": "Insert Command",
 				"category": "PowerShell"
 			},
 			{
@@ -4206,6 +4245,23 @@ extensions package list
 					"when": "editorLangId == powershell",
 					"command": "PowerShell.ShowHelp",
 					"group": "2_powershell"
+				}
+			],
+			"view/title": [
+				{
+					"command": "PowerShell.RefreshCommandsExplorer",
+					"when": "view == PowerShellCommands",
+					"group": "navigation"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "PowerShell.ShowHelp",
+					"when": "view == PowerShellCommands"
+				},
+				{
+					"command": "PowerShell.InsertCommand",
+					"when": "view == PowerShellCommands"
 				}
 			]
 		},
@@ -4511,6 +4567,11 @@ extensions package list
 					"default": true,
 					"description": "Enables syntax based code folding. When disabled, the default indentation based code folding is used."
 				},
+				"powershell.codeFolding.showLastLine": {
+					"type": "boolean",
+					"default": true,
+					"description": "Shows the last line of a folded section similar to the default VSCode folding style. When disabled, the entire folded region is hidden."
+				},
 				"powershell.codeFormatting.preset": {
 					"type": "string",
 					"enum": [
@@ -4637,11 +4698,11 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>rebornix.ruby-0.20.0
+>>>>>>>>>>>>>>>>>>>>>>>rebornix.ruby-0.21.0
 {
 	"name": "ruby",
 	"displayName": "Ruby",
-	"version": "0.20.0",
+	"version": "0.21.0",
 	"publisher": "rebornix",
 	"description": "Provides Ruby language and debugging support for Visual Studio Code",
 	"author": {
@@ -4701,7 +4762,7 @@ extensions package list
 	},
 	"devDependencies": {
 		"@types/mocha": "^2.2.33",
-		"@types/node": "^6.0.50",
+		"@types/node": "^6.14.2",
 		"cson-parser": "^2.0.1",
 		"mocha": "^2.4.5",
 		"prettier": "^1.11.1",
@@ -5005,6 +5066,7 @@ extensions package list
 					"berksfile",
 					"brewfile",
 					"capfile",
+					"deliverfile",
 					"fastfile",
 					"guardfile",
 					"podfile",
@@ -5077,6 +5139,76 @@ extensions package list
 				},
 				"program": "./out/debugger/main.js",
 				"runtime": "node",
+				"configurationSnippets": [
+					{
+						"label": "Ruby: Debug Local File",
+						"body": {
+							"name": "Debug Local File",
+							"type": "Ruby",
+							"request": "launch",
+							"program": "^\"\\${workspaceRoot}/main.rb\""
+						}
+					},
+					{
+						"label": "Ruby: Listen for rdebug-ide",
+						"body": {
+							"name": "Listen for rdebug-ide",
+							"type": "Ruby",
+							"request": "attach",
+							"remoteHost": "127.0.0.1",
+							"remotePort": "1234",
+							"remoteWorkspaceRoot": "^\"\\${workspaceRoot}\""
+						}
+					},
+					{
+						"label": "Ruby: Rails server",
+						"body": {
+							"name": "Rails server",
+							"type": "Ruby",
+							"request": "launch",
+							"program": "^\"\\${workspaceRoot}/bin/rails\"",
+							"args": [
+								"server"
+							]
+						}
+					},
+					{
+						"label": "Ruby: RSpec - all",
+						"body": {
+							"name": "RSpec - all",
+							"type": "Ruby",
+							"request": "launch",
+							"program": "^\"\\${workspaceRoot}/bin/rspec\"",
+							"args": [
+								"-I",
+								"^\"\\${workspaceRoot}\""
+							]
+						}
+					},
+					{
+						"label": "Ruby: RSpec - active spec file only",
+						"body": {
+							"name": "RSpec - active spec file only",
+							"type": "Ruby",
+							"request": "launch",
+							"program": "^\"\\${workspaceRoot}/bin/rspec\"",
+							"args": [
+								"-I",
+								"^\"\\${workspaceRoot}\"",
+								"^\"\\${file}\""
+							]
+						}
+					},
+					{
+						"label": "Ruby: Cucumber",
+						"body": {
+							"name": "Cucumber",
+							"type": "Ruby",
+							"request": "launch",
+							"program": "^\"\\${workspaceRoot}/bin/cucumber\""
+						}
+					}
+				],
 				"configurationAttributes": {
 					"launch": {
 						"required": [
@@ -5183,65 +5315,7 @@ extensions package list
 							}
 						}
 					}
-				},
-				"initialConfigurations": [
-					{
-						"name": "Debug Local File",
-						"type": "Ruby",
-						"request": "launch",
-						"cwd": "${workspaceRoot}",
-						"program": "${workspaceRoot}/main.rb"
-					},
-					{
-						"name": "Listen for rdebug-ide",
-						"type": "Ruby",
-						"request": "attach",
-						"cwd": "${workspaceRoot}",
-						"remoteHost": "127.0.0.1",
-						"remotePort": "1234",
-						"remoteWorkspaceRoot": "${workspaceRoot}"
-					},
-					{
-						"name": "Rails server",
-						"type": "Ruby",
-						"request": "launch",
-						"cwd": "${workspaceRoot}",
-						"program": "${workspaceRoot}/bin/rails",
-						"args": [
-							"server"
-						]
-					},
-					{
-						"name": "RSpec - all",
-						"type": "Ruby",
-						"request": "launch",
-						"cwd": "${workspaceRoot}",
-						"program": "${workspaceRoot}/bin/rspec",
-						"args": [
-							"-I",
-							"${workspaceRoot}"
-						]
-					},
-					{
-						"name": "RSpec - active spec file only",
-						"type": "Ruby",
-						"request": "launch",
-						"cwd": "${workspaceRoot}",
-						"program": "${workspaceRoot}/bin/rspec",
-						"args": [
-							"-I",
-							"${workspaceRoot}",
-							"${file}"
-						]
-					},
-					{
-						"name": "Cucumber",
-						"type": "Ruby",
-						"request": "launch",
-						"cwd": "${workspaceRoot}",
-						"program": "${workspaceRoot}/bin/cucumber"
-					}
-				]
+				}
 			}
 		]
 	},
