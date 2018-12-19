@@ -514,12 +514,12 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>ms-ceintl.vscode-language-pack-zh-hans-1.29.2
+>>>>>>>>>>>>>>>>>>>>>>>ms-ceintl.vscode-language-pack-zh-hans-1.30.2
 {
 	"name": "vscode-language-pack-zh-hans",
 	"displayName": "Chinese (Simplified) Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Chinese (Simplified)",
-	"version": "1.29.2",
+	"version": "1.30.2",
 	"publisher": "MS-CEINTL",
 	"repository": {
 		"type": "git",
@@ -527,7 +527,7 @@ extensions package list
 	},
 	"license": "SEE MIT LICENSE IN LICENSE.md",
 	"engines": {
-		"vscode": "^1.29.0"
+		"vscode": "^1.30.0"
 	},
 	"icon": "languagepack.png",
 	"categories": [
@@ -545,16 +545,16 @@ extensions package list
 						"path": "./translations/main.i18n.json"
 					},
 					{
-						"id": "vscode.coffeescript",
-						"path": "./translations/extensions/coffeescript.i18n.json"
+						"id": "vscode.bat",
+						"path": "./translations/extensions/bat.i18n.json"
 					},
 					{
 						"id": "vscode.clojure",
 						"path": "./translations/extensions/clojure.i18n.json"
 					},
 					{
-						"id": "vscode.bat",
-						"path": "./translations/extensions/bat.i18n.json"
+						"id": "vscode.coffeescript",
+						"path": "./translations/extensions/coffeescript.i18n.json"
 					},
 					{
 						"id": "vscode.configuration-editing",
@@ -597,6 +597,10 @@ extensions package list
 						"path": "./translations/extensions/fsharp.i18n.json"
 					},
 					{
+						"id": "vscode.git",
+						"path": "./translations/extensions/git.i18n.json"
+					},
+					{
 						"id": "vscode.go",
 						"path": "./translations/extensions/go.i18n.json"
 					},
@@ -621,28 +625,20 @@ extensions package list
 						"path": "./translations/extensions/hlsl.i18n.json"
 					},
 					{
-						"id": "vscode.git",
-						"path": "./translations/extensions/git.i18n.json"
-					},
-					{
-						"id": "vscode.ini",
-						"path": "./translations/extensions/ini.i18n.json"
+						"id": "vscode.html-language-features",
+						"path": "./translations/extensions/html-language-features.i18n.json"
 					},
 					{
 						"id": "vscode.html",
 						"path": "./translations/extensions/html.i18n.json"
 					},
 					{
+						"id": "vscode.ini",
+						"path": "./translations/extensions/ini.i18n.json"
+					},
+					{
 						"id": "vscode.jake",
 						"path": "./translations/extensions/jake.i18n.json"
-					},
-					{
-						"id": "vscode.html-language-features",
-						"path": "./translations/extensions/html-language-features.i18n.json"
-					},
-					{
-						"id": "vscode.json-language-features",
-						"path": "./translations/extensions/json-language-features.i18n.json"
 					},
 					{
 						"id": "vscode.java",
@@ -653,6 +649,10 @@ extensions package list
 						"path": "./translations/extensions/javascript.i18n.json"
 					},
 					{
+						"id": "vscode.json-language-features",
+						"path": "./translations/extensions/json-language-features.i18n.json"
+					},
+					{
 						"id": "vscode.json",
 						"path": "./translations/extensions/json.i18n.json"
 					},
@@ -661,16 +661,16 @@ extensions package list
 						"path": "./translations/extensions/less.i18n.json"
 					},
 					{
-						"id": "vscode.make",
-						"path": "./translations/extensions/make.i18n.json"
+						"id": "vscode.log",
+						"path": "./translations/extensions/log.i18n.json"
 					},
 					{
 						"id": "vscode.lua",
 						"path": "./translations/extensions/lua.i18n.json"
 					},
 					{
-						"id": "vscode.log",
-						"path": "./translations/extensions/log.i18n.json"
+						"id": "vscode.make",
+						"path": "./translations/extensions/make.i18n.json"
 					},
 					{
 						"id": "vscode.markdown-basics",
@@ -679,6 +679,10 @@ extensions package list
 					{
 						"id": "vscode.markdown-language-features",
 						"path": "./translations/extensions/markdown-language-features.i18n.json"
+					},
+					{
+						"id": "vscode.merge-conflict",
+						"path": "./translations/extensions/merge-conflict.i18n.json"
 					},
 					{
 						"id": "vscode.npm",
@@ -697,28 +701,24 @@ extensions package list
 						"path": "./translations/extensions/php-language-features.i18n.json"
 					},
 					{
-						"id": "vscode.merge-conflict",
-						"path": "./translations/extensions/merge-conflict.i18n.json"
-					},
-					{
 						"id": "vscode.php",
 						"path": "./translations/extensions/php.i18n.json"
-					},
-					{
-						"id": "vscode.pug",
-						"path": "./translations/extensions/pug.i18n.json"
 					},
 					{
 						"id": "vscode.powershell",
 						"path": "./translations/extensions/powershell.i18n.json"
 					},
 					{
-						"id": "vscode.r",
-						"path": "./translations/extensions/r.i18n.json"
+						"id": "vscode.pug",
+						"path": "./translations/extensions/pug.i18n.json"
 					},
 					{
 						"id": "vscode.python",
 						"path": "./translations/extensions/python.i18n.json"
+					},
+					{
+						"id": "vscode.r",
+						"path": "./translations/extensions/r.i18n.json"
 					},
 					{
 						"id": "vscode.razor",
@@ -735,6 +735,10 @@ extensions package list
 					{
 						"id": "vscode.scss",
 						"path": "./translations/extensions/scss.i18n.json"
+					},
+					{
+						"id": "vscode.search-rg",
+						"path": "./translations/extensions/search-rg.i18n.json"
 					},
 					{
 						"id": "vscode.shaderlab",
@@ -801,8 +805,24 @@ extensions package list
 						"path": "./translations/extensions/typescript-basics.i18n.json"
 					},
 					{
+						"id": "vscode.typescript-language-features",
+						"path": "./translations/extensions/typescript-language-features.i18n.json"
+					},
+					{
 						"id": "vscode.vb",
 						"path": "./translations/extensions/vb.i18n.json"
+					},
+					{
+						"id": "vscode.vscode-chrome-debug-core",
+						"path": "./translations/extensions/vscode-chrome-debug-core.i18n.json"
+					},
+					{
+						"id": "ms-vscode.node-debug",
+						"path": "./translations/extensions/vscode-node-debug.i18n.json"
+					},
+					{
+						"id": "ms-vscode.node-debug2",
+						"path": "./translations/extensions/vscode-node-debug2.i18n.json"
 					},
 					{
 						"id": "vscode.xml",
@@ -811,26 +831,6 @@ extensions package list
 					{
 						"id": "vscode.yaml",
 						"path": "./translations/extensions/yaml.i18n.json"
-					},
-					{
-						"id": "vscode.typescript-language-features",
-						"path": "./translations/extensions/typescript-language-features.i18n.json"
-					},
-					{
-						"id": "vscode.search-rg",
-						"path": "./translations/extensions/search-rg.i18n.json"
-					},
-					{
-						"id": "msjsdiag.debugger-for-chrome",
-						"path": "./translations/extensions/vscode-chrome-debug.i18n.json"
-					},
-					{
-						"id": "ms-vscode.node-debug2",
-						"path": "./translations/extensions/vscode-node-debug2.i18n.json"
-					},
-					{
-						"id": "ms-vscode.node-debug",
-						"path": "./translations/extensions/vscode-node-debug.i18n.json"
 					}
 				]
 			}
@@ -846,13 +846,13 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>ms-python.python-2018.11.0
+>>>>>>>>>>>>>>>>>>>>>>>ms-python.python-2018.12.1
 {
 	"name": "python",
 	"displayName": "Python",
 	"description": "Linting, Debugging (multi-threaded, remote), Intellisense, code formatting, refactoring, unit tests, snippets, and more.",
-	"version": "2018.11.0",
-	"languageServerVersion": "0.1.65",
+	"version": "2018.12.1",
+	"languageServerVersion": "0.1.72",
 	"publisher": "ms-python",
 	"author": {
 		"name": "Microsoft Corporation"
@@ -892,9 +892,6 @@ extensions package list
 	"engines": {
 		"vscode": "^1.26.0"
 	},
-	"recommendations": [
-		"donjayamanne.jupyter"
-	],
 	"keywords": [
 		"python",
 		"django",
@@ -937,6 +934,9 @@ extensions package list
 		"onCommand:python.discoverTests",
 		"onCommand:python.datascience.showhistorypane",
 		"onCommand:python.datascience.importnotebook",
+		"onCommand:python.datascience.selectjupyteruri",
+		"onCommand:python.datascience.exportfileasnotebook",
+		"onCommand:python.datascience.exportfileandoutputasnotebook",
 		"onCommand:python.python.enableSourceMapSupport"
 	],
 	"main": "./out/client/extension",
@@ -1088,36 +1088,92 @@ extensions package list
 			{
 				"command": "python.datascience.runcurrentcell",
 				"title": "%python.command.python.datascience.runcurrentcell.title%",
-				"category": "Python",
-				"when": "python.datascience.hascodecells && python.datascience.featureenabled"
+				"category": "Python"
 			},
 			{
 				"command": "python.datascience.runcurrentcelladvance",
 				"title": "%python.command.python.datascience.runcurrentcelladvance.title%",
-				"category": "Python",
-				"when": "python.datascience.hascodecells && python.datascience.featureenabled"
+				"category": "Python"
 			},
 			{
 				"command": "python.datascience.showhistorypane",
 				"title": "%python.command.python.datascience.showhistorypane.title%",
-				"category": "Python",
-				"when": "python.datascience.featureenabled"
+				"category": "Python"
 			},
 			{
 				"command": "python.datascience.runallcells",
 				"title": "%python.command.python.datascience.runallcells.title%",
-				"category": "Python",
-				"when": "python.datascience.featureenabled"
+				"category": "Python"
 			},
 			{
 				"command": "python.datascience.runcell",
 				"title": "%python.command.python.datascience.runcell.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.datascience.selectjupyteruri",
+				"title": "%python.command.python.datascience.selectjupyteruri.title%",
 				"category": "Python",
 				"when": "python.datascience.featureenabled"
 			},
 			{
 				"command": "python.datascience.importnotebook",
 				"title": "%python.command.python.datascience.importnotebook.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.datascience.exportoutputasnotebook",
+				"title": "%python.command.python.datascience.exportoutputasnotebook.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.datascience.exportfileasnotebook",
+				"title": "%python.command.python.datascience.exportfileasnotebook.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.datascience.exportfileandoutputasnotebook",
+				"title": "%python.command.python.datascience.exportfileandoutputasnotebook.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.datascience.undocells",
+				"title": "%python.command.python.datascience.undocells.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.datascience.redocells",
+				"title": "%python.command.python.datascience.redocells.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.datascience.removeallcells",
+				"title": "%python.command.python.datascience.removeallcells.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.datascience.interruptkernel",
+				"title": "%python.command.python.datascience.interruptkernel.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.datascience.restartkernel",
+				"title": "%python.command.python.datascience.restartkernel.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.datascience.expandallcells",
+				"title": "%python.command.python.datascience.expandallcells.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.datascience.collapseallcells",
+				"title": "%python.command.python.datascience.collapseallcells.title%",
+				"category": "Python"
+			},
+			{
+				"command": "python.datascience.exportoutputasnotebook",
+				"title": "%python.command.python.datascience.exportoutputasnotebook.title%",
 				"category": "Python"
 			}
 		],
@@ -1162,19 +1218,29 @@ extensions package list
 					"group": "Python"
 				},
 				{
-					"when": "python.datascience.hascodecells && python.datascience.featureenabled",
+					"when": "editorFocus && editorLangId == python && python.datascience.hascodecells && python.datascience.featureenabled",
 					"command": "python.datascience.runcurrentcell",
 					"group": "Python"
 				},
 				{
-					"when": "python.datascience.hascodecells && python.datascience.featureenabled",
+					"when": "editorFocus && editorLangId == python && python.datascience.hascodecells && python.datascience.featureenabled",
 					"command": "python.datascience.runcurrentcelladvance",
 					"group": "Python"
 				},
 				{
-					"when": "resourceLangId == jupyter && python.datascience.featureenabled",
+					"when": "editorFocus && editorLangId == python && resourceLangId == jupyter && python.datascience.featureenabled",
 					"command": "python.datascience.importnotebook",
 					"group": "Python"
+				},
+				{
+					"when": "editorFocus && editorLangId == python && python.datascience.hascodecells && python.datascience.featureenabled",
+					"command": "python.datascience.exportfileasnotebook",
+					"group": "Python2"
+				},
+				{
+					"when": "editorFocus && editorLangId == python && python.datascience.hascodecells && python.datascience.featureenabled",
+					"command": "python.datascience.exportfileandoutputasnotebook",
+					"group": "Python2@2"
 				}
 			],
 			"explorer/context": [
@@ -1234,6 +1300,66 @@ extensions package list
 					"command": "python.datascience.importnotebook",
 					"title": "%python.command.python.datascience.importnotebook.title%",
 					"category": "Python"
+				},
+				{
+					"command": "python.datascience.exportfileasnotebook",
+					"title": "%python.command.python.datascience.exportfilesasnotebook.title%",
+					"category": "Python",
+					"when": "python.datascience.hascodecells && python.datascience.featureenabled"
+				},
+				{
+					"command": "python.datascience.exportfileandoutputasnotebook",
+					"title": "%python.command.python.datascience.exportfileandoutputasnotebook.title%",
+					"category": "Python",
+					"when": "python.datascience.hascodecells && python.datascience.featureenabled"
+				},
+				{
+					"command": "python.datascience.undocells",
+					"title": "%python.command.python.datascience.undocells.title%",
+					"category": "Python",
+					"when": "python.datascience.haveinteractivecells && python.datascience.featureenabled"
+				},
+				{
+					"command": "python.datascience.redocells",
+					"title": "%python.command.python.datascience.redocells.title%",
+					"category": "Python",
+					"when": "python.datascience.haveredoablecells && python.datascience.featureenabled"
+				},
+				{
+					"command": "python.datascience.removeallcells",
+					"title": "%python.command.python.datascience.removeallcells.title%",
+					"category": "Python",
+					"when": "python.datascience.haveinteractivecells && python.datascience.featureenabled"
+				},
+				{
+					"command": "python.datascience.interruptkernel",
+					"title": "%python.command.python.datascience.interruptkernel.title%",
+					"category": "Python",
+					"when": "python.datascience.haveinteractive && python.datascience.featureenabled"
+				},
+				{
+					"command": "python.datascience.restartkernel",
+					"title": "%python.command.python.datascience.restartkernel.title%",
+					"category": "Python",
+					"when": "python.datascience.haveinteractive && python.datascience.featureenabled"
+				},
+				{
+					"command": "python.datascience.expandallcells",
+					"title": "%python.command.python.datascience.expandallcells.title%",
+					"category": "Python",
+					"when": "python.datascience.haveinteractive && python.datascience.featureenabled"
+				},
+				{
+					"command": "python.datascience.collapseallcells",
+					"title": "%python.command.python.datascience.collapseallcells.title%",
+					"category": "Python",
+					"when": "python.datascience.haveinteractive && python.datascience.featureenabled"
+				},
+				{
+					"command": "python.datascience.exportoutputasnotebook",
+					"title": "%python.command.python.datascience.exportoutputasnotebook.title%",
+					"category": "Python",
+					"when": "python.datascience.haveinteractive && python.datascience.featureenabled"
 				}
 			]
 		},
@@ -1726,10 +1852,46 @@ extensions package list
 					"description": "Enable the experimental data science features in the python extension.",
 					"scope": "resource"
 				},
+				"python.dataScience.exportWithOutputEnabled": {
+					"type": "boolean",
+					"default": false,
+					"description": "Enable exporting a python file into a jupyter notebook and run all cells when doing so.",
+					"scope": "resource"
+				},
 				"python.dataScience.jupyterLaunchTimeout": {
 					"type": "number",
 					"default": 60000,
 					"description": "Amount of time (in ms) to wait for the Jupyter Notebook server to start.",
+					"scope": "resource"
+				},
+				"python.dataScience.jupyterServerURI": {
+					"type": "string",
+					"default": "local",
+					"description": "Select the Jupyter server URI to connect to. Select 'local' to launch a new Juypter server on the local machine.",
+					"scope": "resource"
+				},
+				"python.dataScience.notebookFileRoot": {
+					"type": "string",
+					"default": "${workspaceFolder}",
+					"description": "Set the root directory for loading files for the Python Interactive window.",
+					"scope": "resource"
+				},
+				"python.dataScience.changeDirOnImportExport": {
+					"type": "boolean",
+					"default": true,
+					"description": "When importing or exporting a Jupyter Notebook add a directory change command to allow relative path loading to work.",
+					"scope": "resource"
+				},
+				"python.dataScience.useDefaultConfigForJupyter": {
+					"type": "boolean",
+					"default": true,
+					"description": "When running Jupyter locally, create a default empty Jupyter config for the Python Interactive window",
+					"scope": "resource"
+				},
+				"python.dataScience.jupyterInterruptTimeout": {
+					"type": "number",
+					"default": 10000,
+					"description": "Amount of time (in ms) to wait for an interrupt before asking to restart the Jupyter kernel.",
 					"scope": "resource"
 				},
 				"python.disableInstallationCheck": {
@@ -2539,15 +2701,18 @@ extensions package list
 		]
 	},
 	"scripts": {
-		"package": "gulp clean:cleanExceptTests && gulp prePublishBundle && gulp updateVSCodeIgnore && gulp removePrePublishScript && vsce package && gulp restorePrePublishScript",
+		"package": "gulp clean && gulp prePublishBundle && vsce package",
 		"compile": "tsc -watch -p ./",
 		"compile-webviews-watch": "npx webpack --config webpack.datascience-ui.config.js --watch",
 		"dump-datascience-webpack-stats": "webpack --config webpack.datascience-ui.config.js --profile --json > tmp/ds-stats.json",
 		"compile-webviews": "gulp compile-webviews",
+		"compile-webviews-verbose": "npx webpack --config webpack.datascience-ui.config.js",
 		"postinstall": "node ./node_modules/vscode/bin/install",
 		"test": "node ./out/test/standardTest.js && node ./out/test/multiRootTest.js",
-		"test:unittests": "node ./out/test/unittests.js",
-		"test:functional": "node ./out/test/functionalTests.js",
+		"test:unittests": "mocha --opts ./build/.mocha.unittests.opts --grep='PlatformService'",
+		"test:unittests:cover": "nyc --nycrc-path ./build/.nycrc npm run test:unittests",
+		"test:functional": "mocha --opts ./build/.mocha.functional.opts",
+		"test:functional:cover": "nyc--nycrc-path ./build/.nycrc npm run test:functional",
 		"testDebugger": "node ./out/test/debuggerTest.js",
 		"testSingleWorkspace": "node ./out/test/standardTest.js",
 		"testMultiWorkspace": "node ./out/test/multiRootTest.js",
@@ -2556,11 +2721,9 @@ extensions package list
 		"lint-staged": "node gulpfile.js",
 		"lint": "tslint src/**/*.ts -t verbose",
 		"clean": "gulp clean",
-		"clean:ptvsd": "gulp clean:ptvsd",
 		"cover:enable": "gulp cover:enable",
 		"debugger-coverage": "gulp debugger-coverage",
-		"cover:inlinesource": "gulp inlinesource",
-		"vscode:prepublish_Old": "gulp checkNativeDependencies && gulp check-datascience-dependencies && gulp compile && webpack"
+		"cover:inlinesource": "gulp inlinesource"
 	},
 	"dependencies": {
 		"@jupyterlab/services": "^3.1.4",
@@ -2572,12 +2735,11 @@ extensions package list
 		"fs-extra": "^4.0.3",
 		"fuzzy": "^0.1.3",
 		"get-port": "^3.2.0",
-		"getos": "^3.1.0",
 		"glob": "^7.1.2",
 		"iconv-lite": "^0.4.21",
 		"inversify": "^4.11.1",
 		"line-by-line": "^0.1.6",
-		"lodash": "^4.17.5",
+		"lodash": "^4.17.11",
 		"md5": "^2.2.1",
 		"minimatch": "^3.0.4",
 		"named-js-regexp": "^1.3.3",
@@ -2694,6 +2856,7 @@ extensions package list
 		"mocha": "^5.0.4",
 		"mocha-junit-reporter": "^1.17.0",
 		"node-has-native-dependencies": "^1.0.2",
+		"nyc": "^13.1.0",
 		"prismjs": "^1.15.0",
 		"raw-loader": "^0.5.1",
 		"react": "^16.5.2",
@@ -2716,7 +2879,7 @@ extensions package list
 		"tslint-microsoft-contrib": "^5.0.3",
 		"typed-react-markdown": "^0.1.0",
 		"typemoq": "^2.1.0",
-		"typescript": "^3.1.3",
+		"typescript": "^3.2.2",
 		"typescript-formatter": "^7.1.0",
 		"url-loader": "^1.1.1",
 		"uuid": "^3.3.2",
@@ -2738,10 +2901,10 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>ms-vscode.go-0.7.0
+>>>>>>>>>>>>>>>>>>>>>>>ms-vscode.go-0.8.0
 {
 	"name": "Go",
-	"version": "0.7.0",
+	"version": "0.8.0",
 	"publisher": "ms-vscode",
 	"description": "Rich Go language support for Visual Studio Code",
 	"author": {
@@ -2791,10 +2954,10 @@ extensions package list
 		"fs-extra": "^7.0.0",
 		"tslint": "^5.11.0",
 		"typescript": "^3.1.3",
-		"vscode": "^1.1.21"
+		"vscode": "^1.1.26"
 	},
 	"engines": {
-		"vscode": "^1.22.0"
+		"vscode": "^1.23.0"
 	},
 	"activationEvents": [
 		"onLanguage:go",
@@ -3236,6 +3399,11 @@ extensions package list
 								],
 								"description": "Delve Api Version to use. Default value is 2.",
 								"default": 2
+							},
+							"stackTraceDepth": {
+								"type": "number",
+								"description": "Maximum depth of stack trace collected from Delve",
+								"default": 50
 							}
 						}
 					}
@@ -3540,6 +3708,19 @@ extensions package list
 					"description": "Environment variables that will passed to the processes that run the Go tools (e.g. CGO_CFLAGS)",
 					"scope": "resource"
 				},
+				"go.gocodeFlags": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"-builtin",
+						"-ignore-case",
+						"-unimported-packages"
+					],
+					"description": "Additional flags to pass to gocode.",
+					"scope": "resource"
+				},
 				"go.gocodeAutoBuild": {
 					"type": "boolean",
 					"default": false,
@@ -3608,11 +3789,60 @@ extensions package list
 							"type": "boolean",
 							"default": false,
 							"description": "If true, the language server will provide code completion results."
+						},
+						"rename": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, the language server will be used for the Rename feature."
+						},
+						"goToDefinition": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, the language server will be used for the Go to/Peek Definition feature."
+						},
+						"goToTypeDefinition": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, the language server will be used for the Go to/Peek Type Definition feature."
+						},
+						"hover": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, the language server will be used for the hover feature."
+						},
+						"findReferences": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, the language server will be used for the Find/Peek References feature."
+						},
+						"signatureHelp": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, the language server will be used for the Signature Help/Parameter Hints feature."
+						},
+						"documentSymbols": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, the language server will be used for the Go to Document Symbols/Outline/Breadcrumbs feature."
+						},
+						"workspaceSymbols": {
+							"type": "boolean",
+							"default": false,
+							"description": "If true, the language server will be used for the Go to Workspace Symbols feature."
 						}
 					},
 					"default": {
 						"format": false,
-						"autoComplete": false
+						"autoComplete": false,
+						"rename": true,
+						"goToDefinition": true,
+						"hover": true,
+						"signatureHelp": true,
+						"goToTypeDefinition": true,
+						"goToImplementation": true,
+						"documentSymbols": true,
+						"workspaceSymbols": true,
+						"findReferences": true
 					},
 					"description": "Use this setting to enable/disable experimental features from the language server."
 				},
