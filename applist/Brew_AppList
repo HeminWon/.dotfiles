@@ -3,6 +3,7 @@ autoconf
 automake
 coreutils
 dep
+elasticsearch
 expect
 gdbm
 gettext
@@ -11,6 +12,7 @@ gnupg
 gnutls
 go
 icu4c
+kibana
 libassuan
 libffi
 libgcrypt

@@ -1,7 +1,9 @@
 tap "buo/cask-upgrade"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
+cask "java8"
 # C/C++ resolver library and DNS resolver utilities
 brew "adns"
 # Automatic configure script builder
@@ -14,6 +16,8 @@ brew "coreutils"
 brew "go"
 # Go dependency management tool
 brew "dep"
+# Distributed search & analytics engine
+brew "elasticsearch"
 # Program that can automate interactive applications
 brew "expect"
 # GNU database manager
@@ -40,6 +44,8 @@ brew "libgcrypt"
 brew "libksba"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Analytics and search dashboard for Elasticsearch
+brew "kibana"
 # Generic library support script
 brew "libtool"
 # YAML Parser
@@ -99,7 +105,6 @@ cask "sourcetree"
 cask "typora"
 cask "xmind"
 mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "OhMyStar2", id: 1218642292

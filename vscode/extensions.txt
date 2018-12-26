@@ -4260,11 +4260,11 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>ms-vscode.powershell-1.10.1
+>>>>>>>>>>>>>>>>>>>>>>>ms-vscode.powershell-1.10.2
 {
 	"name": "PowerShell",
 	"displayName": "PowerShell",
-	"version": "1.10.1",
+	"version": "1.10.2",
 	"publisher": "ms-vscode",
 	"description": "Develop PowerShell scripts in Visual Studio Code!",
 	"engines": {
