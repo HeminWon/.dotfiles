@@ -514,6 +514,238 @@ extensions package list
 	}
 }
 
+>>>>>>>>>>>>>>>>>>>>>>>mechatroner.rainbow-csv-0.8.0
+{
+	"name": "rainbow-csv",
+	"displayName": "Rainbow CSV",
+	"description": "Highlight CSV and TSV files in different colors, Run SQL-like queries",
+	"version": "0.8.0",
+	"publisher": "mechatroner",
+	"icon": "rainbow_csv_logo.png",
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"keywords": [
+		"csv",
+		"tsv",
+		"highlight"
+	],
+	"categories": [
+		"Other",
+		"Languages"
+	],
+	"activationEvents": [
+		"onLanguage:csv",
+		"onLanguage:tsv",
+		"onLanguage:csv (semicolon)",
+		"onLanguage:csv (pipe)",
+		"onLanguage:plaintext",
+		"onCommand:extension.QueryHere",
+		"onCommand:extension.RBQL",
+		"onCommand:extension.RainbowSeparator",
+		"onCommand:extension.SampleHead",
+		"onCommand:extension.SampleTail"
+	],
+	"main": "./extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Rainbow CSV",
+			"properties": {
+				"rainbow_csv.enable_auto_csv_lint": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enables automatic linting/checking of opened csv files"
+				},
+				"rainbow_csv.enable_separator_autodetection": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enables automatic content based separator autodetection"
+				},
+				"rainbow_csv.enable_tooltip": {
+					"type": "boolean",
+					"default": true,
+					"description": "Enables column-info tooltip on hover"
+				},
+				"rainbow_csv.enable_tooltip_column_names": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show column names in tooltip"
+				},
+				"rainbow_csv.enable_tooltip_warnings": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show warnings in tooltip"
+				},
+				"rainbow_csv.autodetect_separators": {
+					"type": "array",
+					"default": [
+						"\t",
+						",",
+						";"
+					],
+					"description": "Enables automatic content-based separator autodetection for specified list of separators.",
+					"items": {
+						"type": "string",
+						"description": "Separator"
+					}
+				}
+			}
+		},
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorHasSelection",
+					"command": "extension.RainbowSeparator",
+					"group": "rainbow_csv"
+				}
+			],
+			"explorer/context": [
+				{
+					"command": "extension.SampleHead",
+					"group": "rainbow_csv"
+				},
+				{
+					"command": "extension.SampleTail",
+					"group": "rainbow_csv"
+				}
+			]
+		},
+		"languages": [
+			{
+				"id": "csv",
+				"aliases": [
+					"CSV",
+					"csv"
+				],
+				"extensions": [
+					".csv"
+				]
+			},
+			{
+				"id": "tsv",
+				"aliases": [
+					"TSV",
+					"tsv"
+				],
+				"extensions": [
+					".tsv",
+					".tab"
+				]
+			},
+			{
+				"id": "csv (pipe)",
+				"aliases": [
+					"CSV (pipe)",
+					"csv (pipe)"
+				],
+				"extensions": []
+			},
+			{
+				"id": "csv (semicolon)",
+				"aliases": [
+					"CSV (semicolon)",
+					"csv (semicolon)"
+				],
+				"extensions": []
+			}
+		],
+		"commands": [
+			{
+				"command": "extension.CSVLint",
+				"title": "CSV Lint"
+			},
+			{
+				"command": "extension.SetVirtualHeader",
+				"category": "Rainbow CSV",
+				"title": "Set virtual header"
+			},
+			{
+				"command": "extension.RBQL",
+				"category": "Rainbow CSV",
+				"title": "RBQL"
+			},
+			{
+				"command": "extension.SetJoinTableName",
+				"category": "Rainbow CSV",
+				"title": "Set join table name for RBQL"
+			},
+			{
+				"command": "extension.ColumnEditBefore",
+				"category": "Rainbow CSV",
+				"title": "Column edit before"
+			},
+			{
+				"command": "extension.ColumnEditAfter",
+				"category": "Rainbow CSV",
+				"title": "Column edit after"
+			},
+			{
+				"command": "extension.ColumnEditSelect",
+				"category": "Rainbow CSV",
+				"title": "Column edit select"
+			},
+			{
+				"command": "extension.RainbowSeparator",
+				"title": "Set as Rainbow separator"
+			},
+			{
+				"command": "extension.RainbowSeparatorOff",
+				"title": "RainbowSeparatorOff"
+			},
+			{
+				"command": "extension.QueryHere",
+				"title": "QueryHere"
+			},
+			{
+				"command": "extension.SampleHead",
+				"title": "Preview big CSV: head"
+			},
+			{
+				"command": "extension.SampleTail",
+				"title": "Preview big CSV: tail"
+			}
+		],
+		"grammars": [
+			{
+				"language": "csv",
+				"scopeName": "text.csv",
+				"path": "./syntaxes/csv.tmLanguage.json"
+			},
+			{
+				"language": "tsv",
+				"scopeName": "text.tsv",
+				"path": "./syntaxes/tsv.tmLanguage.json"
+			},
+			{
+				"language": "csv (pipe)",
+				"scopeName": "text.psv",
+				"path": "./syntaxes/pipe_simple.tmLanguage.json"
+			},
+			{
+				"language": "csv (semicolon)",
+				"scopeName": "text.scsv",
+				"path": "./syntaxes/scsv.tmLanguage.json"
+			}
+		]
+	},
+	"capabilities": {
+		"hoverProvider": "true"
+	},
+	"devDependencies": {
+		"vscode": "^1.1.6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mechatroner/vscode_rainbow_csv"
+	},
+	"__metadata": {
+		"id": "3792588c-3d35-442d-91ea-fe6a755e8155",
+		"publisherId": "0d5438b6-325a-4f88-aa28-6192aa2cf2a6",
+		"publisherDisplayName": "mechatroner"
+	}
+}
+
 >>>>>>>>>>>>>>>>>>>>>>>ms-ceintl.vscode-language-pack-zh-hans-1.30.2
 {
 	"name": "vscode-language-pack-zh-hans",
@@ -5556,12 +5788,12 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>ryu1kn.edit-with-shell-1.0.1
+>>>>>>>>>>>>>>>>>>>>>>>ryu1kn.edit-with-shell-1.1.0
 {
 	"name": "edit-with-shell",
 	"displayName": "Edit with Shell Command",
 	"description": "Leverage your favourite shell commands to edit text",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"publisher": "ryu1kn",
 	"license": "SEE LICENSE IN LICENSE.txt",
 	"icon": "images/edit-with-shell.png",
@@ -5574,7 +5806,7 @@ extensions package list
 		"url": "https://github.com/ryu1kn/vscode-edit-with-shell.git"
 	},
 	"engines": {
-		"vscode": "^1.19.0"
+		"vscode": "^1.26.0"
 	},
 	"categories": [
 		"Other"
@@ -5586,7 +5818,12 @@ extensions package list
 	],
 	"activationEvents": [
 		"onCommand:editWithShell.clearCommandHistory",
-		"onCommand:editWithShell.runCommand"
+		"onCommand:editWithShell.runCommand",
+		"onCommand:editWithShell.runQuickCommand1",
+		"onCommand:editWithShell.runQuickCommand2",
+		"onCommand:editWithShell.runQuickCommand3",
+		"onCommand:editWithShell.runQuickCommand4",
+		"onCommand:editWithShell.runQuickCommand5"
 	],
 	"main": "./out/extension",
 	"contributes": {
@@ -5599,6 +5836,31 @@ extensions package list
 			{
 				"command": "editWithShell.runCommand",
 				"title": "Run command",
+				"category": "EditWithShell"
+			},
+			{
+				"command": "editWithShell.runQuickCommand1",
+				"title": "Run quick command 1",
+				"category": "EditWithShell"
+			},
+			{
+				"command": "editWithShell.runQuickCommand2",
+				"title": "Run quick command 2",
+				"category": "EditWithShell"
+			},
+			{
+				"command": "editWithShell.runQuickCommand3",
+				"title": "Run quick command 3",
+				"category": "EditWithShell"
+			},
+			{
+				"command": "editWithShell.runQuickCommand4",
+				"title": "Run quick command 4",
+				"category": "EditWithShell"
+			},
+			{
+				"command": "editWithShell.runQuickCommand5",
+				"title": "Run quick command 5",
 				"category": "EditWithShell"
 			}
 		],
@@ -5614,6 +5876,46 @@ extensions package list
 						"workspaceRoot"
 					],
 					"default": "currentFile"
+				},
+				"editWithShell.quickCommand1": {
+					"description": "ID of a favorite command triggered by quick command 1",
+					"type": "string"
+				},
+				"editWithShell.quickCommand2": {
+					"description": "ID of a favorite command triggered by quick command 2",
+					"type": "string"
+				},
+				"editWithShell.quickCommand3": {
+					"description": "ID of a favorite command triggered by quick command 3",
+					"type": "string"
+				},
+				"editWithShell.quickCommand4": {
+					"description": "ID of a favorite command triggered by quick command 4",
+					"type": "string"
+				},
+				"editWithShell.quickCommand5": {
+					"description": "ID of a favorite command triggered by quick command 5",
+					"type": "string"
+				},
+				"editWithShell.favoriteCommands": {
+					"description": "Commands that can be activated by quick commands",
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "string"
+							},
+							"command": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"id",
+							"command"
+						]
+					},
+					"default": []
 				},
 				"editWithShell.processEntireTextIfNoneSelected": {
 					"description": "Pipe the entire text to the shell command if no text is selected",
@@ -5684,14 +5986,14 @@ extensions package list
 	},
 	"devDependencies": {
 		"@types/mocha": "^5.2.5",
-		"@types/node": "^7.0.67",
+		"@types/node": "^8.10.39",
 		"mocha": "^5.2.0",
-		"nyc": "^12.0.2",
-		"testdouble": "^3.8.1",
-		"ts-node": "^7.0.0",
-		"tslint": "^5.11.0",
-		"typescript": "^3.0.1",
-		"vscode": "^1.1.18"
+		"nyc": "^13.1.0",
+		"testdouble": "^3.9.1",
+		"ts-node": "^7.0.1",
+		"tslint": "^5.12.0",
+		"typescript": "^3.2.2",
+		"vscode": "^1.1.26"
 	},
 	"__metadata": {
 		"id": "370f75d3-459d-498a-80ed-e380c87750c5",
