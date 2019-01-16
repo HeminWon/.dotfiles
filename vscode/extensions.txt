@@ -174,6 +174,49 @@ extensions package list
 	}
 }
 
+>>>>>>>>>>>>>>>>>>>>>>>be5invis.toml-0.0.3
+{
+	"name": "toml",
+	"displayName": "TOML Language Support",
+	"description": "TOML language support",
+	"version": "0.0.3",
+	"publisher": "be5invis",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "toml",
+				"aliases": [
+					"TOML",
+					"toml"
+				],
+				"extensions": [
+					".toml",
+					".tml"
+				],
+				"configuration": "./toml.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "toml",
+				"scopeName": "source.toml",
+				"path": "./syntaxes/toml.tmLanguage"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "e79fd228-c27f-423b-a8fc-b006fa99ed64",
+		"publisherId": "8c148d69-cbc6-480b-bd8b-a42715926324",
+		"publisherDisplayName": "be5invis"
+	}
+}
+
 >>>>>>>>>>>>>>>>>>>>>>>formulahendry.code-runner-0.9.5
 {
 	"name": "code-runner",

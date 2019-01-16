@@ -2,6 +2,7 @@
   <component name="RecentDirectoryProjectsManager">
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/go/src/DoraemonServer" />
         <option value="$USER_HOME$/go/src/DawnServer" />
         <option value="$USER_HOME$/go/src/awesomeProject" />
         <option value="$USER_HOME$/go/src/go-config" />
@@ -20,7 +21,6 @@
         <option value="$USER_HOME$/Desktop/golang-rpc-example/client" />
         <option value="$USER_HOME$/Desktop/Meizar/code" />
         <option value="$USER_HOME$/Desktop/ydict" />
-        <option value="/private/var/folders/52/5qd8yg5s6mbg83n1c79yy0xm0000gp/T/hello.go" />
       </list>
     </option>
     <option name="pid" value="" />
@@ -186,8 +186,19 @@
               <option name="build" value="GO-181.4892.55" />
               <option name="productionCode" value="GO" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1532608983637" />
-              <option name="buildTimestamp" value="1525957671127" />
+              <option name="projectOpenTimestamp" value="1547204940532" />
+              <option name="buildTimestamp" value="1525957667827" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/DoraemonServer">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4892.55" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1547213605189" />
+              <option name="buildTimestamp" value="1525957671144" />
             </RecentProjectMetaInfo>
           </value>
         </entry>

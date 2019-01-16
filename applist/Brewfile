@@ -1,4 +1,5 @@
 tap "buo/cask-upgrade"
+tap "go-delve/delve"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"

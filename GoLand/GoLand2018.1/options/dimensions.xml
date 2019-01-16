@@ -1,7 +1,7 @@
 <application>
   <component name="DimensionService">
     <location key="SettingsEditor.0.0.3360.2100@192dpi" x="652" y="160" />
-    <location key="WELCOME_SCREEN.0.0.3360.2100@192dpi" x="2326" y="1422" />
+    <location key="WELCOME_SCREEN.0.0.3360.2100@192dpi" x="1678" y="906" />
     <location key="#GOPATH.0.0.3360.2100@192dpi" x="1280" y="324" />
     <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.3360.2100@192dpi" x="608" y="316" />
     <location key="#hello.go.0.0.3360.2100@192dpi" x="1174" y="302" />

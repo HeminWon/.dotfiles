@@ -2,18 +2,10 @@
   <component name="FileBasedIndex">
     <option name="registeredIndices">
       <list>
-        <option value="es6.exported.index" />
-        <option value="go.type.spec.inheritance" />
-        <option value="go.typeSpec.redeclared" />
-        <option value="go.method.spec.inheritance" />
-        <option value="go.spec.fingerprint" />
-        <option value="go.method.fingerprint" />
-        <option value="go.method" />
-        <option value="go.packages" />
-        <option value="go.type.name" />
         <option value="go.function" />
         <option value="go.all.private.name" />
         <option value="go.all.name" />
+        <option value="markdown.header" />
         <option value="sql.names" />
         <option value="sql.column.name" />
         <option value="sql.table.shortName" />
@@ -22,6 +14,7 @@
         <option value="js.nonglobal.symbol.index" />
         <option value="ts.local.classes" />
         <option value="es6.assignment.index" />
+        <option value="es6.exported.index" />
         <option value="js.exported.index" />
         <option value="js.global.symbol.index" />
         <option value="amd.requirePaths.index" />
@@ -42,6 +35,13 @@
         <option value="JS.global.qualified.elements" />
         <option value="js.element.qualifiedName" />
         <option value="js.qualified.shortName" />
+        <option value="bash.var" />
+        <option value="bash.vardef" />
+        <option value="bash.scriptCommandReference" />
+        <option value="bash.includers" />
+        <option value="bash.included" />
+        <option value="bash.script.name" />
+        <option value="bash.function.name" />
         <option value="Css.custom.mixin" />
         <option value="Css.custom.property" />
         <option value="Css.attr" />
@@ -50,14 +50,14 @@
         <option value="Css.ampersand.selector" />
         <option value="dom.elementClass" />
         <option value="dom.namespaceKey" />
-        <option value="markdown.header" />
-        <option value="bash.var" />
-        <option value="bash.vardef" />
-        <option value="bash.scriptCommandReference" />
-        <option value="bash.includers" />
-        <option value="bash.included" />
-        <option value="bash.script.name" />
-        <option value="bash.function.name" />
+        <option value="go.type.spec.inheritance" />
+        <option value="go.typeSpec.redeclared" />
+        <option value="go.method.spec.inheritance" />
+        <option value="go.spec.fingerprint" />
+        <option value="go.method.fingerprint" />
+        <option value="go.method" />
+        <option value="go.packages" />
+        <option value="go.type.name" />
       </list>
     </option>
   </component>

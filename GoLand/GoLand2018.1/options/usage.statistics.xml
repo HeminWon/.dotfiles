@@ -30,10 +30,10 @@
       <entry action="DialogOkAction ⏎" count="53" />
       <entry action="Diff.ShowDiff" count="1" />
       <entry action="EditSource" count="24" />
-      <entry action="EditorBackSpace" count="9575" />
+      <entry action="EditorBackSpace" count="9584" />
       <entry action="EditorChooseLookupItem" count="1960" />
       <entry action="EditorCodeBlockStart" count="3" />
-      <entry action="EditorCopy" count="778" />
+      <entry action="EditorCopy" count="786" />
       <entry action="EditorCut" count="71" />
       <entry action="EditorDeleteLine" count="6" />
       <entry action="EditorDown" count="1847" />
@@ -47,7 +47,7 @@
       <entry action="EditorLineEndWithSelection" count="9" />
       <entry action="EditorLineStart" count="43" />
       <entry action="EditorLineStartWithSelection" count="3" />
-      <entry action="EditorPaste" count="796" />
+      <entry action="EditorPaste" count="798" />
       <entry action="EditorPreviousWord" count="1" />
       <entry action="EditorRight" count="2698" />
       <entry action="EditorRightWithSelection" count="18" />
@@ -60,8 +60,8 @@
       <entry action="EvaluateExpression" count="5" />
       <entry action="ExpandAllRegions" count="1" />
       <entry action="ExpandRegion" count="44" />
-      <entry action="Find" count="122" />
-      <entry action="FindInPath" count="106" />
+      <entry action="Find" count="125" />
+      <entry action="FindInPath" count="109" />
       <entry action="FindNext" count="2" />
       <entry action="FindPrevious" count="1" />
       <entry action="FindUsages" count="3" />
@@ -71,8 +71,8 @@
       <entry action="Go.NewGoFile" count="28" />
       <entry action="GotoBookmark3" count="4" />
       <entry action="GotoClass" count="2" />
-      <entry action="GotoDeclaration" count="1653" />
-      <entry action="GotoFile" count="24" />
+      <entry action="GotoDeclaration" count="1661" />
+      <entry action="GotoFile" count="26" />
       <entry action="GotoImplementation" count="2" />
       <entry action="GotoLine" count="1" />
       <entry action="GotoNextElementUnderCaretUsage" count="53" />
@@ -130,7 +130,7 @@
       <entry action="ToggleBookmark4" count="1" />
       <entry action="ToggleBookmarkWithMnemonic" count="2" />
       <entry action="ToggleFullScreen" count="6" />
-      <entry action="ToggleLineBreakpoint" count="664" />
+      <entry action="ToggleLineBreakpoint" count="665" />
       <entry action="TypeHierarchy" count="1" />
       <entry action="Vcs.CopyRevisionNumberAction" count="1" />
       <entry action="Vcs.Log.IntelliSortChooser" count="2" />
@@ -165,13 +165,13 @@
     <feature id="switcher" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.complete.statement" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.goto.inspection" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="navigation.popup.file" count="24" last-shown="0" last-used="1531996606806" shown-count="0" />
+    <feature id="navigation.popup.file" count="26" last-shown="0" last-used="1546584755013" shown-count="0" />
     <feature id="navigation.popup.wildcards" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="refactoring.introduceVariable" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.javadoc.external" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.surroundwith.expression" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.recent.files" count="2" last-shown="0" last-used="1527048228861" shown-count="0" />
-    <feature id="navigation.goto.declaration" count="1653" last-shown="0" last-used="1532608538882" shown-count="0" />
+    <feature id="navigation.goto.declaration" count="1661" last-shown="0" last-used="1547213584689" shown-count="0" />
     <feature id="scratch" count="2" last-shown="0" last-used="1527257029250" shown-count="0" />
     <feature id="editing.completion.finishByDotEtc" count="6" last-shown="1532606795289" last-used="1530185168699" shown-count="41" />
     <feature id="navigation.goto.implementation" count="2" last-shown="0" last-used="1528712530645" shown-count="0" />
@@ -192,7 +192,7 @@
     <feature id="editing.completion.postfix" count="3" last-shown="0" last-used="1530184713422" shown-count="0" />
     <feature id="refactoring.introduceVariable.incompleteStatement" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="dir.diff" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="editing.select.word" count="2192" last-shown="0" last-used="1532608486016" shown-count="0" />
+    <feature id="editing.select.word" count="2210" last-shown="0" last-used="1547213564921" shown-count="0" />
     <feature id="editing.add.carets.using.double.ctrl" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.quickjavadoc.lookup" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="ui.scheme.quickswitch" count="0" last-shown="0" last-used="0" shown-count="0" />
@@ -267,7 +267,7 @@
       <entry shortcut="Alt+Shift+Up" count="6" />
       <entry shortcut="Alt+Slash" count="2" />
       <entry shortcut="Alt+Up" count="4" />
-      <entry shortcut="Backspace" count="9588" />
+      <entry shortcut="Backspace" count="9597" />
       <entry shortcut="Ctrl+3" count="4" />
       <entry shortcut="Ctrl+A" count="2" />
       <entry shortcut="Ctrl+Alt+H" count="61" />
@@ -281,8 +281,8 @@
       <entry shortcut="Ctrl+Shift+D" count="1" />
       <entry shortcut="Ctrl+Shift+R" count="208" />
       <entry shortcut="Ctrl+V" count="1" />
-      <entry shortcut="Down" count="2486" />
-      <entry shortcut="Enter" count="5262" />
+      <entry shortcut="Down" count="2539" />
+      <entry shortcut="Enter" count="5280" />
       <entry shortcut="Escape" count="6" />
       <entry shortcut="F12" count="3" />
       <entry shortcut="F6" count="1" />
@@ -297,7 +297,7 @@
       <entry shortcut="Meta+Alt+R" count="2" />
       <entry shortcut="Meta+B" count="5" />
       <entry shortcut="Meta+Backspace" count="24" />
-      <entry shortcut="Meta+C" count="786" />
+      <entry shortcut="Meta+C" count="794" />
       <entry shortcut="Meta+Close Bracket" count="434" />
       <entry shortcut="Meta+Ctrl+F" count="6" />
       <entry shortcut="Meta+Ctrl+R" count="6" />
@@ -307,7 +307,7 @@
       <entry shortcut="Meta+E" count="2" />
       <entry shortcut="Meta+Enter" count="5" />
       <entry shortcut="Meta+Equals" count="36" />
-      <entry shortcut="Meta+F" count="131" />
+      <entry shortcut="Meta+F" count="134" />
       <entry shortcut="Meta+F1" count="23" />
       <entry shortcut="Meta+F2" count="1" />
       <entry shortcut="Meta+G" count="2" />
@@ -327,11 +327,11 @@
       <entry shortcut="Meta+Shift+Close Bracket" count="3" />
       <entry shortcut="Meta+Shift+Down" count="38" />
       <entry shortcut="Meta+Shift+Equals" count="1" />
-      <entry shortcut="Meta+Shift+F" count="112" />
+      <entry shortcut="Meta+Shift+F" count="115" />
       <entry shortcut="Meta+Shift+G" count="1" />
       <entry shortcut="Meta+Shift+Left" count="3" />
       <entry shortcut="Meta+Shift+N" count="2" />
-      <entry shortcut="Meta+Shift+O" count="31" />
+      <entry shortcut="Meta+Shift+O" count="33" />
       <entry shortcut="Meta+Shift+Open Bracket" count="4" />
       <entry shortcut="Meta+Shift+R" count="2" />
       <entry shortcut="Meta+Shift+Right" count="9" />
@@ -339,7 +339,7 @@
       <entry shortcut="Meta+Shift+Up" count="47" />
       <entry shortcut="Meta+Slash" count="299" />
       <entry shortcut="Meta+Up" count="16" />
-      <entry shortcut="Meta+V" count="808" />
+      <entry shortcut="Meta+V" count="810" />
       <entry shortcut="Meta+X" count="71" />
       <entry shortcut="Meta+Z" count="686" />
       <entry shortcut="Right" count="2695" />
@@ -351,7 +351,7 @@
       <entry shortcut="Shift+Right" count="18" />
       <entry shortcut="Shift+Shift" count="14" />
       <entry shortcut="Tab" count="284" />
-      <entry shortcut="Up" count="1338" />
+      <entry shortcut="Up" count="1343" />
     </counts>
   </component>
   <component name="ToolbarClicksCollector">
@@ -433,7 +433,7 @@
     <counts>
       <entry feature="AbstractNewProjectStep.Go" count="1" />
       <entry feature="CreateFile.CreateFileAction" count="7" />
-      <entry feature="StripeButton[Version Control].shown" count="10" />
+      <entry feature="StripeButton[Version Control].shown" count="11" />
       <entry feature="diff.DiffSettings.Tool.Side-by-side viewer" count="1" />
       <entry feature="diff.DiffSettings.Tool.Unified viewer" count="1" />
       <entry feature="execute.BashConfigurationType.Run" count="294" />
@@ -449,14 +449,14 @@
       <entry feature="ide.settings.GOPATH" count="2" />
       <entry feature="ide.settings.GOROOT" count="9" />
       <entry feature="ide.settings.Plugins" count="3" />
-      <entry feature="ideaapp.started" count="103" />
+      <entry feature="ideaapp.started" count="108" />
       <entry feature="json.schema.builtin.completion" count="78" />
       <entry feature="terminal.mac" count="93" />
       <entry feature="vcs.history." count="20" />
       <entry feature="welcome.screen.WelcomeScreen.Configure" count="3" />
       <entry feature="welcome.screen.WelcomeScreen.Documentation" count="1" />
       <entry feature="welcome.screen.WelcomeScreen.GetFromVcs" count="1" />
-      <entry feature="welcome.screen.WelcomeScreen.OpenDirectoryProject" count="31" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenDirectoryProject" count="32" />
       <entry feature="welcome.screen.WelcomeScreen.Settings" count="2" />
       <entry feature="welcome.screen.null" count="2" />
     </counts>
