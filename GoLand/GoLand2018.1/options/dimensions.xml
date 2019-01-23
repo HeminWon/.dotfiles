@@ -44,20 +44,20 @@
     <location key="MultipleFileMergeDialog.0.0.3360.2100@192dpi" x="1068" y="548" />
     <location key="DiffContextDialog.0.0.3360.2100@192dpi" x="336" y="230" />
     <location key="#xdebugger.XInspectDialog.1680.0.1920.1080" x="2498" y="321" />
-    <size key="GridCell.Tab.0.left.0.0.3360.2100@192dpi" width="3276" height="608" />
-    <size key="GridCell.Tab.0.center.0.0.3360.2100@192dpi" width="3276" height="608" />
-    <size key="GridCell.Tab.0.right.0.0.3360.2100@192dpi" width="3276" height="608" />
-    <size key="GridCell.Tab.0.bottom.0.0.3360.2100@192dpi" width="3276" height="608" />
+    <size key="GridCell.Tab.0.left.0.0.3360.2100@192dpi" width="3276" height="560" />
+    <size key="GridCell.Tab.0.center.0.0.3360.2100@192dpi" width="3276" height="560" />
+    <size key="GridCell.Tab.0.right.0.0.3360.2100@192dpi" width="3276" height="560" />
+    <size key="GridCell.Tab.0.bottom.0.0.3360.2100@192dpi" width="3276" height="560" />
     <size key="find.popup.0.0.3360.2100@192dpi" width="1430" height="1290" />
     <size key="GridCell.Tab.1.left.0.0.3360.2100@192dpi" width="3276" height="608" />
     <size key="GridCell.Tab.1.center.0.0.3360.2100@192dpi" width="3276" height="608" />
     <size key="GridCell.Tab.1.right.0.0.3360.2100@192dpi" width="3276" height="608" />
     <size key="GridCell.Tab.1.bottom.0.0.3360.2100@192dpi" width="3276" height="608" />
     <size key="DebuggerActiveHint.0.0.3360.2100@192dpi" width="1232" height="882" />
-    <size key="GridCell.Tab.0.left.1680.0.1920.1080" width="1878" height="314" />
-    <size key="GridCell.Tab.0.center.1680.0.1920.1080" width="1878" height="314" />
-    <size key="GridCell.Tab.0.right.1680.0.1920.1080" width="1878" height="314" />
-    <size key="GridCell.Tab.0.bottom.1680.0.1920.1080" width="1878" height="314" />
+    <size key="GridCell.Tab.0.left.1680.0.1920.1080" width="1878" height="280" />
+    <size key="GridCell.Tab.0.center.1680.0.1920.1080" width="1878" height="280" />
+    <size key="GridCell.Tab.0.right.1680.0.1920.1080" width="1878" height="280" />
+    <size key="GridCell.Tab.0.bottom.1680.0.1920.1080" width="1878" height="280" />
     <size key="GridCell.Tab.1.left.1680.0.1920.1080" width="1878" height="314" />
     <size key="GridCell.Tab.1.center.1680.0.1920.1080" width="1878" height="314" />
     <size key="GridCell.Tab.1.right.1680.0.1920.1080" width="1878" height="314" />

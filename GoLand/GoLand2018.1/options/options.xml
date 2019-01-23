@@ -19,7 +19,7 @@
     <property name="go.call.hierarchy.browser.recursive" value="true" />
     <property name="go.init.cfg.2" value="true" />
     <property name="go.init.cfg.line.markers" value="true" />
-    <property name="go.last.update.timestamp" value="1547204933372" />
+    <property name="go.last.update.timestamp" value="1547629731779" />
     <property name="go.libraries.notification.had.been.shown" value="true" />
     <property name="go.optimizeImportsByDefault" value="true" />
     <property name="go.settings.notification.shown" value="true" />

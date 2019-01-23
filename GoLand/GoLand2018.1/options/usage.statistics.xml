@@ -33,7 +33,7 @@
       <entry action="EditorBackSpace" count="9584" />
       <entry action="EditorChooseLookupItem" count="1960" />
       <entry action="EditorCodeBlockStart" count="3" />
-      <entry action="EditorCopy" count="786" />
+      <entry action="EditorCopy" count="788" />
       <entry action="EditorCut" count="71" />
       <entry action="EditorDeleteLine" count="6" />
       <entry action="EditorDown" count="1847" />
@@ -126,7 +126,7 @@
       <entry action="StepOver" count="2036" />
       <entry action="Stop" count="525" />
       <entry action="TemplateProjectProperties" count="13" />
-      <entry action="Terminal.OpenInTerminal" count="22" />
+      <entry action="Terminal.OpenInTerminal" count="23" />
       <entry action="ToggleBookmark4" count="1" />
       <entry action="ToggleBookmarkWithMnemonic" count="2" />
       <entry action="ToggleFullScreen" count="6" />
@@ -297,7 +297,7 @@
       <entry shortcut="Meta+Alt+R" count="2" />
       <entry shortcut="Meta+B" count="5" />
       <entry shortcut="Meta+Backspace" count="24" />
-      <entry shortcut="Meta+C" count="794" />
+      <entry shortcut="Meta+C" count="796" />
       <entry shortcut="Meta+Close Bracket" count="434" />
       <entry shortcut="Meta+Ctrl+F" count="6" />
       <entry shortcut="Meta+Ctrl+R" count="6" />
@@ -438,7 +438,7 @@
       <entry feature="diff.DiffSettings.Tool.Unified viewer" count="1" />
       <entry feature="execute.BashConfigurationType.Run" count="294" />
       <entry feature="execute.GoApplicationRunConfiguration.Debug" count="894" />
-      <entry feature="execute.GoApplicationRunConfiguration.Run" count="211" />
+      <entry feature="execute.GoApplicationRunConfiguration.Run" count="213" />
       <entry feature="execute.GoTestRunConfiguration.Coverage" count="5" />
       <entry feature="execute.GoTestRunConfiguration.Debug" count="108" />
       <entry feature="go.dlv.debugger" count="1002" />
@@ -449,9 +449,9 @@
       <entry feature="ide.settings.GOPATH" count="2" />
       <entry feature="ide.settings.GOROOT" count="9" />
       <entry feature="ide.settings.Plugins" count="3" />
-      <entry feature="ideaapp.started" count="108" />
+      <entry feature="ideaapp.started" count="109" />
       <entry feature="json.schema.builtin.completion" count="78" />
-      <entry feature="terminal.mac" count="93" />
+      <entry feature="terminal.mac" count="95" />
       <entry feature="vcs.history." count="20" />
       <entry feature="welcome.screen.WelcomeScreen.Configure" count="3" />
       <entry feature="welcome.screen.WelcomeScreen.Documentation" count="1" />

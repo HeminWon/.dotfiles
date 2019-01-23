@@ -23,6 +23,12 @@
         <option value="$USER_HOME$/Desktop/ydict" />
       </list>
     </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/go/src/DoraemonServer" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/go/src/DoraemonServer" />
     <option name="pid" value="" />
     <option name="additionalInfo">
       <map>
@@ -197,8 +203,8 @@
               <option name="build" value="GO-181.4892.55" />
               <option name="productionCode" value="GO" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1547213605189" />
-              <option name="buildTimestamp" value="1525957671144" />
+              <option name="projectOpenTimestamp" value="1547643920469" />
+              <option name="buildTimestamp" value="1525957656732" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
