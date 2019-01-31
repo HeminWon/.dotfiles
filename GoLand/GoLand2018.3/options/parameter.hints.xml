@@ -1,0 +1,10 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="Go">
+        <added pattern="fmt#Println(a)" />
+        <added pattern="FUNCTION:fmt#Printf(format,a)" />
+      </blacklist>
+    </blacklists>
+  </component>
+</application>

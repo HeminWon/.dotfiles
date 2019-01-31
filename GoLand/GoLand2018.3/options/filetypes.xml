@@ -1,0 +1,11 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="host" type="PLAIN_TEXT" />
+      <mapping pattern="success" type="PLAIN_TEXT" />
+      <mapping pattern="go.mod" type="PLAIN_TEXT" />
+      <mapping ext="ini" type="PLAIN_TEXT" />
+      <mapping pattern="master" type="Bash" />
+    </extensionMap>
+  </component>
+</application>

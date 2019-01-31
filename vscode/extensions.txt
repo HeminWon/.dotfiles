@@ -4537,11 +4537,11 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>ms-vscode.powershell-1.10.2
+>>>>>>>>>>>>>>>>>>>>>>>ms-vscode.powershell-1.11.0
 {
 	"name": "PowerShell",
 	"displayName": "PowerShell",
-	"version": "1.10.2",
+	"version": "1.11.0",
 	"publisher": "ms-vscode",
 	"description": "Develop PowerShell scripts in Visual Studio Code!",
 	"engines": {
@@ -4612,7 +4612,8 @@ extensions package list
 			"PowerShellCommandExplorer": [
 				{
 					"id": "PowerShellCommands",
-					"name": "PowerShell Commands"
+					"name": "PowerShell Commands",
+					"when": "config.powershell.sideBar.CommandExplorerVisibility"
 				}
 			]
 		},
@@ -4653,16 +4654,20 @@ extensions package list
 			},
 			{
 				"command": "PowerShell.RefreshCommandsExplorer",
-				"title": "Refresh",
+				"title": "Refresh Command Explorer",
 				"icon": {
-					"light": "resources/light/refresh.svg",
-					"dark": "resources/dark/refresh.svg"
+					"light": "resources/light/sync.svg",
+					"dark": "resources/dark/sync.svg"
 				},
 				"category": "PowerShell"
 			},
 			{
 				"command": "PowerShell.InsertCommand",
 				"title": "Insert Command",
+				"icon": {
+					"light": "resources/light/pencil.svg",
+					"dark": "resources/dark/pencil.svg"
+				},
 				"category": "PowerShell"
 			},
 			{
@@ -4673,6 +4678,10 @@ extensions package list
 			{
 				"command": "PowerShell.ShowHelp",
 				"title": "Get Help for Command",
+				"icon": {
+					"light": "resources/light/question.svg",
+					"dark": "resources/dark/question.svg"
+				},
 				"category": "PowerShell"
 			},
 			{
@@ -4736,12 +4745,32 @@ extensions package list
 				"category": "PowerShell"
 			},
 			{
+				"command": "PowerShell.RunPesterTestsFromFile",
+				"title": "Run Pester tests",
+				"category": "PowerShell"
+			},
+			{
+				"command": "PowerShell.DebugPesterTestsFromFile",
+				"title": "Debug Pester tests",
+				"category": "PowerShell"
+			},
+			{
 				"command": "PowerShell.OpenExamplesFolder",
 				"title": "Open Examples Folder",
 				"category": "PowerShell"
 			}
 		],
 		"menus": {
+			"commandPalette": [
+				{
+					"command": "PowerShell.InsertCommand",
+					"when": "false"
+				},
+				{
+					"command": "PowerShell.RefreshCommandsExplorer",
+					"when": "config.powershell.sideBar.CommandExplorerVisibility"
+				}
+			],
 			"editor/context": [
 				{
 					"when": "editorLangId == powershell",
@@ -4754,6 +4783,16 @@ extensions package list
 					"group": "2_powershell"
 				}
 			],
+			"editor/title/context": [
+				{
+					"when": "resourceFilename =~ /\\.tests\\.ps1$/i",
+					"command": "PowerShell.RunPesterTestsFromFile"
+				},
+				{
+					"when": "resourceFilename =~ /\\.tests\\.ps1$/i",
+					"command": "PowerShell.DebugPesterTestsFromFile"
+				}
+			],
 			"view/title": [
 				{
 					"command": "PowerShell.RefreshCommandsExplorer",
@@ -4764,11 +4803,13 @@ extensions package list
 			"view/item/context": [
 				{
 					"command": "PowerShell.ShowHelp",
-					"when": "view == PowerShellCommands"
+					"when": "view == PowerShellCommands",
+					"group": "inline@1"
 				},
 				{
 					"command": "PowerShell.InsertCommand",
-					"when": "view == PowerShellCommands"
+					"when": "view == PowerShellCommands",
+					"group": "inline@2"
 				}
 			]
 		},
@@ -4996,6 +5037,11 @@ extensions package list
 			"type": "object",
 			"title": "PowerShell Configuration",
 			"properties": {
+				"powershell.sideBar.CommandExplorerVisibility": {
+					"type": "boolean",
+					"default": true,
+					"description": "Specifies the visibility of the Command Explorer in the PowerShell Side Bar."
+				},
 				"powershell.powerShellExePath": {
 					"type": "string",
 					"default": "",
@@ -5830,220 +5876,6 @@ extensions package list
 		"id": "ae062c8a-c68e-4b92-9ecf-8f1d4288b05d",
 		"publisherId": "d30b9513-547b-4112-9c9c-0fcffa960258",
 		"publisherDisplayName": "Peng Lv"
-	}
-}
-
->>>>>>>>>>>>>>>>>>>>>>>ryu1kn.edit-with-shell-1.1.0
-{
-	"name": "edit-with-shell",
-	"displayName": "Edit with Shell Command",
-	"description": "Leverage your favourite shell commands to edit text",
-	"version": "1.1.0",
-	"publisher": "ryu1kn",
-	"license": "SEE LICENSE IN LICENSE.txt",
-	"icon": "images/edit-with-shell.png",
-	"bugs": {
-		"url": "https://github.com/ryu1kn/vscode-edit-with-shell/issues"
-	},
-	"homepage": "https://github.com/ryu1kn/vscode-edit-with-shell/blob/master/README.md",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ryu1kn/vscode-edit-with-shell.git"
-	},
-	"engines": {
-		"vscode": "^1.26.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"keywords": [
-		"shell",
-		"command",
-		"filter"
-	],
-	"activationEvents": [
-		"onCommand:editWithShell.clearCommandHistory",
-		"onCommand:editWithShell.runCommand",
-		"onCommand:editWithShell.runQuickCommand1",
-		"onCommand:editWithShell.runQuickCommand2",
-		"onCommand:editWithShell.runQuickCommand3",
-		"onCommand:editWithShell.runQuickCommand4",
-		"onCommand:editWithShell.runQuickCommand5"
-	],
-	"main": "./out/extension",
-	"contributes": {
-		"commands": [
-			{
-				"command": "editWithShell.clearCommandHistory",
-				"title": "Clear command history",
-				"category": "EditWithShell"
-			},
-			{
-				"command": "editWithShell.runCommand",
-				"title": "Run command",
-				"category": "EditWithShell"
-			},
-			{
-				"command": "editWithShell.runQuickCommand1",
-				"title": "Run quick command 1",
-				"category": "EditWithShell"
-			},
-			{
-				"command": "editWithShell.runQuickCommand2",
-				"title": "Run quick command 2",
-				"category": "EditWithShell"
-			},
-			{
-				"command": "editWithShell.runQuickCommand3",
-				"title": "Run quick command 3",
-				"category": "EditWithShell"
-			},
-			{
-				"command": "editWithShell.runQuickCommand4",
-				"title": "Run quick command 4",
-				"category": "EditWithShell"
-			},
-			{
-				"command": "editWithShell.runQuickCommand5",
-				"title": "Run quick command 5",
-				"category": "EditWithShell"
-			}
-		],
-		"configuration": {
-			"type": "object",
-			"title": "Edit with Shell Command configurations",
-			"properties": {
-				"editWithShell.currentDirectoryKind": {
-					"description": "Current directory for shell commands",
-					"type": "string",
-					"enum": [
-						"currentFile",
-						"workspaceRoot"
-					],
-					"default": "currentFile"
-				},
-				"editWithShell.quickCommand1": {
-					"description": "ID of a favorite command triggered by quick command 1",
-					"type": "string"
-				},
-				"editWithShell.quickCommand2": {
-					"description": "ID of a favorite command triggered by quick command 2",
-					"type": "string"
-				},
-				"editWithShell.quickCommand3": {
-					"description": "ID of a favorite command triggered by quick command 3",
-					"type": "string"
-				},
-				"editWithShell.quickCommand4": {
-					"description": "ID of a favorite command triggered by quick command 4",
-					"type": "string"
-				},
-				"editWithShell.quickCommand5": {
-					"description": "ID of a favorite command triggered by quick command 5",
-					"type": "string"
-				},
-				"editWithShell.favoriteCommands": {
-					"description": "Commands that can be activated by quick commands",
-					"type": "array",
-					"items": {
-						"type": "object",
-						"properties": {
-							"id": {
-								"type": "string"
-							},
-							"command": {
-								"type": "string"
-							}
-						},
-						"required": [
-							"id",
-							"command"
-						]
-					},
-					"default": []
-				},
-				"editWithShell.processEntireTextIfNoneSelected": {
-					"description": "Pipe the entire text to the shell command if no text is selected",
-					"type": "boolean",
-					"default": false
-				},
-				"editWithShell.shell.linux": {
-					"description": "The path of the shell that this extension uses on Linux",
-					"type": "string",
-					"default": "/bin/sh"
-				},
-				"editWithShell.shellArgs.linux": {
-					"description": "Arguments to the shell to be used on Linux",
-					"type": "array",
-					"items": {
-						"type": "string"
-					},
-					"default": [
-						"-c"
-					]
-				},
-				"editWithShell.shell.osx": {
-					"description": "The path of the shell that this extension uses on OS X",
-					"type": "string",
-					"default": "/bin/sh"
-				},
-				"editWithShell.shellArgs.osx": {
-					"description": "Arguments to the shell to be used on OS X",
-					"type": "array",
-					"items": {
-						"type": "string"
-					},
-					"default": [
-						"-c"
-					]
-				},
-				"editWithShell.shell.windows": {
-					"description": "The path of the shell that this extension uses on Windows",
-					"type": "string",
-					"default": "cmd.exe"
-				},
-				"editWithShell.shellArgs.windows": {
-					"description": "Arguments to the shell to be used on Windows",
-					"type": "array",
-					"items": {
-						"type": "string"
-					},
-					"default": [
-						"/d",
-						"/s",
-						"/c"
-					]
-				}
-			}
-		}
-	},
-	"scripts": {
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"coverage": "nyc yarn test",
-		"lint": "tslint -p .",
-		"test": "mocha --opts cli-test-mocha.opts",
-		"test-mode": "mocha --opts cli-test-mocha.opts --watch",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"prep": "yarn run lint && yarn run compile && yarn test",
-		"vscode:prepublish": "yarn run compile",
-		"vscode:postpublish": "./tag-release.sh"
-	},
-	"devDependencies": {
-		"@types/mocha": "^5.2.5",
-		"@types/node": "^8.10.39",
-		"mocha": "^5.2.0",
-		"nyc": "^13.1.0",
-		"testdouble": "^3.9.1",
-		"ts-node": "^7.0.1",
-		"tslint": "^5.12.0",
-		"typescript": "^3.2.2",
-		"vscode": "^1.1.26"
-	},
-	"__metadata": {
-		"id": "370f75d3-459d-498a-80ed-e380c87750c5",
-		"publisherId": "78c9c61d-8fc2-48eb-bf5e-7dd8b068702c",
-		"publisherDisplayName": "Ryuichi Inagaki"
 	}
 }
 

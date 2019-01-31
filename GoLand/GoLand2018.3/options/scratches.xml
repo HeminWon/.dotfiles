@@ -1,0 +1,6 @@
+<application>
+  <component name="ScratchFileService">
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.go" value="go" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.go" value="go" />
+  </component>
+</application>

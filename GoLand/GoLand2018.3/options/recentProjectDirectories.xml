@@ -1,0 +1,380 @@
+<application>
+  <component name="RecentDirectoryProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/go/src/DoraemonServer" />
+        <option value="$USER_HOME$/go/src/DawnServer" />
+        <option value="$USER_HOME$/go/src/awesomeProject" />
+        <option value="$USER_HOME$/go/src/go-config" />
+        <option value="$USER_HOME$/go/src/golang-design-pattern/10_observer" />
+        <option value="$USER_HOME$/go/src/Meizar" />
+        <option value="$USER_HOME$/go/src/quickstart" />
+        <option value="$USER_HOME$/go/src/github.com/TimothyYe/ydict" />
+        <option value="$USER_HOME$/go/src" />
+        <option value="$USER_HOME$/go/src/douban-movie" />
+        <option value="$USER_HOME$/go/src/imooc.com/ccmouse/learngo/functional" />
+        <option value="$USER_HOME$/go/src/imooc.com/ccmouse/learngo/retriever" />
+        <option value="$USER_HOME$/go/src/imooc.com/ccmouse/learngo/tree" />
+        <option value="$USER_HOME$/Downloads/GO语言/课件代码/u2pppw/tree" />
+        <option value="$USER_HOME$/go/src/rpcexample" />
+        <option value="$USER_HOME$/Desktop/rpcexample/examples" />
+        <option value="$USER_HOME$/Desktop/golang-rpc-example/client" />
+        <option value="$USER_HOME$/Desktop/Meizar/code" />
+        <option value="$USER_HOME$/Desktop/ydict" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/go/src/DoraemonServer" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/go/src/DoraemonServer" />
+    <option name="pid" value="" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Desktop/Meizar/code">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1525598736737" />
+              <option name="buildTimestamp" value="1524765550770" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/examples">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526372065990" />
+              <option name="buildTimestamp" value="1524765577715" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/examples/computecsv">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526381230000" />
+              <option name="buildTimestamp" value="1524765597638" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/examples/coordinator">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526372144725" />
+              <option name="buildTimestamp" value="1524765577715" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/examples/quickstart">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526464808896" />
+              <option name="buildTimestamp" value="1524765580330" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/golang-rpc-example/client">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1525928513215" />
+              <option name="buildTimestamp" value="1524765559119" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/golang-rpc-example/server">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1525928503728" />
+              <option name="buildTimestamp" value="1524765559119" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/rpcexample/examples">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1525933803651" />
+              <option name="buildTimestamp" value="1524765559119" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/ydict">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1525586748783" />
+              <option name="buildTimestamp" value="1524765552271" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/DIDI/DawnServer">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526388766135" />
+              <option name="buildTimestamp" value="1524765576176" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/GO语言/课件代码/u2pppw/queue">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526463360512" />
+              <option name="buildTimestamp" value="1524765580330" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/GO语言/课件代码/u2pppw/retriever">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526462593631" />
+              <option name="buildTimestamp" value="1524765580330" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/GO语言/课件代码/u2pppw/tree">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526467279705" />
+              <option name="buildTimestamp" value="1524765580330" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1529035464756" />
+              <option name="buildTimestamp" value="1524765553379" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/DawnServer">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4892.55" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1547204940532" />
+              <option name="buildTimestamp" value="1525957667827" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/DoraemonServer">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-183.5153.54" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1548738697144" />
+              <option name="buildTimestamp" value="1547650193146" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/Meizar">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1529750704985" />
+              <option name="buildTimestamp" value="1524765555149" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/awesomeProject">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4892.55" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1532603650271" />
+              <option name="buildTimestamp" value="1525957670279" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/carwler">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526631114637" />
+              <option name="buildTimestamp" value="1524765553344" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/douban-movie">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526886402911" />
+              <option name="buildTimestamp" value="1524765570810" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/github.com/TimothyYe/ydict">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1529653626332" />
+              <option name="buildTimestamp" value="1524765575978" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/go-config">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4892.55" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1531995442219" />
+              <option name="buildTimestamp" value="1525957639243" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/golang-design-pattern/10_observer">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1530535653132" />
+              <option name="buildTimestamp" value="1524765599310" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/imooc.com/ccmouse/learngo/functional">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526543648367" />
+              <option name="buildTimestamp" value="1524765598464" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/imooc.com/ccmouse/learngo/retriever">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526475672131" />
+              <option name="buildTimestamp" value="1524765580330" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/imooc.com/ccmouse/learngo/tree">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526467467283" />
+              <option name="buildTimestamp" value="1524765580330" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/quickstart">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1529676903011" />
+              <option name="buildTimestamp" value="1524765567153" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/rpcexample">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1525940293159" />
+              <option name="buildTimestamp" value="1524765582037" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/u2pppw/retriever">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526464022548" />
+              <option name="buildTimestamp" value="1524765580330" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/go/src/u2pppw/tree">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4668.90" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1526464638216" />
+              <option name="buildTimestamp" value="1524765580330" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/private/var/folders/52/5qd8yg5s6mbg83n1c79yy0xm0000gp/T/hello.go">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="GO-181.4203.567" />
+              <option name="productionCode" value="GO" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1523096222450" />
+              <option name="buildTimestamp" value="1522241876836" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/go/src" />
+  </component>
+</application>

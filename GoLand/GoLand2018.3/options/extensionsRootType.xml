@@ -1,0 +1,7 @@
+<application>
+  <component name="ExtensionsRootType">
+    <pluginVersions>
+      <plugin id="com.intellij.database" version="GO-181.4668.90" />
+    </pluginVersions>
+  </component>
+</application>
