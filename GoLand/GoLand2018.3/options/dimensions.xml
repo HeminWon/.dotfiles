@@ -45,24 +45,26 @@
     <location key="DiffContextDialog.0.0.3360.2100@192dpi" x="336" y="230" />
     <location key="#xdebugger.XInspectDialog.1680.0.1920.1080" x="2498" y="321" />
     <location key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog.1680.0.1920.1080" x="2328" y="294" />
-    <size key="GridCell.Tab.0.left.0.0.3360.2100@192dpi" width="3276" height="560" />
-    <size key="GridCell.Tab.0.center.0.0.3360.2100@192dpi" width="3276" height="560" />
-    <size key="GridCell.Tab.0.right.0.0.3360.2100@192dpi" width="3276" height="560" />
-    <size key="GridCell.Tab.0.bottom.0.0.3360.2100@192dpi" width="3276" height="560" />
+    <location key="search.everywhere.popup.1680.0.1920.1080" x="2305" y="258" />
+    <location key="search.everywhere.popup.0.0.3360.2100@192dpi" x="1010" y="374" />
+    <size key="GridCell.Tab.0.left.0.0.3360.2100@192dpi" width="3276" height="506" />
+    <size key="GridCell.Tab.0.center.0.0.3360.2100@192dpi" width="3276" height="506" />
+    <size key="GridCell.Tab.0.right.0.0.3360.2100@192dpi" width="3276" height="506" />
+    <size key="GridCell.Tab.0.bottom.0.0.3360.2100@192dpi" width="3276" height="506" />
     <size key="find.popup.0.0.3360.2100@192dpi" width="1430" height="1290" />
-    <size key="GridCell.Tab.1.left.0.0.3360.2100@192dpi" width="3276" height="608" />
-    <size key="GridCell.Tab.1.center.0.0.3360.2100@192dpi" width="3276" height="608" />
-    <size key="GridCell.Tab.1.right.0.0.3360.2100@192dpi" width="3276" height="608" />
-    <size key="GridCell.Tab.1.bottom.0.0.3360.2100@192dpi" width="3276" height="608" />
+    <size key="GridCell.Tab.1.left.0.0.3360.2100@192dpi" width="3276" height="542" />
+    <size key="GridCell.Tab.1.center.0.0.3360.2100@192dpi" width="3276" height="542" />
+    <size key="GridCell.Tab.1.right.0.0.3360.2100@192dpi" width="3276" height="542" />
+    <size key="GridCell.Tab.1.bottom.0.0.3360.2100@192dpi" width="3276" height="542" />
     <size key="DebuggerActiveHint.0.0.3360.2100@192dpi" width="1232" height="882" />
-    <size key="GridCell.Tab.0.left.1680.0.1920.1080" width="1878" height="262" />
-    <size key="GridCell.Tab.0.center.1680.0.1920.1080" width="1878" height="262" />
-    <size key="GridCell.Tab.0.right.1680.0.1920.1080" width="1878" height="262" />
-    <size key="GridCell.Tab.0.bottom.1680.0.1920.1080" width="1878" height="262" />
-    <size key="GridCell.Tab.1.left.1680.0.1920.1080" width="1878" height="262" />
-    <size key="GridCell.Tab.1.center.1680.0.1920.1080" width="1878" height="262" />
-    <size key="GridCell.Tab.1.right.1680.0.1920.1080" width="1878" height="262" />
-    <size key="GridCell.Tab.1.bottom.1680.0.1920.1080" width="1878" height="262" />
+    <size key="GridCell.Tab.0.left.1680.0.1920.1080" width="1878" height="280" />
+    <size key="GridCell.Tab.0.center.1680.0.1920.1080" width="1878" height="280" />
+    <size key="GridCell.Tab.0.right.1680.0.1920.1080" width="1878" height="280" />
+    <size key="GridCell.Tab.0.bottom.1680.0.1920.1080" width="1878" height="280" />
+    <size key="GridCell.Tab.1.left.1680.0.1920.1080" width="1878" height="280" />
+    <size key="GridCell.Tab.1.center.1680.0.1920.1080" width="1878" height="280" />
+    <size key="GridCell.Tab.1.right.1680.0.1920.1080" width="1878" height="280" />
+    <size key="GridCell.Tab.1.bottom.1680.0.1920.1080" width="1878" height="280" />
     <size key="DebuggerActiveHint.1680.0.1920.1080" width="733" height="441" />
     <size key="find.popup.1680.0.1920.1080" width="715" height="805" />
     <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1638" height="305" />
@@ -84,5 +86,7 @@
     <size key="GridCell.Tab.3.right.1680.0.1920.1080" width="1333" height="112" />
     <size key="GridCell.Tab.3.bottom.1680.0.1920.1080" width="1333" height="112" />
     <size key="CommitChangelistDialog2.1680.0.1920.1080" width="1626" height="944" />
+    <size key="search.everywhere.popup.1680.0.1920.1080" width="670" height="676" />
+    <size key="search.everywhere.popup.0.0.3360.2100@192dpi" width="1340" height="1352" />
   </component>
 </application>

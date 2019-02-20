@@ -217,12 +217,12 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>formulahendry.code-runner-0.9.6
+>>>>>>>>>>>>>>>>>>>>>>>formulahendry.code-runner-0.9.7
 {
 	"name": "code-runner",
 	"displayName": "Code Runner",
 	"description": "Run C, C++, Java, JS, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, CMD, BASH, F#, C#, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml, R, AppleScript, Elixir, VB.NET, Clojure, Haxe, Obj-C, Rust, Racket, AutoHotkey, AutoIt, Kotlin, Dart, Pascal, Haskell, Nim, D, Lisp",
-	"version": "0.9.6",
+	"version": "0.9.7",
 	"publisher": "formulahendry",
 	"icon": "images/logo.png",
 	"engines": {
@@ -328,6 +328,14 @@ extensions package list
 			"type": "object",
 			"title": "Run Code configuration",
 			"properties": {
+				"code-runner.executorMapByGlob": {
+					"type": "object",
+					"default": {
+						"pom.xml": "cd $dir && mvn clean package"
+					},
+					"description": "Set the executor by glob.",
+					"scope": "resource"
+				},
 				"code-runner.executorMap": {
 					"type": "object",
 					"default": {
@@ -542,9 +550,11 @@ extensions package list
 	},
 	"dependencies": {
 		"applicationinsights": "^0.19.0",
+		"micromatch": "^3.1.10",
 		"tree-kill": "^1.1.0"
 	},
 	"devDependencies": {
+		"@types/micromatch": "^3.1.0",
 		"@types/mocha": "^2.2.32",
 		"@types/node": "^6.0.40",
 		"mocha": "^2.3.3",
@@ -559,12 +569,12 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>mechatroner.rainbow-csv-0.8.0
+>>>>>>>>>>>>>>>>>>>>>>>mechatroner.rainbow-csv-1.0.0
 {
 	"name": "rainbow-csv",
 	"displayName": "Rainbow CSV",
 	"description": "Highlight CSV and TSV files in different colors, Run SQL-like queries",
-	"version": "0.8.0",
+	"version": "1.0.0",
 	"publisher": "mechatroner",
 	"icon": "rainbow_csv_logo.png",
 	"engines": {
@@ -584,6 +594,13 @@ extensions package list
 		"onLanguage:tsv",
 		"onLanguage:csv (semicolon)",
 		"onLanguage:csv (pipe)",
+		"onLanguage:csv (tilda)",
+		"onLanguage:csv (caret)",
+		"onLanguage:csv (colon)",
+		"onLanguage:csv (double quote)",
+		"onLanguage:csv (equals)",
+		"onLanguage:csv (dot)",
+		"onLanguage:csv (hyphen)",
 		"onLanguage:plaintext",
 		"onCommand:extension.QueryHere",
 		"onCommand:extension.RBQL",
@@ -687,6 +704,62 @@ extensions package list
 				"extensions": []
 			},
 			{
+				"id": "csv (tilda)",
+				"aliases": [
+					"CSV (tilda)",
+					"csv (tilda)"
+				],
+				"extensions": []
+			},
+			{
+				"id": "csv (caret)",
+				"aliases": [
+					"CSV (caret)",
+					"csv (caret)"
+				],
+				"extensions": []
+			},
+			{
+				"id": "csv (colon)",
+				"aliases": [
+					"CSV (colon)",
+					"csv (colon)"
+				],
+				"extensions": []
+			},
+			{
+				"id": "csv (double quote)",
+				"aliases": [
+					"CSV (double quote)",
+					"csv (double quote)"
+				],
+				"extensions": []
+			},
+			{
+				"id": "csv (equals)",
+				"aliases": [
+					"CSV (equals)",
+					"csv (equals)"
+				],
+				"extensions": []
+			},
+			{
+				"id": "csv (dot)",
+				"aliases": [
+					"CSV (dot)",
+					"csv (dot)"
+				],
+				"extensions": []
+			},
+			{
+				"id": "csv (hyphen)",
+				"aliases": [
+					"CSV (hyphen)",
+					"csv (hyphen)"
+				],
+				"extensions": []
+			},
+			{
 				"id": "csv (semicolon)",
 				"aliases": [
 					"CSV (semicolon)",
@@ -766,6 +839,41 @@ extensions package list
 				"language": "csv (pipe)",
 				"scopeName": "text.psv",
 				"path": "./syntaxes/pipe_simple.tmLanguage.json"
+			},
+			{
+				"language": "csv (tilda)",
+				"scopeName": "text.tldsv",
+				"path": "./syntaxes/tldsv.tmLanguage.json"
+			},
+			{
+				"language": "csv (caret)",
+				"scopeName": "text.crtsv",
+				"path": "./syntaxes/crtsv.tmLanguage.json"
+			},
+			{
+				"language": "csv (colon)",
+				"scopeName": "text.clnsv",
+				"path": "./syntaxes/clnsv.tmLanguage.json"
+			},
+			{
+				"language": "csv (double quote)",
+				"scopeName": "text.dbqsv",
+				"path": "./syntaxes/dbqsv.tmLanguage.json"
+			},
+			{
+				"language": "csv (equals)",
+				"scopeName": "text.eqlsv",
+				"path": "./syntaxes/eqlsv.tmLanguage.json"
+			},
+			{
+				"language": "csv (dot)",
+				"scopeName": "text.dotsv",
+				"path": "./syntaxes/dotsv.tmLanguage.json"
+			},
+			{
+				"language": "csv (hyphen)",
+				"scopeName": "text.hypsv",
+				"path": "./syntaxes/hypsv.tmLanguage.json"
 			},
 			{
 				"language": "csv (semicolon)",
@@ -1123,13 +1231,13 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>ms-python.python-2018.12.1
+>>>>>>>>>>>>>>>>>>>>>>>ms-python.python-2019.1.0
 {
 	"name": "python",
 	"displayName": "Python",
 	"description": "Linting, Debugging (multi-threaded, remote), Intellisense, code formatting, refactoring, unit tests, snippets, and more.",
-	"version": "2018.12.1",
-	"languageServerVersion": "0.1.72",
+	"version": "2019.1.0",
+	"languageServerVersion": "0.1.78",
 	"publisher": "ms-python",
 	"author": {
 		"name": "Microsoft Corporation"
@@ -1185,6 +1293,7 @@ extensions package list
 	],
 	"activationEvents": [
 		"onLanguage:python",
+		"onLanguage:jupyter",
 		"onDebugResolve:python",
 		"onCommand:python.execInTerminal",
 		"onCommand:python.sortImports",
@@ -1379,7 +1488,7 @@ extensions package list
 			},
 			{
 				"command": "python.datascience.runallcells",
-				"title": "%python.command.python.datascience.runallcells.title%",
+				"title": "%python.command.python.datascience.runallcells.command.title%",
 				"category": "Python"
 			},
 			{
@@ -1446,11 +1555,6 @@ extensions package list
 			{
 				"command": "python.datascience.collapseallcells",
 				"title": "%python.command.python.datascience.collapseallcells.title%",
-				"category": "Python"
-			},
-			{
-				"command": "python.datascience.exportoutputasnotebook",
-				"title": "%python.command.python.datascience.exportoutputasnotebook.title%",
 				"category": "Python"
 			}
 		],
@@ -1563,7 +1667,7 @@ extensions package list
 				},
 				{
 					"command": "python.datascience.runallcells",
-					"title": "%python.command.python.datascience.runallcells.title%",
+					"title": "%python.command.python.datascience.runallcells.command.title%",
 					"category": "Python",
 					"when": "python.datascience.featureenabled"
 				},
@@ -1805,14 +1909,20 @@ extensions package list
 						}
 					},
 					{
-						"label": "Python: Attach",
+						"label": "Python: Remote Attach",
 						"description": "%python.snippet.launch.attach.description%",
 						"body": {
 							"name": "Attach (Remote Debug)",
 							"type": "python",
 							"request": "attach",
 							"port": 5678,
-							"host": "localhost"
+							"host": "localhost",
+							"pathMappings": [
+								{
+									"localRoot": "${workspaceFolder}",
+									"remoteRoot": "."
+								}
+							]
 						}
 					}
 				],
@@ -2013,70 +2123,12 @@ extensions package list
 							}
 						}
 					}
-				},
-				"initialConfigurations": [
-					{
-						"name": "Python: Current File (Integrated Terminal)",
-						"type": "python",
-						"request": "launch",
-						"program": "${file}",
-						"console": "integratedTerminal"
-					},
-					{
-						"name": "Python: Attach",
-						"type": "python",
-						"request": "attach",
-						"port": 5678,
-						"host": "localhost"
-					},
-					{
-						"name": "Python: Module",
-						"type": "python",
-						"request": "launch",
-						"module": "enter-your-module-name-here",
-						"console": "integratedTerminal"
-					},
-					{
-						"name": "Python: Django",
-						"type": "python",
-						"request": "launch",
-						"program": "${workspaceFolder}/manage.py",
-						"console": "integratedTerminal",
-						"args": [
-							"runserver",
-							"--noreload",
-							"--nothreading"
-						],
-						"django": true
-					},
-					{
-						"name": "Python: Flask",
-						"type": "python",
-						"request": "launch",
-						"module": "flask",
-						"env": {
-							"FLASK_APP": "app.py"
-						},
-						"args": [
-							"run",
-							"--no-debugger",
-							"--no-reload"
-						],
-						"jinja": true
-					},
-					{
-						"name": "Python: Current File (External Terminal)",
-						"type": "python",
-						"request": "launch",
-						"program": "${file}",
-						"console": "externalTerminal"
-					}
-				]
+				}
 			}
 		],
 		"configuration": {
 			"type": "object",
-			"title": "Python Configuration",
+			"title": "Python",
 			"properties": {
 				"python.diagnostics.sourceMapsEnabled": {
 					"type": "boolean",
@@ -2153,6 +2205,12 @@ extensions package list
 					"description": "Set the root directory for loading files for the Python Interactive window.",
 					"scope": "resource"
 				},
+				"python.dataScience.searchForJupyter": {
+					"type": "boolean",
+					"default": true,
+					"description": "Search all installed Python interpreters for a Jupyter installation when starting the Python Interactive window",
+					"scope": "resource"
+				},
 				"python.dataScience.changeDirOnImportExport": {
 					"type": "boolean",
 					"default": true,
@@ -2169,6 +2227,41 @@ extensions package list
 					"type": "number",
 					"default": 10000,
 					"description": "Amount of time (in ms) to wait for an interrupt before asking to restart the Jupyter kernel.",
+					"scope": "resource"
+				},
+				"python.dataScience.allowInput": {
+					"type": "boolean",
+					"default": true,
+					"description": "Allow the inputting of python code directly into the Python Interactive window"
+				},
+				"python.dataScience.showCellInputCode": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show cell input code.",
+					"scope": "resource"
+				},
+				"python.dataScience.collapseCellInputCodeByDefault": {
+					"type": "boolean",
+					"default": true,
+					"description": "Collapse cell input code by default.",
+					"scope": "resource"
+				},
+				"python.dataScience.maxOutputSize": {
+					"type": "number",
+					"default": 400,
+					"description": "Maximum size (in pixels) of text output in the Python Interactive window before a scrollbar appears. Set to -1 for infinity.",
+					"scope": "resource"
+				},
+				"python.dataScience.codeRegularExpression": {
+					"type": "string",
+					"default": "^(#\\s*%%|#\\s*\\<codecell\\>|#\\s*In\\[\\d*?\\]|#\\s*In\\[ \\])",
+					"description": "Regular expression used to identify code cells. All code until the next match is considered part of this cell. \nDefaults to '^(#\\s*%%|#\\s*\\<codecell\\>|#\\s*In\\[\\d*?\\]|#\\s*In\\[ \\])' if left blank",
+					"scope": "resource"
+				},
+				"python.dataScience.markdownRegularExpression": {
+					"type": "string",
+					"default": "^(#\\s*%%\\s*\\[markdown\\]|#\\s*\\<markdowncell\\>)",
+					"description": "Regular expression used to identify markdown cells. All comments after this expression are considered part of the markdown. \nDefaults to '^(#\\s*%%\\s*\\[markdown\\]|#\\s*\\<markdowncell\\>)' if left blank",
 					"scope": "resource"
 				},
 				"python.disableInstallationCheck": {
@@ -2452,7 +2545,8 @@ extensions package list
 					"description": "Arguments passed in. Each argument is a separate item in the array.",
 					"default": [
 						"--ignore-missing-imports",
-						"--follow-imports=silent"
+						"--follow-imports=silent",
+						"--show-column-numbers"
 					],
 					"items": {
 						"type": "string"
@@ -2702,6 +2796,12 @@ extensions package list
 					"description": "Path to the conda executable to use for activation (version 4.4+).",
 					"scope": "resource"
 				},
+				"python.pipenvPath": {
+					"type": "string",
+					"default": "pipenv",
+					"description": "Path to the pipenv executable to use for activation.",
+					"scope": "resource"
+				},
 				"python.sortImports.args": {
 					"type": "array",
 					"description": "Arguments passed in. Each argument is a separate item in the array.",
@@ -2759,7 +2859,7 @@ extensions package list
 				"python.unitTest.nosetestsEnabled": {
 					"type": "boolean",
 					"default": false,
-					"description": "Whether to enable or disable unit testing using nosetests.",
+					"description": "Enable unit testing using nosetests.",
 					"scope": "resource"
 				},
 				"python.unitTest.nosetestPath": {
@@ -2771,7 +2871,7 @@ extensions package list
 				"python.unitTest.promptToConfigure": {
 					"type": "boolean",
 					"default": true,
-					"description": "Where to prompt to configure a test framework if potential tests directories are discovered.",
+					"description": "Prompt to configure a test framework if potential tests directories are discovered.",
 					"scope": "resource"
 				},
 				"python.unitTest.pyTestArgs": {
@@ -2786,7 +2886,7 @@ extensions package list
 				"python.unitTest.pyTestEnabled": {
 					"type": "boolean",
 					"default": false,
-					"description": "Whether to enable or disable unit testing using pytest.",
+					"description": "Enable unit testing using pytest.",
 					"scope": "resource"
 				},
 				"python.unitTest.pyTestPath": {
@@ -2813,13 +2913,13 @@ extensions package list
 				"python.unitTest.unittestEnabled": {
 					"type": "boolean",
 					"default": false,
-					"description": "Whether to enable or disable unit testing using unittest.",
+					"description": "Enable unit testing using unittest.",
 					"scope": "resource"
 				},
 				"python.unitTest.autoTestDiscoverOnSaveEnabled": {
 					"type": "boolean",
 					"default": true,
-					"description": "Whether to enable or disable auto run test discovery when saving a unit test file.",
+					"description": "Enable auto run test discovery when saving a unit test file.",
 					"scope": "resource"
 				},
 				"python.venvFolders": {
@@ -2984,12 +3084,12 @@ extensions package list
 		"dump-datascience-webpack-stats": "webpack --config webpack.datascience-ui.config.js --profile --json > tmp/ds-stats.json",
 		"compile-webviews": "gulp compile-webviews",
 		"compile-webviews-verbose": "npx webpack --config webpack.datascience-ui.config.js",
-		"postinstall": "node ./node_modules/vscode/bin/install",
+		"postinstall": "node ./node_modules/vscode/bin/install && node ./build/ci/postInstall.js",
 		"test": "node ./out/test/standardTest.js && node ./out/test/multiRootTest.js",
-		"test:unittests": "mocha --opts ./build/.mocha.unittests.opts --grep='PlatformService'",
+		"test:unittests": "mocha --require source-map-support/register --opts ./build/.mocha.unittests.opts",
 		"test:unittests:cover": "nyc --nycrc-path ./build/.nycrc npm run test:unittests",
-		"test:functional": "mocha --opts ./build/.mocha.functional.opts",
-		"test:functional:cover": "nyc--nycrc-path ./build/.nycrc npm run test:functional",
+		"test:functional": "mocha --require source-map-support/register --opts ./build/.mocha.functional.opts",
+		"test:functional:cover": "nyc --nycrc-path ./build/.nycrc npm run test:functional",
 		"testDebugger": "node ./out/test/debuggerTest.js",
 		"testSingleWorkspace": "node ./out/test/standardTest.js",
 		"testMultiWorkspace": "node ./out/test/multiRootTest.js",
@@ -3028,6 +3128,8 @@ extensions package list
 		"request-progress": "^3.0.0",
 		"rxjs": "^5.5.9",
 		"semver": "^5.5.0",
+		"stack-trace": "0.0.10",
+		"strip-json-comments": "^2.0.1",
 		"sudo-prompt": "^8.2.0",
 		"tmp": "^0.0.29",
 		"tree-kill": "^1.2.0",
@@ -3058,6 +3160,7 @@ extensions package list
 		"@types/chai-as-promised": "^7.1.0",
 		"@types/copy-webpack-plugin": "^4.4.2",
 		"@types/del": "^3.0.0",
+		"@types/diff-match-patch": "^1.0.32",
 		"@types/dotenv": "^4.0.3",
 		"@types/download": "^6.2.2",
 		"@types/enzyme": "^3.1.14",
@@ -3075,15 +3178,17 @@ extensions package list
 		"@types/md5": "^2.1.32",
 		"@types/mocha": "^2.2.48",
 		"@types/node": "9.4.7",
-		"@types/prismjs": "^1.9.0",
 		"@types/promisify-node": "^0.4.0",
 		"@types/react": "^16.4.14",
+		"@types/react-codemirror": "^1.0.2",
 		"@types/react-dom": "^16.0.8",
 		"@types/react-json-tree": "^0.6.8",
 		"@types/request": "^2.47.0",
 		"@types/semver": "^5.5.0",
 		"@types/shortid": "^0.0.29",
 		"@types/sinon": "^4.3.0",
+		"@types/stack-trace": "0.0.29",
+		"@types/strip-json-comments": "0.0.30",
 		"@types/temp": "^0.8.32",
 		"@types/tmp": "0.0.33",
 		"@types/untildify": "^3.0.0",
@@ -3096,7 +3201,6 @@ extensions package list
 		"awesome-typescript-loader": "^5.2.1",
 		"babel-loader": "^8.0.3",
 		"babel-plugin-inline-json-import": "^0.3.1",
-		"babel-plugin-prismjs": "^1.0.2",
 		"babel-plugin-transform-runtime": "^6.23.0",
 		"babel-polyfill": "^6.26.0",
 		"chai": "^4.1.2",
@@ -3134,20 +3238,21 @@ extensions package list
 		"mocha-junit-reporter": "^1.17.0",
 		"node-has-native-dependencies": "^1.0.2",
 		"nyc": "^13.1.0",
-		"prismjs": "^1.15.0",
 		"raw-loader": "^0.5.1",
 		"react": "^16.5.2",
+		"react-codemirror": "^1.0.0",
 		"react-dev-utils": "^5.0.2",
 		"react-dom": "^16.5.2",
 		"react-json-tree": "^0.11.0",
 		"relative": "^3.0.2",
 		"remap-istanbul": "^0.10.1",
 		"retyped-diff-match-patch-tsd-ambient": "^1.0.0-0",
+		"rewiremock": "^3.13.0",
 		"shortid": "^2.2.8",
-		"source-map-support": "^0.5.9",
 		"style-loader": "^0.23.1",
 		"styled-jsx": "^3.1.0",
 		"svg-inline-loader": "^0.8.0",
+		"svg-inline-react": "^3.1.0",
 		"ts-loader": "^5.3.0",
 		"ts-mockito": "^2.3.1",
 		"tsconfig-paths-webpack-plugin": "^3.2.0",
@@ -3168,7 +3273,6 @@ extensions package list
 		"webpack-fix-default-import-plugin": "^1.0.3",
 		"webpack-merge": "^4.1.4",
 		"webpack-node-externals": "^1.7.2",
-		"wrapper-webpack-plugin": "^2.0.0",
 		"yargs": "^12.0.2"
 	},
 	"__metadata": {
@@ -3178,10 +3282,10 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>ms-vscode.go-0.8.0
+>>>>>>>>>>>>>>>>>>>>>>>ms-vscode.go-0.9.2
 {
 	"name": "Go",
-	"version": "0.8.0",
+	"version": "0.9.2",
 	"publisher": "ms-vscode",
 	"description": "Rich Go language support for Visual Studio Code",
 	"author": {
@@ -3212,13 +3316,13 @@ extensions package list
 		"compile": "tsc -watch -p ./",
 		"postinstall": "node ./node_modules/vscode/bin/install",
 		"test": "node ./node_modules/vscode/bin/test",
-		"lint": "node ./node_modules/tslint/bin/tslint ./src/*.ts ./src/debugAdapter/*.ts ./test/*.ts"
+		"lint": "node ./node_modules/tslint/bin/tslint ./src/*.ts ./src/debugAdapter/*.ts ./test/*.ts",
+		"unit-test": "node ./node_modules/mocha/bin/_mocha -u tdd --timeout 5000 --colors ./out/test/unit"
 	},
 	"extensionDependencies": [],
 	"dependencies": {
 		"diff": "^3.5.0",
 		"json-rpc2": "^1.0.2",
-		"vscode-debug-logger": "0.0.5",
 		"vscode-debugadapter": "^1.32.1",
 		"vscode-debugprotocol": "^1.32.0",
 		"vscode-extension-telemetry": "^0.1.0",
@@ -3282,6 +3386,11 @@ extensions package list
 				"command": "go.benchmark.cursor",
 				"title": "Go: Benchmark Function At Cursor",
 				"description": "Runs a benchmark at the cursor."
+			},
+			{
+				"command": "go.debug.cursor",
+				"title": "Go: Debug Test At Cursor",
+				"description": "Debug test at the cursor."
 			},
 			{
 				"command": "go.test.file",
@@ -3588,16 +3697,14 @@ extensions package list
 								"default": "127.0.0.1"
 							},
 							"trace": {
-								"type": [
-									"boolean",
-									"string"
-								],
+								"type": "string",
 								"enum": [
+									"log",
 									"verbose",
-									true
+									"error"
 								],
-								"default": true,
-								"description": "When 'true', the extension will log diagnostic info to a file. When 'verbose', it will also show logs in the console."
+								"default": "error",
+								"description": "Various levels of logging shown in the debug console. When set to 'log' or 'verbose', the logs will also be written to a file."
 							},
 							"envFile": {
 								"type": "string",
@@ -3681,6 +3788,11 @@ extensions package list
 								"type": "number",
 								"description": "Maximum depth of stack trace collected from Delve",
 								"default": 50
+							},
+							"showGlobalVariables": {
+								"type": "boolean",
+								"default": true,
+								"description": "Boolean value to indicate whether global package variables should be shown in the variables pane or not."
 							}
 						}
 					}
@@ -3752,9 +3864,9 @@ extensions package list
 					"enum": [
 						"golint",
 						"gometalinter",
-						"megacheck",
 						"golangci-lint",
-						"revive"
+						"revive",
+						"staticcheck"
 					]
 				},
 				"go.lintFlags": {
@@ -4334,6 +4446,11 @@ extensions package list
 							"type": "boolean",
 							"default": true,
 							"description": "If true, adds command to upload the current file or selection to the Go Playground"
+						},
+						"debugTestAtCursor": {
+							"type": "boolean",
+							"default": true,
+							"description": "If true, adds command to debug the test under the cursor to the editor context menu"
 						}
 					},
 					"default": {
@@ -4348,7 +4465,8 @@ extensions package list
 						"generateTestForPackage": false,
 						"addImport": true,
 						"testCoverage": true,
-						"playground": true
+						"playground": true,
+						"debugTestAtCursor": true
 					},
 					"description": "Experimental Feature: Enable/Disable entries from the context menu in the editor.",
 					"scope": "resource"
@@ -4485,6 +4603,11 @@ extensions package list
 				{
 					"when": "editorTextFocus && config.go.editorContextMenuCommands.benchmarkAtCursor && resourceLangId == go && !config.editor.codeLens",
 					"command": "go.benchmark.cursor",
+					"group": "Go group 1"
+				},
+				{
+					"when": "editorTextFocus && config.go.editorContextMenuCommands.debugTestAtCursor && resourceLangId == go && !config.editor.codeLens",
+					"command": "go.debug.cursor",
 					"group": "Go group 1"
 				},
 				{
@@ -5251,11 +5374,11 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>rebornix.ruby-0.21.0
+>>>>>>>>>>>>>>>>>>>>>>>rebornix.ruby-0.21.1
 {
 	"name": "ruby",
 	"displayName": "Ruby",
-	"version": "0.21.0",
+	"version": "0.21.1",
 	"publisher": "rebornix",
 	"description": "Provides Ruby language and debugging support for Visual Studio Code",
 	"author": {
@@ -5315,7 +5438,7 @@ extensions package list
 	},
 	"devDependencies": {
 		"@types/mocha": "^2.2.33",
-		"@types/node": "^6.14.2",
+		"@types/node": "^6.0.50",
 		"cson-parser": "^2.0.1",
 		"mocha": "^2.4.5",
 		"prettier": "^1.11.1",
@@ -5367,7 +5490,7 @@ extensions package list
 			}
 		],
 		"configuration": {
-			"title": "ruby language settings",
+			"title": "Ruby configuration",
 			"properties": {
 				"ruby.locate": {
 					"type": "object",

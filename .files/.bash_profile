@@ -6,3 +6,5 @@
 export GOPATH=/Users/heminwon/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
+
+export PATH=$PATH:/usr/local/mysql/bin

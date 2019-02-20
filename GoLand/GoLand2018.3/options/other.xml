@@ -1,6 +1,6 @@
 <application>
   <component name="PropertiesComponent">
-    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.6935725" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.715959" />
     <property name="CommitChangeListDialog.SPLITTER_PROPORTION_2" value="0.81363636" />
     <property name="Copy.OpenInEditor" value="true" />
     <property name="Default.savedEditorTheme" value="_@user_Default" />
@@ -21,7 +21,7 @@
     <property name="go.init.cfg.2" value="true" />
     <property name="go.init.cfg.line.markers" value="true" />
     <property name="go.init.mod.file.type" value="true" />
-    <property name="go.last.update.timestamp" value="1548729340634" />
+    <property name="go.last.update.timestamp" value="1548999221799" />
     <property name="go.libraries.notification.had.been.shown" value="true" />
     <property name="go.optimizeImportsByDefault" value="true" />
     <property name="go.settings.notification.shown" value="true" />
