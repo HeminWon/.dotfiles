@@ -171,8 +171,8 @@
         <usage id="FROM_PREVIOUS" value="1" />
       </usages-collector>
       <usages-collector id="statistics.lifecycle.app">
-        <usage id="ide.start" value="4" />
-        <usage id="ide.close" value="4" />
+        <usage id="ide.start" value="5" />
+        <usage id="ide.close" value="5" />
         <usage id="ide.close.restart" value="1" />
         <usage id="ide.error" value="6">
           <context>
@@ -187,6 +187,9 @@
             <entry key="data_2" value="40+" />
           </context>
         </usage>
+      </usages-collector>
+      <usages-collector id="statistics.ide.self.update">
+        <usage id="notification.shown" value="2" />
       </usages-collector>
     </session>
   </component>
@@ -230,7 +233,7 @@
     <feature id="editing.completion.postfix" count="5" last-shown="0" last-used="1549002787431" shown-count="0" />
     <feature id="refactoring.introduceVariable.incompleteStatement" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="dir.diff" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="editing.select.word" count="2426" last-shown="0" last-used="1549014384640" shown-count="0" />
+    <feature id="editing.select.word" count="2427" last-shown="0" last-used="1550730116240" shown-count="0" />
     <feature id="editing.add.carets.using.double.ctrl" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.quickjavadoc.lookup" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="ui.scheme.quickswitch" count="0" last-shown="0" last-used="0" shown-count="0" />
@@ -395,7 +398,7 @@
   <component name="ToolWindowsCollector">
     <counts>
       <entry toolWindow="Debug by Activation" count="35" />
-      <entry toolWindow="Project by Activation" count="69" />
+      <entry toolWindow="Project by Activation" count="70" />
       <entry toolWindow="Run by Activation" count="78" />
       <entry toolWindow="TODO by Activation" count="1" />
     </counts>

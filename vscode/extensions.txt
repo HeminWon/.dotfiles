@@ -899,12 +899,12 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>ms-ceintl.vscode-language-pack-zh-hans-1.30.2
+>>>>>>>>>>>>>>>>>>>>>>>ms-ceintl.vscode-language-pack-zh-hans-1.31.4
 {
 	"name": "vscode-language-pack-zh-hans",
 	"displayName": "Chinese (Simplified) Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Chinese (Simplified)",
-	"version": "1.30.2",
+	"version": "1.31.4",
 	"publisher": "MS-CEINTL",
 	"repository": {
 		"type": "git",
@@ -912,7 +912,7 @@ extensions package list
 	},
 	"license": "SEE MIT LICENSE IN LICENSE.md",
 	"engines": {
-		"vscode": "^1.30.0"
+		"vscode": "^1.31.0"
 	},
 	"icon": "languagepack.png",
 	"categories": [
@@ -5374,11 +5374,11 @@ extensions package list
 	}
 }
 
->>>>>>>>>>>>>>>>>>>>>>>rebornix.ruby-0.21.1
+>>>>>>>>>>>>>>>>>>>>>>>rebornix.ruby-0.22.0
 {
 	"name": "ruby",
 	"displayName": "Ruby",
-	"version": "0.21.1",
+	"version": "0.22.0",
 	"publisher": "rebornix",
 	"description": "Provides Ruby language and debugging support for Visual Studio Code",
 	"author": {
@@ -5427,11 +5427,11 @@ extensions package list
 		"url": "https://github.com/rubyide/vscode-ruby/issues"
 	},
 	"dependencies": {
+		"@types/xmldom": "^0.1.29",
 		"async": "^2.3.0",
 		"lodash": "^4.17.3",
 		"minimatch": "^3.0.3",
 		"ruby-method-locate": "*",
-		"vscode": "^1.1.4",
 		"vscode-debugadapter": "^1.19.0",
 		"vscode-debugprotocol": "^1.19.0",
 		"xmldom": "^0.1.19"
@@ -5445,8 +5445,10 @@ extensions package list
 		"run-sequence": "*",
 		"tslint": "^5.9.1",
 		"tslint-config-prettier": "^1.10.0",
-		"tslint-microsoft-contrib": "^5.0.3",
+		"tslint-config-standard": "^8.0.1",
+		"tslint-no-circular-imports": "^0.6.1",
 		"typescript": "^2.9.2",
+		"vscode": "^1.1.29",
 		"vscode-debugadapter-testsupport": "^1.19.0"
 	},
 	"scripts": {
@@ -5516,7 +5518,8 @@ extensions package list
 					"type": "string",
 					"default": "ruby",
 					"description": "Path to the Ruby interpreter.  Set this to an absolute path to select from multiple installed Ruby versions.",
-					"isExecutable": true
+					"isExecutable": true,
+					"scope": "resource"
 				},
 				"ruby.useLanguageServer": {
 					"type": "boolean",
@@ -5550,12 +5553,14 @@ extensions package list
 				"ruby.useBundler": {
 					"type": "boolean",
 					"default": false,
-					"description": "Whether ruby tools should be started using Bundler"
+					"description": "Whether ruby tools should be started using Bundler",
+					"scope": "resource"
 				},
 				"ruby.pathToBundler": {
 					"type": "string",
 					"default": "bundle",
-					"description": "Path to the bundler executable (used if useBundler is true)"
+					"description": "Path to the bundler executable (used if useBundler is true)",
+					"scope": "resource"
 				},
 				"ruby.rctComplete.commandPath": {
 					"type": "string",
@@ -5569,6 +5574,7 @@ extensions package list
 					"description": "Time (ms) to wait after keypress before running enabled linters. Ensures linters are only run when typing has finished and not for every keypress"
 				},
 				"ruby.lint": {
+					"scope": "resource",
 					"type": "object",
 					"description": "Set individual ruby linters to use",
 					"properties": {
@@ -5601,9 +5607,23 @@ extensions package list
 							"description": "Use fasterer to lint"
 						},
 						"reek": {
-							"type": "boolean",
+							"type": [
+								"boolean",
+								"object"
+							],
 							"default": false,
-							"description": "Use reek to lint"
+							"description": "Use reek to lint",
+							"properties": {
+								"command": {
+									"type": "string",
+									"description": "reek command. Setting this will cause reek to be executed exactly this way and other settings will be ignored!"
+								},
+								"useBundler": {
+									"type": "boolean",
+									"default": false,
+									"description": "Prefix the `reek` command with `bundle exec`"
+								}
+							}
 						},
 						"rubocop": {
 							"type": [
@@ -5613,6 +5633,15 @@ extensions package list
 							"default": false,
 							"description": "Use RuboCop to lint",
 							"properties": {
+								"command": {
+									"type": "string",
+									"description": "RuboCop command. Setting this will cause RuboCop to be executed this way and other settings will be ignored!"
+								},
+								"useBundler": {
+									"type": "boolean",
+									"default": false,
+									"description": "Prefix the `rubocop` command with `bundle exec`"
+								},
 								"lint": {
 									"type": "boolean",
 									"default": false,
@@ -5643,6 +5672,46 @@ extensions package list
 									"type": "boolean",
 									"default": false,
 									"description": "Rails cops are specific to the Ruby on Rails framework"
+								}
+							}
+						},
+						"standard": {
+							"type": [
+								"boolean",
+								"object"
+							],
+							"default": false,
+							"description": "Use standard to lint",
+							"properties": {
+								"command": {
+									"type": "string",
+									"description": "Standard command. Setting this will cause standard to be executed this way and other settings will be ignored!"
+								},
+								"useBundler": {
+									"type": "boolean",
+									"default": false,
+									"description": "Prefix the `standard` command with `bundle exec`"
+								},
+								"only": {
+									"type": "array",
+									"description": "Run only the specified cop(s) and/or cops in the specified departments",
+									"items": {
+										"type": "string"
+									}
+								},
+								"except": {
+									"type": "array",
+									"description": "Run all cops enabled by configuration except the specified cop(s) and/or departments",
+									"items": {
+										"type": "string"
+									}
+								},
+								"require": {
+									"type": "array",
+									"description": "Require Ruby files",
+									"items": {
+										"type": "string"
+									}
 								}
 							}
 						},
@@ -5694,10 +5763,13 @@ extensions package list
 					],
 					"enum": [
 						false,
-						"rubocop"
+						"rubocop",
+						"standard",
+						"rufo"
 					],
 					"default": false,
-					"description": "Which system to use for formatting. Use `false` to disable or if another extension provides this feature."
+					"description": "Which system to use for formatting. Use `false` to disable or if another extension provides this feature.",
+					"scope": "resource"
 				}
 			}
 		},

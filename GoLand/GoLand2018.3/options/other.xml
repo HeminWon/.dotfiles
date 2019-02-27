@@ -21,7 +21,7 @@
     <property name="go.init.cfg.2" value="true" />
     <property name="go.init.cfg.line.markers" value="true" />
     <property name="go.init.mod.file.type" value="true" />
-    <property name="go.last.update.timestamp" value="1548999221799" />
+    <property name="go.last.update.timestamp" value="1550720082961" />
     <property name="go.libraries.notification.had.been.shown" value="true" />
     <property name="go.optimizeImportsByDefault" value="true" />
     <property name="go.settings.notification.shown" value="true" />
