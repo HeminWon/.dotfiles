@@ -8,3 +8,4 @@ export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
 export PATH=$PATH:/usr/local/mysql/bin
+export PATH=$HOME/Documents/flutter/bin:$PATH
