@@ -28,17 +28,17 @@ function installer() {
 	# 找出本地未安装的软件列表
 	echo "#!/bin/bash" > $file_applist/installer
 	echo "############### Not install app" >> $file_applist/installer
-	comm -2 -3 $brew_list $temp_brew_list | sed 's/^/brew install /g' >> $file_installer
-	comm -2 -3 $brewcask_list $temp_brewcask_list | sed 's/^/brew cask install /g' >> $file_installer
-	comm -2 -3 $mas_list $temp_mas_list | sed 's/^/mas install /g' | awk '$3=$3 " #"' >> $file_installer
-	comm -2 -3 $app_list $temp_app_list | sed 's/^/# /g' >> $file_installer
+	comm -2 -3 $brew_list $temp_brew_list | LC_CTYPE=C sed 's/^/brew install /g' >> $file_installer
+	comm -2 -3 $brewcask_list $temp_brewcask_list | LC_CTYPE=C sed 's/^/brew cask install /g' >> $file_installer
+	comm -2 -3 $mas_list $temp_mas_list | LC_CTYPE=C sed 's/^/mas install /g' | awk '$3=$3 " #"' >> $file_installer
+	comm -2 -3 $app_list $temp_app_list | LC_CTYPE=C sed 's/^/# /g' >> $file_installer
 
 	# 找出本地比配置列表多出的软件
 	echo "\n############## Native app" >> $file_applist/installer
-	comm -2 -3 $temp_brew_list $brew_list | sed 's/^/brew install /g' | sed 's/^/# /g' >> $file_installer
-	comm -2 -3 $temp_brewcask_list $brewcask_list | sed 's/^/brew cask install /g' | sed 's/^/# /g' >> $file_installer
-	comm -2 -3 $temp_mas_list $mas_list | sed 's/^/mas install /g' | awk '$3=$3 " #"' | sed 's/^/# /g' >> $file_installer
-	comm -2 -3 $temp_app_list $app_list | sed 's/^/# /g' | sed 's/^/# /g' >> $file_installer
+	comm -2 -3 $temp_brew_list $brew_list | LC_CTYPE=C sed 's/^/brew install /g' | sed 's/^/# /g' >> $file_installer
+	comm -2 -3 $temp_brewcask_list $brewcask_list | LC_CTYPE=C sed 's/^/brew cask install /g' | sed 's/^/# /g' >> $file_installer
+	comm -2 -3 $temp_mas_list $mas_list | LC_CTYPE=C sed 's/^/mas install /g' | awk '$3=$3 " #"' | sed 's/^/# /g' >> $file_installer
+	comm -2 -3 $temp_app_list $app_list | LC_CTYPE=C sed 's/^/# /g' | sed 's/^/# /g' >> $file_installer
 
 	# 移除临时文件
 	rm $temp_brew_list
