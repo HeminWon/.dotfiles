@@ -100,10 +100,10 @@ export NVM_DIR="/Users/heminwon/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 function proxy() {
-    launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.polipo.plist
-    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.polipo.plist
-    export http_proxy=http://localhost:8123
-    export https_proxy=http://localhost:8123
+    curl cip.cc
+    export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;
+    echo "---->"
+    curl cip.cc
 }
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -e
+set -x
+
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -19,7 +22,21 @@ defaults write com.apple.finder AppleShowAllFiles -boolean true && killall Finde
 
 # Allow MAC to install any source
 sudo spctl --master-disable
-spctl --status
+# spctl --status
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume="%00"
+
+# dock setup
+# 删除所有固定图标
+defaults write com.apple.dock static-only -boolean true
+# ⌘H hidden show
+defaults write com.apple.dock showhidden -bool true
+# 关闭 Dock 自动隐藏动画
+defaults write com.apple.dock autohide-time-modifier -float 0
+# defaults write com.apple.dock autohide-time-modifier -float 0.7
+# 鼠标唤起的触发有一个延迟时间设置
+defaults write com.apple.Dock autohide-delay -float 0
+# defaults delete com.apple.Dock autohide-delay
+
+killall Dock
