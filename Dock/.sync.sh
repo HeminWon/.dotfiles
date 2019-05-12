@@ -1,10 +1,20 @@
 #!/usr/bin/env bash
 
-if [[ ! -e /Applications/iTerm.app ]]; then
-    brew cask install iterm2
-else
-    echo "You have installed iTerm2"
-fi
+set -x
+set -e
 
-defaults delete com.googlecode.iterm2
-cp ~/dotfiles/iTerm/com.googlecode.iterm2.plist ~/Library/Preferences
+sync_Dock() {
+	NAME_DOCKS=`ls ~/dotfiles/Dock | grep -E '^com.apple.dock.' | sort -V -r`
+	for NAME_DOCK in $NAME_DOCKS
+		do
+			PATH_DOCK=~/dotfiles/Dock/$NAME_DOCK
+			if [[ -f "$PATH_DOCK" ]]; then
+				cp -Rf $PATH_DOCK ~/Library/Preferences/$NAME_DOCK
+			fi
+		done
+}
+
+# defaults delete com.apple.dock
+sync_Dock
+killall Dock
+killall Dock
