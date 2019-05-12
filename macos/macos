@@ -28,15 +28,36 @@ sudo spctl --master-disable
 sudo nvram SystemAudioVolume="%00"
 
 # dock setup
+# Remove all icons from dock
+defaults write com.apple.dock persistent-apps -array
 # 删除所有固定图标
-defaults write com.apple.dock static-only -boolean true
+# defaults write com.apple.dock static-only -boolean true
 # ⌘H hidden show
 defaults write com.apple.dock showhidden -bool true
 # 关闭 Dock 自动隐藏动画
 defaults write com.apple.dock autohide-time-modifier -float 0
 # defaults write com.apple.dock autohide-time-modifier -float 0.7
 # 鼠标唤起的触发有一个延迟时间设置
+defaults write com.apple.Dock autohide -boolean true
 defaults write com.apple.Dock autohide-delay -float 0
 # defaults delete com.apple.Dock autohide-delay
+# System Preferences > Dock > Size (magnified):
+defaults write com.apple.dock largesize -int 85
+# System Preferences > Dock > Magnification:
+defaults write com.apple.dock magnification -bool true
+# System Preferences > Dock > Size:
+defaults write com.apple.dock tilesize -int 40
+# Swipe down with three/four fingers
+defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+# turn on "genie" animation
+defaults write com.apple.dock mineffect genie
+# Enable minize into app icon
+# defaults write com.apple.dock minimize-to-application -bool true
+# Remove running app indicators
+# defaults write com.apple.dock show-process-indicators -bool false
+# Remove icon bounce on launch
+# defaults write com.apple.dock launchanim -bool false
+
+defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'
 
 killall Dock
