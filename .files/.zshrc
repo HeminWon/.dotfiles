@@ -94,18 +94,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/sbin:$PATH"
 
-
-# HeminWon
-export NVM_DIR="/Users/heminwon/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-
-function proxy() {
-    curl cip.cc
-    export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;
-    echo "---->"
-    curl cip.cc
-}
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 # export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.bash_profile" ]] && source "$HOME/.bash_profile"
