@@ -1,7 +1,7 @@
 refreshFrequency: 60000
 
 #Link Your File Here
-todolistfile = '/Users/heminwon/Desktop/todo.txt'
+todolistfile = '$HOME/Dropbox/workspace/todo.txt'
 
 
 #other stuff
