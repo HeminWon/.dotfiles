@@ -4,9 +4,6 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-cask "java8"
-# C/C++ resolver library and DNS resolver utilities
-brew "adns"
 # Automatic configure script builder
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -17,78 +14,49 @@ brew "coreutils"
 brew "go"
 # Go dependency management tool
 brew "dep"
-# Distributed search & analytics engine
-brew "elasticsearch"
-# Program that can automate interactive applications
-brew "expect"
-# GNU database manager
-brew "gdbm"
-# GNU internationalization (i18n) and localization (l10n) library
-brew "gettext"
-# GNU multiple precision arithmetic library
-brew "gmp"
-# Portable Foreign Function Interface library
-brew "libffi"
-# ASN.1 structure parser library
-brew "libtasn1"
-# C string library for manipulating Unicode strings
-brew "libunistring"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# Common error values for all GnuPG components
-brew "libgpg-error"
-# Assuan IPC Library
-brew "libassuan"
-# Cryptographic library based on the code from GnuPG
-brew "libgcrypt"
-# X.509 and CMS library
-brew "libksba"
-# GNU Pretty Good Privacy (PGP) package
-brew "gnupg"
-# Analytics and search dashboard for Elasticsearch
-brew "kibana"
-# Generic library support script
-brew "libtool"
 # YAML Parser
 brew "libyaml"
-# Powerful, lightweight programming language
-brew "lua"
-# Mac App Store command-line interface
-brew "mas"
-# SSL/TLS cryptography library
-brew "openssl"
 # Library for command-line editing
 brew "readline"
-# Intercept, modify, replay, save HTTP/S traffic
-brew "mitmproxy"
+# Isolated development environments using Docker
+brew "docker-compose", link: false
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Generic library support script
+brew "libtool"
+# Mac App Store command-line interface
+brew "mas"
 # NCurses Disk Usage
 brew "ncdu"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Python dependency management tool
+brew "pipenv"
 # Manage compile and link flags for libraries
 brew "pkg-config"
-# Web caching proxy
-brew "polipo"
-# Advanced filtering web proxy
-brew "privoxy"
-# Pyenv plugin to manage virtualenv
-brew "pyenv-virtualenv"
-# Alternative to pyenv for managing virtualenvs
-brew "pyenv-virtualenvwrapper"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Tool to enforce Swift style and conventions
+brew "swiftlint"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Extract, view, and test RAR archives
 brew "unrar"
-# JavaScript package manager
-brew "yarn"
+# Watch files and take action when they change
+brew "watchman"
+cask "aerial"
+cask "appcleaner"
+cask "appium"
 cask "bitbar"
 cask "captin"
+cask "charles"
 cask "cheatsheet"
 cask "cryptomator"
 cask "docker"
 cask "dropbox"
 cask "firefox"
 cask "flux"
+cask "foxmail"
 cask "go2shell"
 cask "google-chrome"
 cask "hammerspoon"
@@ -97,20 +65,27 @@ cask "iterm2"
 cask "keycastr"
 cask "lepton"
 cask "licecap"
+cask "neteasemusic"
 cask "postman"
 cask "qq"
 cask "save-hollywood"
+cask "shadowsocksx-ng"
 cask "shuttle"
-cask "sogouinput"
 cask "sourcetree"
+cask "textmate"
 cask "typora"
+cask "ubersicht"
+cask "v2rayu"
+cask "visual-studio-code"
+cask "webviewscreensaver"
+cask "wechat"
+cask "wireshark"
 cask "xmind"
-mas "GarageBand", id: 682658836
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
+mas "iMovie 剪辑", id: 408981434
+mas "Keynote 讲演", id: 409183694
+mas "Numbers 表格", id: 409203825
 mas "OhMyStar2", id: 1218642292
-mas "Pages", id: 409201541
+mas "Pages 文稿", id: 409201541
 mas "Reeder", id: 880001334
-mas "WeChat", id: 836500024
-mas "Xcode", id: 497799835
+mas "库乐队", id: 682658836
 mas "网易有道词典", id: 491854842
