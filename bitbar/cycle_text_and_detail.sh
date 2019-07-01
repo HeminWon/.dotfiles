@@ -17,9 +17,16 @@
 # open the menu.
 #
 
-echo "知而无畏"
-echo "定能生慧"
-echo "利他"
+# echo "知而无畏"
+# echo "定能生慧"
+# echo "利他"
+echo "客户第一"
+echo "诚信正直"
+echo "团队协作"
+echo "拥抱变化"
+echo "结果导向"
+echo "自我驱动"
+
 echo ---
 echo These lines are only visible
 echo when you open the menu.
