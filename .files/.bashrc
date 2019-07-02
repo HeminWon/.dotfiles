@@ -12,7 +12,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export GOPATH=$HOME/.go:$HOME/Documents/go
 export PATH=$PATH:${GOPATH//://bin:}/bin
 export GOBIN=
-export GO111MODULE=on
+export GO111MODULE=auto
 
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=$HOME/Documents/flutter/bin:$PATH
