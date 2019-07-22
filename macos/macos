@@ -60,4 +60,16 @@ defaults write com.apple.dock mineffect genie
 
 defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'
 
+# keyboard
+#disable special characters when holding keys
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# normal minimum is 15 (225 ms)
+defaults write -g InitialKeyRepeat -float 10.0
+defaults write NSGlobalDomain InitialKeyRepeat -float 10.0
+
+# normal minimum is 2 (30 ms)
+defaults write NSGlobalDomain KeyRepeat -float 1.0
+defaults write -g KeyRepeat -float 1.0
+
 killall Dock
