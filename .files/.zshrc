@@ -60,6 +60,9 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  autojump
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -93,6 +96,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/usr/local/sbin:$PATH"
+
+# autojump
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 # export PATH="$PATH:$HOME/.rvm/bin"
