@@ -17,6 +17,8 @@ export GO111MODULE=auto
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=$HOME/Documents/flutter/bin:$PATH
 
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+
 function proxy() {
     curl cip.cc
     export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;

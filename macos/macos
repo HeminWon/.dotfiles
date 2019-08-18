@@ -72,4 +72,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -float 10.0
 defaults write NSGlobalDomain KeyRepeat -float 1.0
 defaults write -g KeyRepeat -float 1.0
 
+# 去除mac密码位数限制
+pwpolicy -clearaccountpolicies
+
 killall Dock
