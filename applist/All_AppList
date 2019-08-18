@@ -16,6 +16,7 @@ Contacts.app
 Contexts.app
 Cryptomator.app
 Dashboard.app
+DataGrip.app
 Dictionary.app
 Docker.app
 Dropbox.app
@@ -38,6 +39,7 @@ Keynote.app
 LICEcap.app
 Launchpad.app
 Lepton.app
+LocalizedCSV.app
 Mail.app
 Maps.app
 Messages.app
@@ -58,8 +60,10 @@ QuickTime Player.app
 Reeder.app
 Reminders.app
 Remove Sophos Home.app
+SYStringsParser.app
 Safari.app
-ShadowsocksX-NG.app
+Sequel Pro.app
+ShadowsocksX-NG-R8.app
 Shuttle.app
 Siri.app
 Sophos Home.app
@@ -79,6 +83,7 @@ VoiceMemos.app
 WeChat.app
 Wireshark.app
 XMind.app
+Xcode-beta.app
 Xcode.app
 iMovie.app
 iTerm.app

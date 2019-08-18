@@ -1,13 +1,17 @@
 tap "buo/cask-upgrade"
 tap "go-delve/delve"
 tap "homebrew/bundle"
-tap "homebrew/cask"
+tap "homebrew/cask", "https://mirrors.ustc.edu.cn/homebrew-cask.git"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
+tap "homebrew/core", "https://mirrors.ustc.edu.cn/homebrew-core.git"
 # Automatic configure script builder
 brew "autoconf"
+# Shell extension to jump to frequently used directories
+brew "autojump"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# Decentralized dependency manager for Cocoa
+brew "carthage"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Open source programming language to build simple/reliable/efficient software
@@ -22,10 +26,14 @@ brew "readline"
 brew "docker-compose", link: false
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Library to communicate with iOS devices natively
+brew "libimobiledevice"
 # Generic library support script
 brew "libtool"
 # Mac App Store command-line interface
 brew "mas"
+# Open source relational database management system
+brew "mysql"
 # NCurses Disk Usage
 brew "ncdu"
 # Cryptography and SSL/TLS Toolkit
@@ -38,6 +46,8 @@ brew "pkg-config"
 brew "stow"
 # Tool to enforce Swift style and conventions
 brew "swiftlint"
+# Terminal multiplexer
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Extract, view, and test RAR archives
@@ -69,7 +79,8 @@ cask "neteasemusic"
 cask "postman"
 cask "qq"
 cask "save-hollywood"
-cask "shadowsocksx-ng"
+cask "sequel-pro-nightly"
+cask "shadowsocksx-ng-r"
 cask "shuttle"
 cask "sourcetree"
 cask "textmate"
