@@ -7,6 +7,7 @@
 # <bitbar.desc>Write what ever you want into your Menubar.</bitbar.desc>
 # <bitbar.image>https://cldup.com/myKD3KqgCA-3000x3000.png</bitbar.image>
 
-echo "Issue"
+echo "me"
 echo "---"
-echo "open issue | href='https://github.com/HeminWon/Journey/issues"
+echo "issue | href='https://github.com/HeminWon/Journey/issues"
+echo "cleanMyMac | bash='curl https://raw.githubusercontent.com/HeminWon/CleanMyMac/develop/cleanmymac.sh | sh \n'"
