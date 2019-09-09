@@ -1,3 +1,14 @@
+
+valid_port() {
+    pIDa=`/usr/sbin/lsof -i :${1} | grep -v "PID" | awk '{print $2}'`
+    if [ "$pIDa" != "" ];
+    then
+        return 0
+    else
+        return 1
+    fi
+}
+
 # HeminWon
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
@@ -20,8 +31,13 @@ export PATH=$HOME/Documents/flutter/bin:$PATH
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 function proxy() {
-    curl cip.cc
-    export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;
-    echo "---->"
-    curl cip.cc
+    valid_port 1087
+    if [ $? -eq 0 ]; then
+        curl cip.cc
+        export http_proxy=http://127.0.0.1:1087; export https_proxy=http://127.0.0.1:1087;
+        echo "---->"
+        curl cip.cc
+    else
+        echo 'ssr did not start, Please open ssr'
+    fi  
 }
