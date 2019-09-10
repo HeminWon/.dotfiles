@@ -1,0 +1,8 @@
+{
+  "registry-mirrors" : [
+    "http://hub-mirror.c.163.com",
+    "https://dockerhub.azk8s.cn"
+  ],
+  "debug" : true,
+  "experimental" : false
+}
