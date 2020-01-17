@@ -8,11 +8,13 @@ dep
 docker-compose
 gdbm
 gettext
+git-lfs
 gmp
 gnupg
 gnutls
 go
 icu4c
+ios-deploy
 libassuan
 libevent
 libffi
@@ -26,6 +28,7 @@ libtasn1
 libtool
 libunistring
 libusb
+libusbmuxd
 libyaml
 mas
 mysql
@@ -40,7 +43,10 @@ pcre
 pinentry
 pipenv
 pkg-config
+protobuf
+protobuf@3.7
 python
+python@3.8
 readline
 sqlite
 stow

@@ -20,12 +20,18 @@ brew "go"
 brew "dep"
 # YAML Parser
 brew "libyaml"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Library for command-line editing
 brew "readline"
 # Isolated development environments using Docker
 brew "docker-compose", link: false
+# Git extension for versioning large files
+brew "git-lfs"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Install and debug iPhone apps from the command-line
+brew "ios-deploy"
 # Library to communicate with iOS devices natively
 brew "libimobiledevice"
 # Generic library support script
@@ -36,8 +42,6 @@ brew "mas"
 brew "mysql"
 # NCurses Disk Usage
 brew "ncdu"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Python dependency management tool
 brew "pipenv"
 # Manage compile and link flags for libraries
@@ -75,11 +79,13 @@ cask "iterm2"
 cask "keycastr"
 cask "lepton"
 cask "licecap"
+cask "macs-fan-control"
 cask "neteasemusic"
 cask "postman"
 cask "qq"
 cask "save-hollywood"
 cask "sequel-pro-nightly"
+cask "shadowsocksx-ng"
 cask "shadowsocksx-ng-r"
 cask "shuttle"
 cask "sourcetree"
@@ -95,8 +101,9 @@ cask "xmind"
 mas "iMovie 剪辑", id: 408981434
 mas "Keynote 讲演", id: 409183694
 mas "Numbers 表格", id: 409203825
-mas "OhMyStar2", id: 1218642292
+mas "OhMyStar", id: 1218642292
 mas "Pages 文稿", id: 409201541
 mas "Reeder", id: 880001334
+mas "Xcode", id: 497799835
 mas "库乐队", id: 682658836
 mas "网易有道词典", id: 491854842
