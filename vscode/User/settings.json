@@ -2,7 +2,7 @@
     "window.zoomLevel": 1,
     "go.useLanguageServer": true,
     "diffEditor.ignoreTrimWhitespace": true,
-    "sync.gist": "a660cbf602d83fec809bb2f2d743d2fd",
+    "sync.gist": "15f61b09cb060a26435eeeeaaa04f437",
     "sync.autoUpload": false,
     "git.autofetch": true,
     "explorer.confirmDelete": false,
@@ -17,7 +17,7 @@
     "workbench.sideBar.location": "left",
     "workbench.activityBar.visible": true,
     "extensions.ignoreRecommendations": false,
-    "sync.forceUpload": true,
+    "sync.forceUpload": false,
     "vs-kubernetes": {
         "vs-kubernetes.helm-path": "/Users/heminwon/.vs-kubernetes/tools/helm/darwin-amd64/helm",
         "vs-kubernetes.draft-path": "/Users/heminwon/.vs-kubernetes/tools/draft/darwin-amd64/draft"

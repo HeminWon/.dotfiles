@@ -8,7 +8,7 @@ backup_vscode() {
 	PATH_VSCODE_USER=~/Library/Application\ Support/Code/User
 	echo $PATH_VSCODE_USER
 	if [[ -d "$PATH_VSCODE_USER" ]]; then
-		rsync -avP --exclude={globalStorage,workspaceStorage} --delete ~/Library/Application\ Support/Code/User ~/dotfiles/vscode/
+		rsync -avP --exclude={globalStorage,workspaceStorage,syncLocalSettings.json} --delete ~/Library/Application\ Support/Code/User ~/dotfiles/vscode/
 	fi
 
 	# PATH_VSCODE_USER=~/Library/Application\ Support/Code/User
@@ -36,6 +36,8 @@ backup_vscode() {
 backup_vscode_extensions () {
 	echo "extensions package list" > ~/dotfiles/vscode/extensions.txt
 	code --list-extensions --show-versions >> ~/dotfiles/vscode/extensions.txt
+
+	curl https://gist.githubusercontent.com/HeminWon/15f61b09cb060a26435eeeeaaa04f437/raw/77b262f2bc1b9a4d6536c8cfb0d14ec9c42d0865/extensions.json > ~/dotfiles/vscode/extensions.json
 }
 
 backup_vscode
