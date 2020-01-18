@@ -1,4 +1,25 @@
 {
     "window.zoomLevel": 1,
-    "git.autofetch": true
+    "go.useLanguageServer": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "sync.gist": "a660cbf602d83fec809bb2f2d743d2fd",
+    "sync.autoUpload": false,
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "vscode-icons",
+    "svn.enableProposedApi": "product",
+    "[sql]": {
+        "editor.defaultFormatter": "ms-mssql.mssql"
+    },
+    "cSpell.userWords": [
+        "nsqlookupd"
+    ],
+    "workbench.sideBar.location": "left",
+    "workbench.activityBar.visible": true,
+    "extensions.ignoreRecommendations": false,
+    "sync.forceUpload": true,
+    "vs-kubernetes": {
+        "vs-kubernetes.helm-path": "/Users/heminwon/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vs-kubernetes.draft-path": "/Users/heminwon/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+    }
 }
