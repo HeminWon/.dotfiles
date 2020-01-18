@@ -9,6 +9,6 @@
 
 echo "❀"
 echo "---"
-echo "issue | href='https://github.com/HeminWon/Journey/issues"
-echo "cleanMyMac | bash='curl https://raw.githubusercontent.com/HeminWon/CleanMyMac/develop/cleanmymac.sh | sh \n'"
+echo "issues | href='https://github.com/HeminWon/Journey/issues"
+echo "clean my mac | bash='curl https://raw.githubusercontent.com/HeminWon/CleanMyMac/develop/cleanmymac.sh | sh \n'"
 echo "backup dotfile | bash='sh ~/dotfiles/scripts/backup'"
