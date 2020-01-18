@@ -36,6 +36,8 @@ backup_vscode() {
 backup_vscode_extensions () {
 	echo "extensions package list" > ~/dotfiles/vscode/extensions.txt
 	code --list-extensions --show-versions >> ~/dotfiles/vscode/extensions.txt
+	echo "\r\nextensions package install list" >> ~/dotfiles/vscode/extensions.txt
+	code --list-extensions | xargs -L 1 echo code --install-extension >> ~/dotfiles/vscode/extensions.txt
 
 	curl https://gist.githubusercontent.com/HeminWon/15f61b09cb060a26435eeeeaaa04f437/raw/77b262f2bc1b9a4d6536c8cfb0d14ec9c42d0865/extensions.json > ~/dotfiles/vscode/extensions.json
 }
