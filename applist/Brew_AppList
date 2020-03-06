@@ -48,6 +48,7 @@ protobuf@3.7
 python
 python@3.8
 readline
+ruby
 sqlite
 stow
 swiftlint
