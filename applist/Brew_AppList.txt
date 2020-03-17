@@ -57,5 +57,6 @@ tree
 unbound
 unrar
 usbmuxd
+utf8proc
 watchman
 xz
