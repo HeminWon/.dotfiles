@@ -41,3 +41,9 @@ function proxy() {
         echo 'ssr did not start, Please open ssr'
     fi  
 }
+
+# Load the shell dotfiles, and then some:
+for file in ~/{dotfiles\/aliases}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
