@@ -21,5 +21,6 @@
     "vs-kubernetes": {
         "vs-kubernetes.helm-path": "/Users/heminwon/.vs-kubernetes/tools/helm/darwin-amd64/helm",
         "vs-kubernetes.draft-path": "/Users/heminwon/.vs-kubernetes/tools/draft/darwin-amd64/draft"
-    }
+    },
+    "vsicons.dontShowNewVersionMessage": true
 }

@@ -1,6 +1,8 @@
 Alfred 3.app
 AppCleaner.app
 Appium.app
+Avira Phantom VPN.app
+Avira.app
 BSPrintNotify
 Bartender 3.app
 BitBar.app
@@ -15,7 +17,6 @@ Docker.app
 Dropbox.app
 Firefox.app
 Flux.app
-GarageBand.app
 Go2Shell.app
 Google Chrome.app
 Hammerspoon.app
@@ -26,7 +27,6 @@ Keyboard Maestro.app
 Keynote.app
 LICEcap.app
 Lepton.app
-LocalizedCSV.app
 Macs Fan Control.app
 Microsoft Edge.app
 NeteaseMusic.app
@@ -35,32 +35,27 @@ OhMyStar.app
 One Switch.app
 Pages.app
 Postman.app
-QQ.app
 Reeder.app
-Remove Sophos Home.app
-SYStringsParser.app
 Safari.app
 Sequel Pro.app
 ShadowsocksX-NG.app
 Shuttle.app
-Sophos Home.app
 Sourcetree.app
 TextMate.app
 Tunnelblick.app
 Typora.app
 Utilities
-Übersicht.app
 Visual Studio Code.app
 WeChat.app
 Wireshark.app
 XMind ZEN.app
+XMind.app
 Xcode.app
 iTerm.app
 trojan-qt5.app
 zoom.us.app
+Übersicht.app
 微盘.app
-同花顺.app
 微文档.app
 企业微信.app
-银河玖乐Mac版.app
 网易有道词典.app
