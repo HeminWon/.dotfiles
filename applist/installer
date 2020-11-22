@@ -1,0 +1,120 @@
+#!/bin/bash
+############### Not install app
+brew install carthage
+brew install openssl
+brew install pipenv
+brew install protobuf@3.7
+brew install python
+brew install ruby
+brew install swiftlint
+brew install watchman
+brew cask install appium
+brew cask install charles
+brew cask install docker
+brew cask install foxmail
+brew cask install macs-fan-control
+brew cask install neteasemusic
+brew cask install postman
+brew cask install sequel-pro-nightly
+brew cask install ubersicht
+brew cask install visual-studio-code
+brew cask install webviewscreensaver
+brew cask install wechat
+brew cask install wireshark
+brew cask install xmind-zen
+mas install 1218642292 # OhMyStar (2.2.4)
+mas install 409183694 # Keynote 讲演 (9.2.1)
+mas install 409201541 # Pages 文稿 (8.2.1)
+mas install 409203825 # Numbers 表格 (10.0)
+mas install 491854842 # 网易有道词典 (2.7.0)
+mas install 497799835 # Xcode (11.4)
+mas install 682658836 # 库乐队 (10.3.3)
+mas install 880001334 # Reeder (3.2.2)
+# Appium.app
+# Avira Phantom VPN.app
+# Avira.app
+# BSPrintNotify
+# Brocadesoft
+# DataGrip.app
+# Huoying Video Desktop.app
+# Keynote.app
+# Macs Fan Control.app
+# Microsoft Edge.app
+# NeteaseMusic.app
+# One Switch.app
+# Postman.app
+# Reeder.app
+# Sequel Pro.app
+# TextMate.app
+# XMind ZEN.app
+# zoom.us.app
+# Übersicht.app
+# 微盘.app
+# 微文档.app
+# 企业微信.app
+
+############## Native app
+# brew install boost
+# brew install c-ares
+# brew install cmake
+# brew install cunit
+# brew install docker
+# brew install fdupes
+# brew install glib
+# brew install go-md2man
+# brew install ideviceinstaller
+# brew install jansson
+# brew install jemalloc
+# brew install libev
+# brew install libmaxminddb
+# brew install libsmi
+# brew install libssh
+# brew install libxml2
+# brew install libzip
+# brew install lua
+# brew install lua@5.1
+# brew install meson
+# brew install mono
+# brew install nghttp2
+# brew install ninja
+# brew install node
+# brew install pcre2
+# brew install polipo
+# brew install pyenv
+# brew install pyenv-virtualenv
+# brew install pyenv-virtualenvwrapper
+# brew install sphinx-doc
+# brew install wireshark
+# brew install yarn
+# brew install zsh
+# brew cask install raspberry-pi-imager
+# brew cask install shadowsocksx-ng-r
+# brew cask install vuze
+# brew cask install xmind
+# mas install 836500024 # WeChat (2.3.28)
+# mas install 491854842 # YoudaoDict (2.8.1)
+# mas install 1218642292 # OhMyStar (2.2.2)
+# mas install 497799835 # Xcode (11.2)
+# mas install 409201541 # Pages (10.0)
+# mas install 409203825 # Numbers (10.0)
+# # Adobe Bridge CC 2018
+# # Adobe Creative Cloud
+# # Adobe Photoshop CC 2018
+# # BaiduNetdisk_mac.app
+# # CLion.app
+# # DingTalk.app
+# # EVPlayer.app
+# # GitSyncMacApp.app
+# # GoLand.app
+# # PyCharm.app
+# # QQ.app
+# # Qfinder Pro.app
+# # Raspberry Pi Imager.app
+# # ShadowsocksX-NG-R8.app
+# # Superbar.app
+# # Thunder.app
+# # Uninstaller for Vuze.app
+# # Übersicht.app
+# # VNC Viewer.app
+# # Vuze.app
+# # balenaEtcher.app

@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 
 set -e 
+# set -x
 
 source ./basic
 
 function installer() {
 	file_applist=${file_dotfiles}/applist
 
-	brew_list=${file_applist}/Brew_AppList
-	brewcask_list=${file_applist}/BrewCask_AppList
-	mas_list=${file_applist}/MAS_AppList
-	app_list=${file_applist}/All_AppList
+	brew_list=${file_applist}/Brew_AppList.txt
+	brewcask_list=${file_applist}/BrewCask_AppList.txt
+	mas_list=${file_applist}/MAS_AppList.txt
+	app_list=${file_applist}/All_AppList.txt
 
 	temp_brew_list=${file_applist}/temp_Brew_AppList
 	temp_brewcask_list=${file_applist}/temp_BrewCask_AppList
@@ -20,8 +21,8 @@ function installer() {
 	file_installer=$file_applist/installer
 
 	# 生成本地的临时列表
-	brew list > $temp_brew_list
-	brew cask list > $temp_brewcask_list
+	brew list --formula > $temp_brew_list
+	brew list --cask > $temp_brewcask_list
 	mas list > $temp_mas_list
 	ls /Applications > $temp_app_list
 
