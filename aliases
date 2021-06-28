@@ -1,27 +1,3 @@
 #!/usr/bin/env bash
 
-### tuya
-alias oem_pod="OEM_REMOVE_LIST=\"TYAppleReviewModule0|\
-TYAppleReviewModule1|\
-TYAppleReviewModule2|\
-TYAppleReviewModule3|\
-TYAppleReviewModule4|\
-TYAppleReviewModule5|\
-TYAppleReviewModule6|\
-TYAppleReviewModule7|\
-TYAppleReviewModule8|\
-TYAppleReviewModule9|\
-TYAppleReviewModule10|\
-TYAppleReviewModule11|\
-TYAppleReviewModule12|\
-TYMallModule｜\
-TYAIFaceModule|\
-TYCameraPanelDeprecated|\
-TYVoiceModule|\
-TYVoiceOverseasModule|\
-TYAVSManagerModule|\
-TuyaRNApi/AVS|\
-TYLoginWithAmzSDK|\
-TYRCTSpeakerManagerModule|\
-TuyaRNApi/Speak|\
-DingDangSDK\" pod"
+### HeminWon

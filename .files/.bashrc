@@ -31,10 +31,10 @@ export PATH=$HOME/Documents/flutter/bin:$PATH
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 function proxy() {
-    valid_port 1087
+    valid_port 7890
     if [ $? -eq 0 ]; then
         curl cip.cc
-        export http_proxy=http://127.0.0.1:1087; export https_proxy=http://127.0.0.1:1087;
+        export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
         echo "---->"
         curl cip.cc
     else
