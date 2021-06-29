@@ -1,9 +1,9 @@
 tap "buo/cask-upgrade"
 tap "go-delve/delve"
 tap "homebrew/bundle"
-tap "homebrew/cask", "https://mirrors.ustc.edu.cn/homebrew-cask.git"
+tap "homebrew/cask", "https://github.com/Homebrew/homebrew-cask.git"
 tap "homebrew/cask-versions"
-tap "homebrew/core", "https://mirrors.ustc.edu.cn/homebrew-core.git"
+tap "homebrew/core", "https://github.com/Homebrew/homebrew-core.git"
 # Automatic configure script builder
 brew "autoconf"
 # Shell extension to jump to frequently used directories
@@ -26,30 +26,44 @@ brew "openssl@1.1"
 brew "readline"
 # Isolated development environments using Docker
 brew "docker-compose", link: false
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
 # Git extension for versioning large files
 brew "git-lfs"
-# GNU Pretty Good Privacy (PGP) package
-brew "gnupg"
-# Install and debug iPhone apps from the command-line
-brew "ios-deploy"
-# Library to communicate with iOS devices natively
-brew "libimobiledevice"
 # Generic library support script
 brew "libtool"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Library to communicate with iOS devices natively
+brew "libimobiledevice"
+# Tool for managing apps on iOS devices
+brew "ideviceinstaller"
+# Install and debug iPhone apps from the command-line
+brew "ios-deploy"
+# Extract Digicam setting info from EXIF JPEG headers
+brew "jhead"
 # Mac App Store command-line interface
 brew "mas"
 # Open source relational database management system
 brew "mysql"
 # NCurses Disk Usage
 brew "ncdu"
+# Port scanning utility for large networks
+brew "nmap"
+# Manage multiple Node.js versions
+brew "nvm"
+# Minimal dumb-terminal emulation program
+brew "picocom"
 # Python dependency management tool
 brew "pipenv"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Tool to enforce Swift style and conventions
 brew "swiftlint"
+# User interface to the TELNET protocol
+brew "telnet"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
@@ -59,42 +73,77 @@ brew "unrar"
 # Watch files and take action when they change
 brew "watchman"
 cask "aerial"
+# Application uninstaller
 cask "appcleaner"
 cask "appium"
-cask "bitbar"
 cask "captin"
+# Web debugging Proxy application
 cask "charles"
+# Tool to list all active shortcuts of the current application
 cask "cheatsheet"
+# Rule-based custom proxy with GUI based on clash
+cask "clashx"
+# Multi-platform client-side cloud file encryption tool
 cask "cryptomator"
+# App to build and share containerized applications and microservices
 cask "docker"
+# Client for the Dropbox cloud storage service
 cask "dropbox"
+# Web browser
 cask "firefox"
+# Screen color temperature controller
 cask "flux"
+# Email client
 cask "foxmail"
 cask "go2shell"
+# Web browser
 cask "google-chrome"
+# Desktop automation application
 cask "hammerspoon"
+# Free and open-source media player
 cask "iina"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Open-source keystroke visualizer
 cask "keycastr"
+# Snippet management app
 cask "lepton"
+# Animated screen capture application
 cask "licecap"
+# Controls and monitors all fans on Apple computers
 cask "macs-fan-control"
+# Music streaming platform
 cask "neteasemusic"
+# Collaboration platform for API development
 cask "postman"
+# Instant messaging tool
 cask "qq"
+# Screen saver for custom video files
 cask "save-hollywood"
 cask "sequel-pro-nightly"
-cask "shadowsocksx-ng"
+# Simple shortcut menu
 cask "shuttle"
+# Digital design and prototyping platform
+cask "sketch"
+# Graphical client for Git version control
 cask "sourcetree"
+# General-purpose text editor
 cask "textmate"
+# Configurable document editor that supports Markdown
 cask "typora"
+# Run commands and display their output on the desktop
 cask "ubersicht"
+# Open-source code editor
 cask "visual-studio-code"
+# Screen saver that displays web pages
 cask "webviewscreensaver"
+# Free messaging and calling application
 cask "wechat"
+# Network protocol analyzer
 cask "wireshark"
+# View output from scripts in the menu bar
+cask "xbar"
+# Mindmap and brainstorming app
 cask "xmind-zen"
 mas "Keynote 讲演", id: 409183694
 mas "Numbers 表格", id: 409203825
@@ -102,5 +151,4 @@ mas "OhMyStar", id: 1218642292
 mas "Pages 文稿", id: 409201541
 mas "Reeder", id: 880001334
 mas "Xcode", id: 497799835
-mas "库乐队", id: 682658836
 mas "网易有道词典", id: 491854842

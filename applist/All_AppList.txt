@@ -1,18 +1,18 @@
 Alfred 3.app
 AppCleaner.app
-Appium.app
 Avira Phantom VPN.app
 Avira.app
 BSPrintNotify
-Bartender 3.app
-BitBar.app
+BaiduNetdisk_mac.app
+Bartender 4.app
+BitTorrent Web.app
 Brocadesoft
 Captin.app
 Charles.app
 CheatSheet.app
+ClashX.app
 Contexts.app
 Cryptomator.app
-DataGrip.app
 Docker.app
 Dropbox.app
 Firefox.app
@@ -20,6 +20,7 @@ Flux.app
 Go2Shell.app
 Google Chrome.app
 Hammerspoon.app
+HomeKit Accessory Simulator.app
 Huoying Video Desktop.app
 IINA.app
 KeyCastr.app
@@ -35,26 +36,26 @@ OhMyStar.app
 One Switch.app
 Pages.app
 Postman.app
+Qfinder Pro.app
 Reeder.app
 Safari.app
 Sequel Pro.app
-ShadowsocksX-NG.app
 Shuttle.app
+Sketch.app
 Sourcetree.app
 TextMate.app
 Tunnelblick.app
 Typora.app
 Utilities
+Übersicht.app
 Visual Studio Code.app
 WeChat.app
 Wireshark.app
 XMind ZEN.app
-XMind.app
 Xcode.app
 iTerm.app
-trojan-qt5.app
+xbar.app
 zoom.us.app
-Übersicht.app
 微盘.app
 微文档.app
 企业微信.app
