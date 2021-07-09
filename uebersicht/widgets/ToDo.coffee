@@ -64,7 +64,7 @@ style: """
 
 
 render: -> """
-  <h>Homework</h>
+  <h>HeminWork</h>
 
   <div class='todolist'>
 </div>
